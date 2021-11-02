@@ -1,26 +1,28 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import React from "react";
-import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import Event from "./components/events/Events";
+
+import Workshops from "./components/workshops/Workshops";
+import Technologies from "./components/technologies/Technologies";
+import Community from "./components/community/Community";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
-      {/* <Route exact path="/" exact component={} /> */}
+
       <Switch>
-        {/* <Route exact path="/workshops" exact component={} />
-        <Route exact path="/technologies" exact component={} />
-        <Route exact path="/team" exact component={} />
-        <Route exact path="/community" exact component={} />
-        <Route exact path="/getintouch" exact component={} />
-        */}
+        <Route path="/workshops" exact component={Workshops} />
+        <Route exact path="/technologies" component={Technologies} />
+        <Route exact path="/events" exact component={Event} />
       </Switch>
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 };
 

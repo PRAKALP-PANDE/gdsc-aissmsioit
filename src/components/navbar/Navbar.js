@@ -1,39 +1,64 @@
 import React from "react";
-import { Link, BrowserRouter } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <BrowserRouter>
-      <header class="header">
-        <h1 class="logo">
-          <a href="#">GDSC IOIT</a>
-        </h1>
-        <ul class="main-nav">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Workshops</a>
-          </li>
-          <li>
-            <a href="#">Technologies</a>
-          </li>
-          <li>
-            <a href="#">Team</a>
-          </li>
-          <li>
-            <a href="#">Community</a>
-          </li>
-          <li>
-            <a href="#">Get in touch</a>
-          </li>
-          <li>
-            <a href="#">Be a member</a>
-          </li>
-        </ul>
+    <div>
+      <header class="site-navbar">
+        <div class="container">
+          <div class="row align-items-center nav-main">
+            <div class="col-11 col-xl-2">
+              <h1 class="mb-0 site-logo">
+                <a href="" class="mb-0 m-0">
+                  GDSC IOIT
+                </a>
+              </h1>
+            </div>
+            <div class="col-12 col-md-10">
+              <nav class="site-navigation position-relative text-right">
+                <ul class="site-menu">
+                  <li class="">
+                    <a href="">
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="gred">Workshops</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="gyellow">Technologies</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="ggreen">Team</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="gblue">Community</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="gred">Get In Touch</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="gyellow">Be a Member</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </header>
-    </BrowserRouter>
+    </div>
   );
 };
 

@@ -1,111 +1,115 @@
 import React from "react";
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <BrowserRouter>
-      <footer className="site-footer">
+    <footer className="mainfooter" role="contentinfo">
+      <div className="footer-middle">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 col-md-6">
-              <h6>About</h6>
-              <p className="text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                laboriosam mollitia dolor officiis labore consequatur
-                architecto, inventore provident blanditiis omnis, nemo, qui
-                amet! Distinctio ex repellendus accusantium doloribus? Debitis
-                veniam a dignissimos velit esse nostrum tempore dolor unde
-                laboriosam tempora porro neque, aliquid ratione qui dolore
-                corrupti vitae officia itaque.
-              </p>
+            <div className="col-md-3 col-sm-6">
+              <div className="footer-pad">
+                <h4 className="heading-1">GDSC IOIT</h4>
+                <p>gdsc logo</p>
+                <ul className="list-unstyled">
+                  <img className="gdsc-logo" src="" alt="" />
+                </ul>
+              </div>
             </div>
 
-            <div className="col-xs-6 col-md-3">
-              <h6>Teams</h6>
-              <ul className="footer-links">
+            <div className="col-md-3 col-sm-6">
+              <div className="footer-pad">
+                <h4 className="heading-2">Team</h4>
+                <ul className="list-unstyled">
+                  <li className="gored">
+                    <a href="#">Andriod Development</a>
+                  </li>
+                  <li className="goorange">
+                    <a href="#">Web Development</a>
+                  </li>
+                  <li className="gogreen">
+                    <a href="#">Machine Learning</a>
+                  </li>
+                  <li className="goblue">
+                    <a href="#">Management</a>
+                  </li>
+                  <li className="gowhite">
+                    <a href="#">DS & Algo</a>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 col-sm-6">
+              <div className="footer-pad">
+                <h4 className="heading-3">Quick Links</h4>
+                <ul className="list-unstyled">
+                  <li className="gored">
+                    <a href="#">Home</a>
+                  </li>
+                  <li className="goorange">
+                    <a href="#">Workshops</a>
+                  </li>
+                  <li className="gogreen">
+                    <a href="#">Community</a>
+                  </li>
+                  <li className="goblue">
+                    <a href="#">Team</a>
+                  </li>
+
+                  <li className="gowhite">
+                    <a href="#">Be a Member</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <h4 className="heading-4">Follow Us</h4>
+
+              <ul className="social-network social-circle">
                 <li>
-                  <Link href="#">Web Team</Link>
+                  <a href="#" className="icoInstagram" title="Instagram">
+                    <i className="fa fa-instagram"></i>
+                  </a>
                 </li>
                 <li>
-                  <Link href="#">Android Team</Link>
-                </li>
-                <li>
-                  <Link href="#">PHP</Link>
-                </li>
-                <li>
-                  <Link href="#">Java</Link>
-                </li>
-                <li>
-                  <Link href="#">Android</Link>
-                </li>
-                <li>
-                  <Link href="#">Templates</Link>
+                  <a href="#" className="icoYoutube" title="Youtube">
+                    <i className="fa fa-youtube-play"></i>
+                  </a>
                 </li>
               </ul>
-            </div>
-
-            <div className="col-xs-6 col-md-3">
-              <h6>Quick Links</h6>
-              <ul className="footer-links">
+              <ul className="social-network social-circle">
                 <li>
-                  <Link href="#">About Us</Link>
+                  <a href="#" className="icoLinkedin" title="Linkedin">
+                    <i className="fa fa-linkedin"></i>
+                  </a>
                 </li>
                 <li>
-                  <Link href="#">Contact Us</Link>
-                </li>
-                <li>
-                  <Link href="#">Workshops</Link>
-                </li>
-                <li>
-                  <Link href="#">Team</Link>
-                </li>
-                <li>
-                  <Link href="#">Privacy Policy</Link>
+                  <a href="#" className="icoEnvelope" title="Envelope">
+                    <i className="fa fa-envelope"></i>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-          <hr />
-        </div>
-        <div className="container">
           <div className="row">
-            <div className="col-md-8 col-sm-6 col-xs-12">
-              <p className="copyright-text">
+            <h4 class="divider donotcross" contenteditable>
+              GDSC IOIT
+            </h4>
+            <div className="col-md-12 copy">
+              <p className="text-center">
                 Copyright &copy; 2021 All Rights Reserved by
                 <Link href="#"> GDSC IOIT</Link>.
               </p>
             </div>
-
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <ul className="social-icons">
-                <li>
-                  <Link className="github" href="#">
-                    <i className="fa fa-github"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link className="facebook" href="#">
-                    <i className="fa fa-facebook"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link className="instagram" href="#">
-                    <i className="fa fa-instagram"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link className="linkedin" href="#">
-                    <i className="fa fa-linkedin"></i>
-                  </Link>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-      </footer>
-    </BrowserRouter>
+      </div>
+    </footer>
   );
 };
 
