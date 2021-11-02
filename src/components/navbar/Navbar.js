@@ -1,7 +1,30 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const toggle = () => {
+    const mainNav = document.getElementById("main-ul");
+    if (mainNav.style.display === "none") mainNav.style.display = "block";
+    else mainNav.style.display = "none";
+  };
+
+  const responsive = (media) => {
+    const mainNav = document.getElementById("main-ul");
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    if (media.matches) {
+      mainNav.style.display = "block";
+      hamburgerIcon.classList.remove("d-none");
+    } else {
+      mainNav.style.display = "flex";
+      hamburgerIcon.classList.add("d-none");
+    }
+  };
+
+  const media = window.matchMedia("(max-width: 800px)");
+  media.addEventListener("change", responsive);
+
   return (
     <div>
       <header class="site-navbar">
@@ -11,6 +34,11 @@ const Navbar = () => {
               <h1 class="mb-0 site-logo">
                 <a href="" class="mb-0 m-0">
                   GDSC IOIT
+                  <MenuOpenIcon
+            onClick={toggle}
+            className={window.screen.width < 800 ? "" : "d-none"}
+            id="hamburger-icon"
+          />
                 </a>
               </h1>
             </div>
@@ -59,6 +87,7 @@ const Navbar = () => {
         </div>
       </header>
     </div>
+  
   );
 };
 
