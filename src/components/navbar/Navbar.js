@@ -96,8 +96,8 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <a href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/">
-                      <span className="gyellow become">Be a Member</span>
+                    <a target="_blank" href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/">
+                      <span className="gyellow beamember">Be a Member</span>
                     </a>
                   </li>
                 </ul>

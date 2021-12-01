@@ -28,9 +28,6 @@ const Event = () => {
     past_workshops = [],
     live_workshops = [];
 
-  const eventSession = JSON.parse(sessionStorage.getItem("events"));
-  const workshopSession = JSON.parse(sessionStorage.getItem("workshops"));
-
   const [eventSlider, setEventSlider] = useState(
     window.screen.width < 800 ? (
       <Slider {...settings}>
@@ -120,18 +117,25 @@ const Event = () => {
     close.addEventListener("click", () => {
       popUp.classList.remove("open");
     });
+    
+    const eventSession = JSON.parse(sessionStorage.getItem("events"));
+    const workshopSession = JSON.parse(sessionStorage.getItem("workshops"));
 
     let events;
     if (eventSession === null) {
-      const events_json = await fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json");
+      const events_json = await fetch(
+        "https://gdsc-web-default-rtdb.firebaseio.com/Events.json"
+      );
       const events = await events_json.json();
       sessionStorage.setItem("events", JSON.stringify(events));
     } else events = eventSession;
 
     let workshops;
     if (workshopSession === null) {
-      const workshops_json = await fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json");
-      const workshops = await workshops_json.json(); 
+      const workshops_json = await fetch(
+        "https://gdsc-web-default-rtdb.firebaseio.com/Events.json"
+      );
+      const workshops = await workshops_json.json();
       sessionStorage.setItem("workshops", JSON.stringify(workshops));
     } else workshops = workshopSession;
 

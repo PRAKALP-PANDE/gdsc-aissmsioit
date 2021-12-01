@@ -13,10 +13,12 @@
   margin: 0 auto;
 }
 
+/* #FIXME: */
 footer {
   background: #242b2e;
+  background: #ffffff;
   color: white;
-  margin-top: 10%;
+  margin-top: 100px;
 }
 
 .heading-1 {
@@ -35,8 +37,12 @@ footer {
   color: #4285f4;
 }
 
+/* #FIXME: */
+
 footer a {
   color: #fff;
+  color: black;
+
   font-size: 14px;
   transition-duration: 0.2s;
 }
@@ -91,8 +97,8 @@ footer a:hover {
 }
 
 .footer-middle {
-  padding-top: 2em;
   color: white;
+  color: black;
 }
 
 ul.social-network {
@@ -100,6 +106,7 @@ ul.social-network {
   margin: 0px;
   padding: 0px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 ul.social-network li {
@@ -112,12 +119,48 @@ ul.social-network li {
   border-radius: 100%;
 }
 
-.social-network a.icoEnvelope:hover {
-  background-color: #fbbc05;
+.social-circle li a {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  border-radius: 30px;
 }
 
-.social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i {
+  transform: scale(1.1);
+  border-radius: 34px;
+}
+
+.social-circle i {
+  color: red;
+  color: #007bb7;
+  color: #fff;
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #ffffff;
+}
+
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoEnvelope:hover i,
+.social-network a.icoInstagram:hover i,
+.social-network a.icoYoutube:hover i {
+  color: #fff;
 }
 
 .social-network a.icoInstagram:hover {
@@ -133,56 +176,15 @@ ul.social-network li {
   background-color: #ff0000;
 }
 
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i,
-.social-network a.icoInstagram:hover i,
-.social-network a.icoYoutube:hover i {
-  color: #fff;
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
 }
 
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #44bcdd;
+.social-network a.icoEnvelope:hover {
+  background-color: #fbbc05;
 }
 
-.social-circle li a {
-  margin: 0 auto 0 auto;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  color: #272727;
-  font-size: 30px;
-  display: block;
-  border-radius: 30px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i {
-  transform: scale(1.2);
-  border-radius: 34px;
-}
-
-.social-circle i {
-  /* color: #595959; */
-  color: red;
-  color: #fff;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #f9f9f9;
-  background-color: #16222a;
-}
-
+/* GDSC BANNER*/
 .divider {
   display: flex;
 }
@@ -196,7 +198,6 @@ ul.social-network li {
 .donotcross {
   overflow: hidden;
   align-items: center;
-
   background-color: white;
   background: linear-gradient(30deg, #db4437, #f4b400, #0f9d58, #4285f4);
   color: black;
@@ -207,8 +208,35 @@ ul.social-network li {
 .donotcross:before,
 .donotcross:after {
   background: white;
-  background: black;
   padding: 5px 0;
-
   transform: rotate(45deg);
+}
+
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #4285f4;
+  bottom: 30px;
+  right: 30px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 50%;
+  z-index: 99;
+  border: none;
+}
+
+.gotopbtn:hover {
+  background: #3944f7;
+}
+
+@media (max-width: 320px) {
+  .gotopbtn {
+    left: calc(80vw - 10px);
+    top: calc(90vh - 10px);
+  }
 }
