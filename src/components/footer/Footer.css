@@ -240,3 +240,19 @@ ul.social-network li {
     top: calc(90vh - 10px);
   }
 }
+
+@media (max-width: 800px) {
+  .team, .quick-links {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .follow-us {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .donotcross {
+    margin-top: 10px;
+  }
+}

@@ -1,12 +1,11 @@
 import React from "react";
-// import Bubbles from "../bubbles/Bubbles";
 import "./Home.css";
 
 const Home = () => {
   return (
     <div className="container home">
       <div className="contents">
-        <div className="row">
+        {/* <div className="row">
           <div className="column ">
             <p className="member-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -25,32 +24,32 @@ const Home = () => {
           <div className="column home-svg">
             <img src="./images/home/home_svg.png" alt="" />
           </div>
-        </div>
+        </div> */}
 
         <div className="container d-flex align-items-center justify-content-center mt-5">
           <div className="all-divs">
             <h1 className="text-center">Events & Workshop</h1>
           </div>
         </div>
-        <div class="container events">
-          <div class="card">
-            <div class="card-content">
+        <div className="container events">
+          <div className="card">
+            <div className="card-content">
               <a href="#">
-                <img src="./images/home/card.jpg" class="img-fluid event-img"></img>
+                <img src="./images/home/card.jpg" className="img-fluid event-img"></img>
               </a>
             </div>
           </div>
-          <div class="card">
-            <div class="card-content">
+          <div className="card">
+            <div className="card-content">
               <a href="#">
-                <img src="./images/home/card.jpg" class="img-fluid event-img"></img>
+                <img src="./images/home/card.jpg" className="img-fluid event-img"></img>
               </a>
             </div>
           </div>
-          <div class="card">
-            <div class="card-content">
+          <div className="card">
+            <div className="card-content">
               <a href="#">
-                <img src="./images/home/card.jpg" class="img-fluid event-img"></img>
+                <img src="./images/home/card.jpg" className="img-fluid event-img"></img>
               </a>
             </div>
           </div>

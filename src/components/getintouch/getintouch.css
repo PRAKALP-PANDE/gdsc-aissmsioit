@@ -1,0 +1,40 @@
+:root{
+    --gdsc-yellow:#FCC500;
+    --gdsc-blue:#519BF7;
+    --gdsc-green:#00AA6A;
+    --gdsc-red:#F15B44;
+
+}
+
+.contact-body {
+    min-height: 100vh;
+    font-weight: 500;
+    font-size: 3.2vh;
+}
+
+.contact-illustration{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.form-label{
+    pointer-events: none;
+}
+
+.lottie-social{
+    height:80vh;
+    width:40vw;
+    padding-top: 12vh;
+}
+.contact-tag{
+    line-height: 50px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	
+	letter-spacing: 0.4px;
+}

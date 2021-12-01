@@ -11,65 +11,6 @@ import EventCard from "./EventCard";
 import WorkshopCard from "./WorkshopCard";
 
 const Event = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    // autoplay: true,
-    // autoplaySpeed: 4000,
-  };
-
-  let upcoming_events = [],
-    past_events = [],
-    live_events = [],
-    upcoming_workshops = [],
-    past_workshops = [],
-    live_workshops = [];
-
-  const [eventSlider, setEventSlider] = useState(
-    window.screen.width < 800 ? (
-      <Slider {...settings}>
-        {past_events.map((event, index) => (
-          <EventCard key={index} name={event.name} />
-        ))}
-      </Slider>
-    ) : (
-      past_events.map((event, index) => (
-        <EventCard key={index} name={event.name} />
-      ))
-    )
-  );
-
-  const [workshopSlider, setWorkshopSlider] = useState(
-    window.screen.width < 800 ? (
-      <Slider {...settings}>
-        {past_workshops.map((event, index) => (
-          <EventCard key={index} name={event.name} />
-        ))}
-      </Slider>
-    ) : (
-      past_workshops.map((event, index) => (
-        <EventCard key={index} name={event.name} />
-      ))
-    )
-  );
-
-  const responsive = (media) => {
-    if (media.matches) {
-      setEventSlider(<Slider {...settings}></Slider>);
-      setWorkshopSlider(<Slider {...settings}></Slider>);
-    } else {
-      setEventSlider(<EventCard />);
-      setWorkshopSlider(<WorkshopCard />);
-    }
-  };
-
-  const media = window.matchMedia("(max-width: 800px)");
-  media.addEventListener("change", responsive);
-  window.onload = () => responsive(media);
-
   useEffect(async () => {
     const upcomingEvents = document.getElementById("Upcoming_Events_Span");
     const pastEvents = document.getElementById("Past_Events_Span");
@@ -117,52 +58,113 @@ const Event = () => {
     close.addEventListener("click", () => {
       popUp.classList.remove("open");
     });
-    
-    const eventSession = JSON.parse(sessionStorage.getItem("events"));
-    const workshopSession = JSON.parse(sessionStorage.getItem("workshops"));
-
-    let events;
-    if (eventSession === null) {
-      const events_json = await fetch(
-        "https://gdsc-web-default-rtdb.firebaseio.com/Events.json"
-      );
-      const events = await events_json.json();
-      sessionStorage.setItem("events", JSON.stringify(events));
-    } else events = eventSession;
-
-    let workshops;
-    if (workshopSession === null) {
-      const workshops_json = await fetch(
-        "https://gdsc-web-default-rtdb.firebaseio.com/Events.json"
-      );
-      const workshops = await workshops_json.json();
-      sessionStorage.setItem("workshops", JSON.stringify(workshops));
-    } else workshops = workshopSession;
-
-    const curr_date = new Date();
-
-    events.forEach((event) => {
-      if (event) {
-        const event_date = new Date(event.date);
-        if (event_date.getTime() < curr_date.getTime() - 157237218)
-          past_events.push(event);
-        else if (event_date.getTime() > curr_date.getTime() + 157237218)
-          upcoming_events.push(event);
-        else live_events.push(event);
-      }
-    });
-
-    workshops.forEach((workshop) => {
-      if (workshop) {
-        const workshop_date = new Date(workshop.date);
-        if (workshop_date.getTime() < curr_date.getTime() - 157237218)
-          past_workshops.push(workshop);
-        else if (workshop_date.getTime() > curr_date.getTime() + 157237218)
-          upcoming_workshops.push(workshop);
-        else live_workshops.push(workshop);
-      }
-    });
   });
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // autoplay: true,
+    // autoplaySpeed: 4000,
+  };
+
+  let upcoming_events = [],
+    past_events = [],
+    live_events = [],
+    upcoming_workshops = [],
+    past_workshops = [],
+    live_workshops = [];
+
+  const eventSession = JSON.parse(sessionStorage.getItem("events"));
+  const workshopSession = JSON.parse(sessionStorage.getItem("workshops"));
+
+  let events;
+  if (eventSession === null) {
+    fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
+      .then((res) => res.json())
+      .then((data) => (events = data));
+    sessionStorage.setItem("events", JSON.stringify(events));
+  } else events = eventSession;
+
+  let workshops;
+  if (workshopSession === null) {
+    fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
+      .then((res) => res.json())
+      .then((data) => (workshops = data));
+    sessionStorage.setItem("workshops", JSON.stringify(workshops));
+  } else workshops = workshopSession;
+
+  const curr_date = new Date();
+
+  events.forEach((event) => {
+    if (event) {
+      const event_date = new Date(event.date);
+      if (event_date.getTime() < curr_date.getTime() - 157237218)
+        past_events.push(event);
+      else if (event_date.getTime() > curr_date.getTime() + 157237218)
+        upcoming_events.push(event);
+      else live_events.push(event);
+    }
+  });
+
+  workshops.forEach((workshop) => {
+    if (workshop) {
+      const workshop_date = new Date(workshop.date);
+      if (workshop_date.getTime() < curr_date.getTime() - 157237218)
+        past_workshops.push(workshop);
+      else if (workshop_date.getTime() > curr_date.getTime() + 157237218)
+        upcoming_workshops.push(workshop);
+      else live_workshops.push(workshop);
+    }
+  });
+
+  console.log(past_events);
+  console.log(upcoming_events);
+  console.log(live_events);
+
+  const [eventSlider, setEventSlider] = useState(
+    window.screen.width < 800 ? (
+      <Slider {...settings}>
+        {past_events.map((event, index) => (
+          <EventCard key={index} name={event.name} />
+        ))}
+      </Slider>
+    ) : (
+      past_events.map((event, index) => (
+        <EventCard key={index} name={event.name} />
+      ))
+    )
+  );
+
+  const [workshopSlider, setWorkshopSlider] = useState(
+    window.screen.width < 800 ? (
+      <Slider {...settings}>
+        {past_workshops.map((event, index) => (
+          <EventCard key={index} name={event.name} />
+        ))}
+      </Slider>
+    ) : (
+      past_workshops.map((event, index) => (
+        <EventCard key={index} name={event.name} />
+      ))
+    )
+  );
+
+  const responsive = (media) => {
+    if (media.matches) {
+      setEventSlider(<Slider {...settings}></Slider>);
+      setWorkshopSlider(<Slider {...settings}></Slider>);
+    } else {
+      setEventSlider(<EventCard />);
+      setWorkshopSlider(<WorkshopCard />);
+    }
+  };
+
+  const media = window.matchMedia("(max-width: 800px)");
+  media.addEventListener("change", responsive);
+  window.onload = () => responsive(media);
 
   return (
     <>

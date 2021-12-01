@@ -1,6 +1,6 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
-// import Bubbles from "../bubbles/Bubbles";
+import { NavLink } from "react-router-dom";
+import Bubbles from "../bubbles/Bubbles";
 
 import "./Footer.css";
 
@@ -23,101 +23,109 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-3 col-sm-6">
                 <div className="footer-pad">
-                  <h4 className="heading-1">GDSC IOIT</h4>
+                  <h4 className="heading-1">GDSC AISSMS IOIT</h4>
                   <ul className="list-unstyled">
-                    <img width="100%" height="100%" className="GDSC-LOGO" src="./images/gdsc-all.png" alt="" />
+                    <img
+                      width="100%"
+                      height="100%"
+                      className="GDSC-LOGO"
+                      src="./images/gdsc-all.png"
+                      alt="GDSC-LOGO"
+                    />
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-3 col-sm-6 team">
                 <div className="footer-pad">
                   <h4 className="heading-2">Team</h4>
                   <ul className="list-unstyled">
                     <li className="gored">
-                      <a href="#">GDSC Lead</a>
-                    </li>
-                    <li className="gored">
-                      <a href="#">Andriod Development</a>
-                    </li>
-                    <li className="goorange">
-                      <a href="#">Web Development</a>
+                      <NavLink to="#">GDSC Lead</NavLink>
                     </li>
                     <li className="gogreen">
-                      <a href="#">Machine Learning</a>
+                      <NavLink to="#">Andriod Development</NavLink>
+                    </li>
+                    <li className="goorange">
+                      <NavLink to="#">Web Development</NavLink>
+                    </li>
+                    <li className="gogreen">
+                      <NavLink to="#">Machine Learning</NavLink>
                     </li>
                     <li className="goblue">
-                      <a href="#">Management</a>
+                      <NavLink to="#">Management</NavLink>
                     </li>
-                    <li className="gowhite">
-                      <a href="#">DS & Algo</a>
+                    <li className="goorange">
+                      <NavLink to="#">DS & Algo</NavLink>
                     </li>
                     <li>
-                      <a href="#"></a>
+                      <NavLink to="#"></NavLink>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-3 col-sm-6 quick-links">
                 <div className="footer-pad">
                   <h4 className="heading-3">Quick Links</h4>
                   <ul className="list-unstyled">
                     <li className="gored">
-                      <a href="#">Home</a>
+                      <NavLink to="/">Home</NavLink>
                     </li>
                     <li className="goorange">
-                      <a href="#">Workshops</a>
+                      <NavLink to="/events">Events</NavLink>
                     </li>
                     <li className="gogreen">
-                      <a href="#">Community</a>
+                      <NavLink to="/community">Community</NavLink>
+                    </li>
+                    <li className="gored">
+                      <NavLink to="/team">Team</NavLink>
                     </li>
                     <li className="goblue">
-                      <a href="#">Team</a>
-                    </li>
-
-                    <li className="gowhite">
-                      <a href="#">Be a Member</a>
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
+                      >
+                        <span>Be a Member</span>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 follow-us">
                 <h4 className="heading-4">Follow Us</h4>
 
                 <ul className="social-network social-circle">
                   <li>
-                    <a href="#" className="icoInstagram" title="Instagram">
+                    <NavLink to="#" className="icoInstagram" title="Instagram">
                       <i className="fa fa-instagram"></i>
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#" className="icoYoutube" title="Youtube">
+                    <NavLink to="#" className="icoYoutube" title="Youtube">
                       <i className="fa fa-youtube-play"></i>
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
                 <ul className="social-network social-circle">
                   <li>
-                    <a href="#" className="icoLinkedin" title="Linkedin">
+                    <NavLink to="#" className="icoLinkedin" title="Linkedin">
                       <i className="fa fa-linkedin"></i>
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#" className="icoEnvelope" title="Envelope">
+                    <NavLink to="#" className="icoEnvelope" title="Envelope">
                       <i className="fa fa-envelope"></i>
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="row">
-              <h4 class="divider donotcross">
-                GDSC IOIT
-              </h4>
-
+              <h4 className="divider donotcross">GDSC AISSMS IOIT</h4>
               <div className="col-md-12 copy">
                 <p className="text-center">
                   Copyright &copy; 2021 All Rights Reserved by
-                  <Link href="#"> GDSC IOIT</Link>.
+                  <NavLink to="/"> GDSC IOIT</NavLink>.
                 </p>
               </div>
             </div>
@@ -126,7 +134,7 @@ const Footer = () => {
         <button className="gotopbtn" onClick={scroll}>
           <i className="fa fa-arrow-up"></i>
         </button>
-        {/* <Bubbles /> */}
+        <Bubbles />
       </footer>
     </>
   );
