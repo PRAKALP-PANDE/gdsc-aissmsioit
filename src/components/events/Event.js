@@ -120,51 +120,101 @@ const Event = () => {
     }
   });
 
-  console.log(past_events);
-  console.log(upcoming_events);
-  console.log(live_events);
+  const upcoming_events_map = upcoming_events.map((event, index) => (
+    <EventCard key={index} name={event.name} />
+  ));
+
+  const past_events_map = past_events.map((event, index) => (
+    <EventCard key={index} name={event.name} />
+  ));
+
+  const livel_events_map = live_events.map((event, index) => (
+    <EventCard key={index} name={event.name} />
+  ));
+
+  const upcoming_workshops_map = upcoming_workshops.map((event, index) => (
+    <EventCard key={index} name={event.name} />
+  ));
+
+  const past_workshops_map = past_workshops.map((event, index) => (
+    <EventCard key={index} name={event.name} />
+  ));
+
+  const livel_workshops_map = live_workshops.map((event, index) => (
+    <EventCard key={index} name={event.name} />
+  ));
 
   const [eventSlider, setEventSlider] = useState(
     window.screen.width < 800 ? (
-      <Slider {...settings}>
-        {past_events.map((event, index) => (
-          <EventCard key={index} name={event.name} />
-        ))}
-      </Slider>
+      <Slider {...settings}>{upcoming_events_map}</Slider>
     ) : (
-      past_events.map((event, index) => (
-        <EventCard key={index} name={event.name} />
-      ))
+      upcoming_events_map
     )
   );
 
   const [workshopSlider, setWorkshopSlider] = useState(
     window.screen.width < 800 ? (
-      <Slider {...settings}>
-        {past_workshops.map((event, index) => (
-          <EventCard key={index} name={event.name} />
-        ))}
-      </Slider>
+      <Slider {...settings}>{upcoming_workshops_map}</Slider>
     ) : (
-      past_workshops.map((event, index) => (
-        <EventCard key={index} name={event.name} />
-      ))
+      upcoming_workshops_map
     )
   );
 
   const responsive = (media) => {
     if (media.matches) {
-      setEventSlider(<Slider {...settings}></Slider>);
-      setWorkshopSlider(<Slider {...settings}></Slider>);
+      setEventSlider(<Slider {...settings}>{upcoming_events_map}</Slider>);
+      setWorkshopSlider(
+        <Slider {...settings}>{upcoming_workshops_map}</Slider>
+      );
     } else {
-      setEventSlider(<EventCard />);
-      setWorkshopSlider(<WorkshopCard />);
+      setEventSlider(upcoming_events_map);
+      setWorkshopSlider(upcoming_workshops_map);
     }
   };
 
   const media = window.matchMedia("(max-width: 800px)");
   media.addEventListener("change", responsive);
   window.onload = () => responsive(media);
+
+  const upcomingEventsClick = () => {
+    setEventSlider(
+      window.screen.width < 800 ? (
+        <Slider {...settings}>{upcoming_events_map}</Slider>
+      ) : (
+        upcoming_events_map
+      )
+    );
+  };
+
+  const pastEventsClick = () => {
+    setEventSlider(
+      window.screen.width < 800 ? (
+        <Slider {...settings}>{past_events_map}</Slider>
+      ) : (
+        past_events_map
+      )
+    );
+  };
+
+  const upcomingWorkshopsClick = () => {
+    setWorkshopSlider(
+      window.screen.width < 800 ? (
+        <Slider {...settings}>{upcoming_workshops_map}</Slider>
+      ) : (
+        upcoming_workshops_map
+      )
+    );
+  };
+
+  const pastWorkshopsClick = () => {
+    setWorkshopSlider(
+      window.screen.width < 800 ? (
+        <Slider {...settings}>{past_workshops_map}</Slider>
+      ) : (
+        past_workshops_map
+      )
+    );
+  };
 
   return (
     <>
@@ -246,6 +296,7 @@ const Event = () => {
             <button
               id="Upcoming_Events_Span"
               className="custom-btn btn-13 Upcoming_Span"
+              onClick={upcomingEventsClick}
             >
               <span>Upcoming Events</span>
             </button>
@@ -262,6 +313,7 @@ const Event = () => {
             <button
               id="Past_Events_Span"
               className="custom-btn btn-14 Past_Span"
+              onClick={pastEventsClick}
             >
               <span>Past Events</span>
             </button>
@@ -376,6 +428,7 @@ const Event = () => {
             <button
               id="Upcoming_Workshops_Span"
               className="custom-btn btn-13 Upcoming_Span Upcoming_Workshops_Span"
+              onClick={upcomingWorkshopsClick}
             >
               <span>Upcoming Workshops</span>
             </button>
@@ -392,6 +445,7 @@ const Event = () => {
             <button
               id="Past_Workshops_Span"
               className="custom-btn btn-14 Past_Span Past_Workshops_Span"
+              onClick={pastWorkshopsClick}
             >
               <span>Past Workshops</span>
             </button>
