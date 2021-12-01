@@ -24,22 +24,22 @@ const Footer = () => {
                 <h4 className="heading-2">Team</h4>
                 <ul className="list-unstyled">
                   <li className="gored">
-                    <a href="#">Andriod Development</a>
+                    <a>Andriod Development</a>
                   </li>
                   <li className="goorange">
-                    <a href="#">Web Development</a>
+                    <a>Web Development</a>
                   </li>
                   <li className="gogreen">
-                    <a href="#">Machine Learning</a>
+                    <a>Machine Learning</a>
                   </li>
                   <li className="goblue">
-                    <a href="#">Management</a>
+                    <a>Management</a>
                   </li>
                   <li className="gowhite">
-                    <a href="#">DS & Algo</a>
+                    <a>DS & Algo</a>
                   </li>
                   <li>
-                    <a href="#"></a>
+                    <a></a>
                   </li>
                 </ul>
               </div>
@@ -49,20 +49,20 @@ const Footer = () => {
                 <h4 className="heading-3">Quick Links</h4>
                 <ul className="list-unstyled">
                   <li className="gored">
-                    <a href="#">Home</a>
+                    <a>Home</a>
                   </li>
                   <li className="goorange">
-                    <a href="#">Workshops</a>
+                    <a>Workshops</a>
                   </li>
                   <li className="gogreen">
-                    <a href="#">Community</a>
+                    <a>Community</a>
                   </li>
                   <li className="goblue">
-                    <a href="#">Team</a>
+                    <a>Team</a>
                   </li>
 
                   <li className="gowhite">
-                    <a href="#">Be a Member</a>
+                    <a>Be a Member</a>
                   </li>
                 </ul>
               </div>
@@ -72,24 +72,24 @@ const Footer = () => {
 
               <ul className="social-network social-circle">
                 <li>
-                  <a href="#" className="icoInstagram" title="Instagram">
+                  <a className="icoInstagram" title="Instagram">
                     <i className="fa fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="icoYoutube" title="Youtube">
+                  <a className="icoYoutube" title="Youtube">
                     <i className="fa fa-youtube-play"></i>
                   </a>
                 </li>
               </ul>
               <ul className="social-network social-circle">
                 <li>
-                  <a href="#" className="icoLinkedin" title="Linkedin">
+                  <a className="icoLinkedin" title="Linkedin">
                     <i className="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="icoEnvelope" title="Envelope">
+                  <a className="icoEnvelope" title="Envelope">
                     <i className="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -97,13 +97,13 @@ const Footer = () => {
             </div>
           </div>
           <div className="row">
-            <h4 class="divider donotcross" contenteditable>
+            <h4 className="divider donotcross">
               GDSC IOIT
             </h4>
             <div className="col-md-12 copy">
               <p className="text-center">
                 Copyright &copy; 2021 All Rights Reserved by
-                <Link href="#"> GDSC IOIT</Link>.
+                <NavLink to="/"> GDSC IOIT</NavLink>.
               </p>
             </div>
           </div>

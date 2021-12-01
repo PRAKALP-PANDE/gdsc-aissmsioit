@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .gdsc-logo {
   display: inline-block;
   line-height: 70px;
@@ -11,29 +12,35 @@
   max-width: 16em;
   margin: 0 auto;
 }
+
 footer {
   background: #242b2e;
-
   color: white;
-  margin-top: 100px;
+  margin-top: 10%;
 }
+
 .heading-1 {
   color: #db4437;
 }
+
 .heading-2 {
   color: #f4b400;
 }
+
 .heading-3 {
   color: #0f9d58;
 }
+
 .heading-4 {
   color: #4285f4;
 }
+
 footer a {
   color: #fff;
   font-size: 14px;
   transition-duration: 0.2s;
 }
+
 .footer-pad a::after {
   background: none repeat scroll 0 0 transparent;
 
@@ -46,21 +53,27 @@ footer a {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 .footer-pad a:hover:after {
   width: 25%;
 }
+
 .gored a:hover:after {
   background-color: #db4437;
 }
+
 .goorange a:hover:after {
   background-color: #f4b400;
 }
+
 .gogreen a:hover:after {
   background-color: #0f9d58;
 }
+
 .goblue a:hover:after {
   background-color: #4285f4;
 }
+
 .gowhite a:hover:after {
   background-color: #fff;
 }
@@ -106,16 +119,16 @@ ul.social-network li {
 .social-network a.icoLinkedin:hover {
   background-color: #007bb7;
 }
+
 .social-network a.icoInstagram:hover {
-  background: linear-gradient(
-    59deg,
-    #fbad50,
-    #fccc63,
-    #e95950,
-    #bc2a8d,
-    #8a3ab9
-  );
+  background: linear-gradient(59deg,
+      #fbad50,
+      #fccc63,
+      #e95950,
+      #bc2a8d,
+      #8a3ab9);
 }
+
 .social-network a.icoYoutube:hover {
   background-color: #ff0000;
 }
@@ -173,6 +186,7 @@ ul.social-network li {
 .divider {
   display: flex;
 }
+
 .divider:before,
 .divider:after {
   content: "";
@@ -189,6 +203,7 @@ ul.social-network li {
   color: white;
   font-weight: 700;
 }
+
 .donotcross:before,
 .donotcross:after {
   background: white;

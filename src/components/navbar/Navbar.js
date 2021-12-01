@@ -1,24 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import "./Navbar.css";
 
 const Navbar = () => {
+  useEffect(() => {
+    const mainNav = document.getElementById("main-ul");
+    window.screen.width < 800
+      ? (mainNav.style.display = "none")
+      : (mainNav.style.display = "block");
+  });
+
   const toggle = () => {
     const mainNav = document.getElementById("main-ul");
-    if (mainNav.style.display === "none") mainNav.style.display = "block";
-    else mainNav.style.display = "none";
+    if (mainNav.style.display === "none") {
+      setTimeout(function () {
+        mainNav.style.display = "block";
+      }, 100);
+    } else {
+      setTimeout(function () {
+        mainNav.style.display = "none";
+      }, 100);
+    }
   };
 
   const responsive = (media) => {
     const mainNav = document.getElementById("main-ul");
     const hamburgerIcon = document.getElementById("hamburger-icon");
     if (media.matches) {
-      mainNav.style.display = "block";
       hamburgerIcon.classList.remove("d-none");
+      mainNav.style.display = "none";
     } else {
-      mainNav.style.display = "flex";
       hamburgerIcon.classList.add("d-none");
+      mainNav.style.display = "block";
     }
   };
 
@@ -27,57 +41,63 @@ const Navbar = () => {
 
   return (
     <div>
-      <header class="site-navbar">
-        <div class="container">
-          <div class="row align-items-center nav-main">
-            <div class="col-11 col-xl-2">
-              <h1 class="mb-0 site-logo">
-                <a href="" class="mb-0 m-0">
-                  GDSC IOIT
+      <header className="site-navbar">
+        <div className="container">
+          <div className="row align-items-center nav-main">
+            <div className="col-11 col-xl-2">
+              <h1 className="m-2 site-logo">
+                <div className="m-2">
+                  <NavLink to="/">
+                    <img
+                      className="logo"
+                      src="/images/gdsc_logo.png"
+                      alt="GDSC Logo"
+                    />
+                  </NavLink>
                   <MenuOpenIcon
-            onClick={toggle}
-            className={window.screen.width < 800 ? "" : "d-none"}
-            id="hamburger-icon"
-          />
-                </a>
+                    onClick={toggle}
+                    className={window.screen.width < 800 ? "" : "d-none"}
+                    id="hamburger-icon"
+                  />
+                </div>
               </h1>
             </div>
-            <div class="col-12 col-md-10">
-              <nav class="site-navigation position-relative text-right">
-                <ul class="site-menu">
-                  <li class="">
-                    <a href="">
+            <div className="col-12 col-md-10">
+              <nav className="site-navigation position-relative text-right">
+                <ul id="main-ul" className="site-menu">
+                  <li>
+                    <NavLink to="/">
                       <span>Home</span>
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="">
-                      <span class="gred">Workshops</span>
-                    </a>
+                    <NavLink to="/events">
+                      <span className="gred">Events</span>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="">
-                      <span class="gyellow">Technologies</span>
-                    </a>
+                    <NavLink to="/blogs">
+                      <span className="gyellow">Blogs</span>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="">
-                      <span class="ggreen">Team</span>
-                    </a>
+                    <NavLink to="/team">
+                      <span className="ggreen">Team</span>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="">
-                      <span class="gblue">Community</span>
-                    </a>
+                    <NavLink to="/community">
+                      <span className="gblue">Community</span>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="">
-                      <span class="gred">Get In Touch</span>
-                    </a>
+                    <NavLink to="/getintouch">
+                      <span className="gred">Get In Touch</span>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="">
-                      <span class="gyellow">Be a Member</span>
+                    <a href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/">
+                      <span className="gyellow become">Be a Member</span>
                     </a>
                   </li>
                 </ul>
@@ -87,7 +107,6 @@ const Navbar = () => {
         </div>
       </header>
     </div>
-  
   );
 };
 

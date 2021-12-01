@@ -3,16 +3,16 @@ import React from "react";
 const GetInTouch = () => {
   const submitForm = async (event) => {
     event.preventDefault();
-    const name = event.target[0].value;
-    const email = event.target[1].value;
-    const mobile_number = event.target[2].value;
-    const message = event.target[3].value;
+    const name = event.target[0];
+    const email = event.target[1];
+    const mobile_number = event.target[2];
+    const message = event.target[3];
 
     if (
-      name.length === 0 ||
-      email.length === 0 ||
-      mobile_number.length === 0 ||
-      message.length === 0
+      name.value.length === 0 ||
+      email.value.length === 0 ||
+      mobile_number.value.length === 0 ||
+      message.value.length === 0
     ) {
       const contactError = document.getElementById("contact_error");
       contactError.innerHTML = "Please Enter Valid Data!";
@@ -25,14 +25,19 @@ const GetInTouch = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            name: name,
-            email: email,
-            mobile_number: mobile_number,
-            message: message,
+            name: name.value,
+            email: email.value,
+            mobile_number: mobile_number.value,
+            message: message.value,
           }),
         }
       );
+      console.log(await response.json());
     }
+    name.value = "";
+    email.value = "";
+    mobile_number.value = "";
+    message.value = "";
   };
 
   return (
