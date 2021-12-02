@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom/cjs/react-router-dom.min";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -19,10 +19,45 @@ import Error from "./components/error/Error";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import "./App.css";
+
 const App = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  // const [content, setContent] = useState(
+  //   <div>
+  //     <div className="artboard">
+  //       <div className="domino">
+  //         <div></div>
+  //         <div></div>
+  //         <div></div>
+  //         <div></div>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
+
+  // setTimeout(() => {
+  //   setContent(
+  //     <BrowserRouter>
+  //       <Navbar />
+  //       <Switch>
+  //         <Route path="/" exact component={Home} />
+  //         <Route path="/events" exact component={Event} />
+  //         <Route path="/blogs" exact component={Blog} />
+  //         <Route path="/team" exact component={Team} />
+  //         <Route path="/community" exact component={Community} />
+  //         <Route path="/getintouch" exact component={GetInTouch} />
+  //         <Route path="*" exact component={Error} />
+  //       </Switch>
+  //       <Footer />
+  //     </BrowserRouter>
+  //   );
+  // }, 1000);
+
+  // return content;
 
   return (
     <BrowserRouter>

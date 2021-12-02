@@ -1,12 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import Card from "./Card";
+
 const Home = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // autoplay: true,
+    // autoplaySpeed: 4000,
+  };
+
+  let upcoming_events = [];
+
+  const eventSession = JSON.parse(sessionStorage.getItem("events"));
+
+  let events = [];
+  if (eventSession === null) {
+    fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
+      .then((res) => res.json())
+      .then((data) => {
+        events = data;
+        sessionStorage.setItem("events", JSON.stringify(events));
+      });
+  } else events = eventSession;
+
+  const curr_date = new Date();
+
+  events.forEach((event) => {
+    if (event) {
+      const event_date = new Date(event.date);
+      if (event_date.getTime() - 157237218 < curr_date.getTime())
+        upcoming_events.push(event);
+    }
+  });
+
+  console.log(upcoming_events);
+
+  const upcoming_events_map = upcoming_events.map((event, index) => (
+    <Card key={index} name={event.name} />
+  ));
+
+  const [eventSlider, setEventSlider] = useState(
+    window.screen.width < 800 ? (
+      <Slider {...settings}>{upcoming_events_map}</Slider>
+    ) : (
+      upcoming_events_map
+    )
+  );
+
+  const responsive = (media) => {
+    if (media.matches) {
+      setEventSlider(<Slider {...settings}>{upcoming_events_map}</Slider>);
+    } else {
+      setEventSlider(upcoming_events_map);
+    }
+  };
+
+  const media = window.matchMedia("(max-width: 800px)");
+  media.addEventListener("change", responsive);
+  window.onload = () => responsive(media);
+
+  console.log("Good");
+
   return (
     <div className="container home">
       <div className="contents">
-        {/* <div className="row">
-          <div className="column ">
+        <div className="row">
+          <div className="column home-svg">
+            <img src="./images/home/home_svg.png" alt="" />
+          </div>
+          <div className="column">
             <p className="member-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               fugiat soluta, eius quo ad eveniet laborum! Quo reiciendis illo
@@ -21,40 +93,15 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          <div className="column home-svg">
-            <img src="./images/home/home_svg.png" alt="" />
-          </div>
-        </div> */}
+        </div>
 
         <div className="container d-flex align-items-center justify-content-center mt-5">
-          <div className="all-divs">
-            <h1 className="text-center">Events & Workshop</h1>
+          <div className="all-divs mt-5">
+            <h1 className="text-center">Upcoming Events</h1>
           </div>
         </div>
-        <div className="container events">
-          <div className="card">
-            <div className="card-content">
-              <a href="#">
-                <img src="./images/home/card.jpg" className="img-fluid event-img"></img>
-              </a>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-content">
-              <a href="#">
-                <img src="./images/home/card.jpg" className="img-fluid event-img"></img>
-              </a>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-content">
-              <a href="#">
-                <img src="./images/home/card.jpg" className="img-fluid event-img"></img>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="container d-flex align-items-center justify-content-center">
+        <div className="container events mt-5">{eventSlider}</div>
+        <div className="container d-flex align-items-center justify-content-center mt-5">
           <div className="all-divs">
             <h1 className="text-center">About Community</h1>
 

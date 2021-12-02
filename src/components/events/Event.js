@@ -80,7 +80,7 @@ const Event = () => {
   const eventSession = JSON.parse(sessionStorage.getItem("events"));
   const workshopSession = JSON.parse(sessionStorage.getItem("workshops"));
 
-  let events;
+  let events = [];
   if (eventSession === null) {
     fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
       .then((res) => res.json())
@@ -88,7 +88,7 @@ const Event = () => {
     sessionStorage.setItem("events", JSON.stringify(events));
   } else events = eventSession;
 
-  let workshops;
+  let workshops = [];
   if (workshopSession === null) {
     fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
       .then((res) => res.json())
