@@ -111,7 +111,7 @@ const Contact = () => {
                 <h3 id="contact_error" className="text-danger"></h3>
                 <div className="my-5 ">
                   <h2
-                    className="text-center font-weight-bolder "
+                    className="text-center font-weight-bolder"
                     style={{
                       fontFamily: "Segoe UI",
                       fontStyle: " normal",

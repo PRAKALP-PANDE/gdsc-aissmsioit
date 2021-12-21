@@ -5,12 +5,12 @@ import Bubbles from "../bubbles/Bubbles";
 import "./Footer.css";
 
 const Footer = () => {
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToBottom = () => {
+  //   window.scrollTo({
+  //     top: document.documentElement.scrollHeight,
+  //     behavior: "smooth",
+  //   });
+  // };
   const scroll = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

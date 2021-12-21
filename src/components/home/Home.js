@@ -42,9 +42,7 @@ const Home = () => {
         upcoming_events.push(event);
     }
   });
-
-  console.log(upcoming_events);
-
+  
   const upcoming_events_map = upcoming_events.map((event, index) => (
     <Card key={index} name={event.name} />
   ));

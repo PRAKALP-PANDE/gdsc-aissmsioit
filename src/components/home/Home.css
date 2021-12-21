@@ -208,7 +208,7 @@
   height: 300px;
   background: #fff;
   display: flex;
-  margin: 0 40px 30px 40px;
+  margin: 0 20px 20px 40px;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
@@ -216,7 +216,7 @@
 }
 
 .event-img {
-  height: 290px;
+  height: 300px;
 }
 
 .events:hover .card {
@@ -318,6 +318,7 @@
   .column {
     display: block;
     width: 100%;
+    text-align: center;
   }
 
   .home-svg img {
@@ -330,8 +331,15 @@
   }
 
   .events {
-    max-width: 314px;
-    margin: 0%;
+    max-width: 360px;
     display: block;
+  }
+
+  .events .card {
+    height: 400px;
+  }
+
+  .event-img {
+    height: 400px;
   }
 }

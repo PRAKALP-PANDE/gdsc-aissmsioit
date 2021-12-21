@@ -11,6 +11,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Team from "./components/team/Team";
 import Event from "./components/events/Event";
+import Eventdetails from "./components/events/Eventdetails";
 import Community from "./components/community/Community";
 import Blog from "./components/blog/Blog";
 import GetInTouch from "./components/getintouch/GetInTouch";
@@ -26,53 +27,43 @@ const App = () => {
     AOS.init();
   }, []);
 
-  // const [content, setContent] = useState(
-  //   <div>
-  //     <div className="artboard">
-  //       <div className="domino">
-  //         <div></div>
-  //         <div></div>
-  //         <div></div>
-  //         <div></div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
+  const [loaderDisplay, setLoaderDisplay] = useState("");
+  const [contentDisplay, setContentDisplay] = useState("d-none");
 
-  // setTimeout(() => {
-  //   setContent(
-  //     <BrowserRouter>
-  //       <Navbar />
-  //       <Switch>
-  //         <Route path="/" exact component={Home} />
-  //         <Route path="/events" exact component={Event} />
-  //         <Route path="/blogs" exact component={Blog} />
-  //         <Route path="/team" exact component={Team} />
-  //         <Route path="/community" exact component={Community} />
-  //         <Route path="/getintouch" exact component={GetInTouch} />
-  //         <Route path="*" exact component={Error} />
-  //       </Switch>
-  //       <Footer />
-  //     </BrowserRouter>
-  //   );
-  // }, 1000);
-
-  // return content;
+  setTimeout(() => {
+    setLoaderDisplay("d-none");
+    setContentDisplay("");
+  }, 5000);
 
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/events" exact component={Event} />
-        <Route path="/blogs" exact component={Blog} />
-        <Route path="/team" exact component={Team} />
-        <Route path="/community" exact component={Community} />
-        <Route path="/getintouch" exact component={GetInTouch} />
-        <Route path="*" exact component={Error} />
-      </Switch>
-      <Footer />
-    </BrowserRouter>
+    <>
+      <div className={loaderDisplay}>
+        <div className="artboard">
+          <div className="domino">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div className={contentDisplay}>
+        <BrowserRouter>
+          <Navbar />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/events" exact component={Event} />
+            <Route path="/events/:id/" exact component={Eventdetails} />
+            <Route path="/blogs" exact component={Blog} />
+            <Route path="/team" exact component={Team} />
+            <Route path="/community" exact component={Community} />
+            <Route path="/getintouch" exact component={GetInTouch} />
+            <Route path="*" exact component={Error} />
+          </Switch>
+          <Footer />
+        </BrowserRouter>
+      </div>
+    </>
   );
 };
 

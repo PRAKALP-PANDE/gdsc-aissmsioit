@@ -22,6 +22,7 @@ const WorkshopCard = () => {
           className="n_0_days_of_Google_Cloud_Progr"
           src="./images/event/GDSC__1_cb.png"
           srcSet="./images/event/GDSC__1_cb.png 1x, ./images/event/GDSC__1_cb@2x.png 2x"
+          alt="Workshop_Image"
         />
         <div className="n_0_Days_Of_Google__Cloud_Prog_bb">
           <span>GDSC KICK-OFF</span>
@@ -55,6 +56,7 @@ const WorkshopCard = () => {
           className="n_0_days_of_Google_Cloud_Progr"
           src="./images/event/n_0_days_of_Google_Cloud_Progr.png"
           srcSet="./images/event/n_0_days_of_Google_Cloud_Progr.png 1x, ./images/event/n_0_days_of_Google_Cloud_Progr@2x.png 2x"
+          alt="Workshop_Image"
         />
         <div className="n_0_Days_Of_Google__Cloud_Prog_bb">
           <span>
@@ -91,6 +93,7 @@ const WorkshopCard = () => {
           className="n_0_days_of_Google_Cloud_Progr"
           src="./images/event/n_3rd_Thursday_ke_din_at_6pm_5_ca.png"
           srcSet="./images/event/n_3rd_Thursday_ke_din_at_6pm_5_ca.png 1x, ./images/event/n_3rd_Thursday_ke_din_at_6pm_5_ca@2x.png 2x"
+          alt="Workshop_Image"
         />
         <div className="n_0_Days_Of_Google__Cloud_Prog_bb">
           <span>

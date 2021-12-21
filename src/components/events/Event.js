@@ -8,10 +8,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Event.css";
 
 import EventCard from "./EventCard";
-import WorkshopCard from "./WorkshopCard";
+// import WorkshopCard from "./WorkshopCard";
 
 const Event = () => {
-  useEffect(async () => {
+  useEffect(() => {
     const upcomingEvents = document.getElementById("Upcoming_Events_Span");
     const pastEvents = document.getElementById("Past_Events_Span");
     const upcomingWorkshops = document.getElementById(
@@ -128,9 +128,9 @@ const Event = () => {
     <EventCard key={index} name={event.name} />
   ));
 
-  const livel_events_map = live_events.map((event, index) => (
-    <EventCard key={index} name={event.name} />
-  ));
+  // const live_events_map = live_events.map((event, index) => (
+  //   <EventCard key={index} name={event.name} />
+  // ));
 
   const upcoming_workshops_map = upcoming_workshops.map((event, index) => (
     <EventCard key={index} name={event.name} />
@@ -140,9 +140,9 @@ const Event = () => {
     <EventCard key={index} name={event.name} />
   ));
 
-  const livel_workshops_map = live_workshops.map((event, index) => (
-    <EventCard key={index} name={event.name} />
-  ));
+  // const live_workshops_map = live_workshops.map((event, index) => (
+  //   <EventCard key={index} name={event.name} />
+  // ));
 
   const [eventSlider, setEventSlider] = useState(
     window.screen.width < 800 ? (
