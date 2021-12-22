@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
+import Card_Img from "../../images/home/card.jpg";
+
 const Card = (props) => {
   const { id } = useParams();
 
@@ -10,7 +12,7 @@ const Card = (props) => {
       <div className="card-content">
         <NavLink to={`/events/${id}/`}>
           <img
-            src="./images/home/card.jpg"
+            src={Card_Img}
             className="img-fluid event-img"
             alt="Card"
           ></img>

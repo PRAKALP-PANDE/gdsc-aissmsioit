@@ -234,6 +234,12 @@ ul.social-network li {
   background: #3944f7;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 @media (max-width: 320px) {
   .gotopbtn {
     left: calc(80vw - 10px);

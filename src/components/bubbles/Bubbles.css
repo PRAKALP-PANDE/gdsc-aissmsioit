@@ -1,15 +1,4 @@
-/* body,
-html {
-  width: 100%;
-  height: 100%;
-} */
-/* body {
-  margin: 0;
-  padding: 0;
-  background: #fff;
-} */
 .bubbles {
-    /* position: absolute; */
     position: fixed;
     width: 100%;
     height: 100%;
@@ -19,17 +8,6 @@ html {
     left: 0;
 }
 
-/* .bubble {
-    position: absolute;
-  
-    bottom: -100px;
-    width: 40px;
-    height: 40px;
-    background: #29b6f6;
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: rise 10s infinite ease-in;
-  } */
 .red {
     position: absolute;
     background: #db4437;
@@ -38,7 +16,7 @@ html {
     animation: rise 10s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -100px;
+    bottom: -30rem;
 }
 
 .blue {
@@ -49,7 +27,7 @@ html {
     animation: rise 10s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -100px;
+    bottom: -30rem;
 }
 
 .green {
@@ -60,7 +38,7 @@ html {
     animation: rise 10s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -100px;
+    bottom: -30rem;
 }
 
 .yellow {
@@ -71,7 +49,7 @@ html {
     animation: rise 10s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -100px;
+    bottom: -30rem;
 }
 
 .bubble:nth-child(1) {
@@ -154,17 +132,8 @@ html {
 }
 
 @keyframes rise {
-
-    /* 0% {
-      bottom: -100px;
-      transform: translateX(0);
-    } */
-    /* 50% {
-      transform: translate(100px);
-    } */
     100% {
         bottom: 1080px;
-        /* bottom: 100000em; */
         transform: translateX(-200px);
     }
 }

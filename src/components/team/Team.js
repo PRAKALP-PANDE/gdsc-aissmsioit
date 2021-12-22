@@ -2,12 +2,43 @@ import React from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Team.css";
 
+import Team_Img from "../../images/team/team2.jpg";
+import Lead from "../../images/team/lead.png";
+import Ashish_Patil from "../../images/team/Ashish_Patil.jpg";
+
 const Team = () => {
   return (
     <>
-      <div className="container-fluid team-heading">
+      <div
+        className="container-fluid team-heading"
+        data-aos="fade-down"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+        data-aos-anchor=".example-selector"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="row">
-          <div className="col-lg 6 col-sm-12 team-body">
+          <div
+            className="col-lg-6 col-sm-12 vector-img"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
+            <img className="img-fluid" src={Team_Img} alt="Team_Image" />
+          </div>
+          <div
+            className="col-lg 6 col-sm-12 team-body"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
             <h1>Meet Our Team</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -16,16 +47,21 @@ const Team = () => {
               voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
           </div>
-          <div className="col-lg-6 col-sm-12 vector-img">
-            <img className="img-fluid" src="/images/team/team2.jpg" alt="Team_Image" />
-          </div>
         </div>
       </div>
       <div className="container-fluid team-members">
         <div className="row">
-          <div className="col-lg-12 col-sm-12 member-body">
+          <div
+            className="col-lg-12 col-sm-12 member-body"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
             <h3>Meet Our DSC Lead</h3>
-            <img src="/images/team/lead.png" className="img-fluid lead-img" alt="Lead_Image" />
+            <img src={Lead} className="img-fluid lead-img" alt="Lead_Image" />
             <h5>Prarthana Chandak</h5>
             <span></span>
             <div className="social-ico">
@@ -41,10 +77,30 @@ const Team = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div
+          className="row"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-anchor=".example-selector"
+          data-aos-anchor-placement="top-center"
+        >
           <h3>Web Team</h3>
-          <div className="col-lg-6 col-sm-12 web-team-body-left">
-            <img src="/images/team/lead.png" className="img-fluid team-img-left" alt="Lead_Image" />
+          <div
+            className="col-lg-6 col-sm-12 web-team-body-left"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
+            <img
+              src={Ashish_Patil}
+              className="img-fluid team-img-left"
+              alt="Lead_Image"
+            />
             <h5>Ashish Patil</h5>
             <h5>Web Development Lead</h5>
             <span></span>
@@ -60,8 +116,20 @@ const Team = () => {
               </a>
             </div>
           </div>
-          <div className="col-lg-6 col-sm-12 web-team-body-right">
-            <img src="/images/team/lead.png" className="img-fluid team-img-right" alt="Lead_Image" />
+          <div
+            className="col-lg-6 col-sm-12 web-team-body-right"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
+            <img
+              src={Lead}
+              className="img-fluid team-img-right"
+              alt="Lead_Image"
+            />
             <h5>Ganesh</h5>
             <h5>Web Development Co-Lead</h5>
             <span></span>

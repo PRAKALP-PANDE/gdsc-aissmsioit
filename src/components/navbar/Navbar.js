@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import "./Navbar.css";
 
+import Gdsc_Logo from "../../images/gdsc_logo.png";
+
 const Navbar = () => {
   useEffect(() => {
     const mainNav = document.getElementById("main-ul");
@@ -40,7 +42,7 @@ const Navbar = () => {
   media.addEventListener("change", responsive);
 
   return (
-    <div>
+    <div id="Navbar">
       <header className="site-navbar">
         <div className="container">
           <div className="row align-items-center nav-main">
@@ -50,7 +52,7 @@ const Navbar = () => {
                   <NavLink to="/">
                     <img
                       className="logo"
-                      src="/images/gdsc_logo.png"
+                      src={Gdsc_Logo}
                       alt="GDSC Logo"
                     />
                   </NavLink>

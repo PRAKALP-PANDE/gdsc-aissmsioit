@@ -26,7 +26,6 @@
     flex-direction: column;
     width: clamp(20rem, calc(20rem + 2vw), 22rem);
     overflow: hidden;
-
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -134,7 +133,7 @@
     .blog-card {
         display: flex;
         flex-direction: row;
-        width: 50%;
+        width: 65%;
         height: 20em;
         overflow: hidden;
         /* box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 10%); */

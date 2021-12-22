@@ -354,7 +354,7 @@ const Event = () => {
                 <img
                   width="20"
                   height="20"
-                  src="/images/event/close-button-png-30227.png"
+                  src="../images/event/close-button-png-30227.png"
                   alt="Close"
                 />
               </span>
@@ -363,7 +363,7 @@ const Event = () => {
                 <h1>Submit Your Event Idea</h1>
               </div>
 
-              <img src="/images/google_gdsc_logo.png" alt="GDSC LOGO" />
+              <img src="../images/google_gdsc_logo.png" alt="GDSC LOGO" />
 
               <div className="subscribe">
                 <h1>

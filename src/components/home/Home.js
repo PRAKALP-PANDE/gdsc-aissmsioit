@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Card from "./Card";
 
+import Home_Svg from "../../images/home/home_svg.png";
+
 const Home = () => {
   const settings = {
     dots: true,
@@ -74,7 +76,7 @@ const Home = () => {
       <div className="contents">
         <div className="row">
           <div className="column home-svg">
-            <img src="./images/home/home_svg.png" alt="" />
+            <img src={Home_Svg} alt="Home_Svg" />
           </div>
           <div className="column">
             <p className="member-description">

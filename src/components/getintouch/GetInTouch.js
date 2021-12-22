@@ -5,6 +5,8 @@ import Lottie from "react-lottie";
 import animationData from "./social-media-influencer.json";
 import Typewriter from "typewriter-effect";
 
+import Animation from "../../images/getintouch/animation.svg";
+
 const Contact = () => {
   const defaultOptions = {
     loop: true,
@@ -103,7 +105,7 @@ const Contact = () => {
             <Row>
               <Col sm={12} lg={5} md={5} xl={5}>
                 <div className="contact-illustration">
-                  <img src="./images/getintouch/animation.svg" alt="" />
+                  <img src={Animation} alt="" />
                 </div>
               </Col>
 
@@ -204,7 +206,7 @@ const Contact = () => {
           <div className="success-submit">
             <Row className="p-2 m-2">
               <Col sm={12} lg={7} md={7} xl={6.5}>
-                <div className="contact-tag  p-5 h1">
+                <div className="contact-tag p-5 h1">
                   <Typewriter
                     options={{
                       strings: ["Thank you for your response..."],

@@ -4,17 +4,11 @@ import Bubbles from "../bubbles/Bubbles";
 
 import "./Footer.css";
 
-const Footer = () => {
-  // const scrollToBottom = () => {
-  //   window.scrollTo({
-  //     top: document.documentElement.scrollHeight,
-  //     behavior: "smooth",
-  //   });
-  // };
-  const scroll = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+import Gdsc_All from "../../images/gdsc-all.png";
 
+import ScrollToTop from "./ScrollToTop";
+
+const Footer = () => {
   return (
     <>
       <footer className="mainfooter" role="contentinfo">
@@ -29,7 +23,7 @@ const Footer = () => {
                       width="100%"
                       height="100%"
                       className="GDSC-LOGO"
-                      src="./images/gdsc-all.png"
+                      src={Gdsc_All}
                       alt="GDSC-LOGO"
                     />
                   </ul>
@@ -131,9 +125,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <button className="gotopbtn" onClick={scroll}>
-          <i className="fa fa-arrow-up"></i>
-        </button>
+
+        <ScrollToTop />
         <Bubbles />
       </footer>
     </>
