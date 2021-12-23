@@ -4,19 +4,12 @@ import "./Team.css";
 
 import Team_Img from "../../images/team/team2.jpg";
 import Lead from "../../images/team/lead.png";
-import Ashish_Patil from "../../images/team/Ashish_Patil.jpg";
 
 const Team = () => {
   return (
     <>
       <div
         className="container-fluid team-heading"
-        data-aos="fade-down"
-        data-aos-easing="ease-in-sine"
-        data-aos-duration="1000"
-        data-aos-delay="100"
-        data-aos-anchor=".example-selector"
-        data-aos-anchor-placement="top-center"
       >
         <div className="row">
           <div
@@ -97,7 +90,7 @@ const Team = () => {
             data-aos-anchor-placement="top-center"
           >
             <img
-              src={Ashish_Patil}
+              src={Lead}
               className="img-fluid team-img-left"
               alt="Lead_Image"
             />

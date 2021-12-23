@@ -44,7 +44,7 @@ const Home = () => {
         upcoming_events.push(event);
     }
   });
-  
+
   const upcoming_events_map = upcoming_events.map((event, index) => (
     <Card key={index} name={event.name} />
   ));
@@ -75,10 +75,26 @@ const Home = () => {
     <div className="container home">
       <div className="contents">
         <div className="row">
-          <div className="column home-svg">
+          <div
+            className="column home-svg"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
             <img src={Home_Svg} alt="Home_Svg" />
           </div>
-          <div className="column">
+          <div
+            className="column"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
             <p className="member-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               fugiat soluta, eius quo ad eveniet laborum! Quo reiciendis illo
@@ -96,13 +112,29 @@ const Home = () => {
         </div>
 
         <div className="container d-flex align-items-center justify-content-center mt-5">
-          <div className="all-divs mt-5">
+          <div
+            className="all-divs mt-5"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
             <h1 className="text-center">Upcoming Events</h1>
           </div>
         </div>
-        <div className="container events mt-5">{eventSlider}</div>
+        <div className="container events mt-2 mt-lg-5">{eventSlider}</div>
         <div className="container d-flex align-items-center justify-content-center mt-5">
-          <div className="all-divs">
+          <div
+            className="all-divs"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
             <h1 className="text-center">About Community</h1>
 
             <p className="text-center">
@@ -120,7 +152,15 @@ const Home = () => {
         </div>
 
         <div className="container d-flex align-items-center justify-content-center">
-          <div className="all-divs">
+          <div
+            className="all-divs"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
             <h1 className="text-center">Our Blog</h1>
             <p className="text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
@@ -138,7 +178,15 @@ const Home = () => {
         </div>
 
         <div className="container d-flex align-items-center justify-content-center">
-          <div className="all-divs">
+          <div
+            className="all-divs"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-anchor=".example-selector"
+            data-aos-anchor-placement="top-center"
+          >
             <h1 className="text-center">Stay Updated</h1>
             <p className="text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus

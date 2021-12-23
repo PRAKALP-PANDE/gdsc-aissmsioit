@@ -190,12 +190,11 @@ body {
 }
 
 .n_0_Days_Of_Google__Cloud_Prog_bb {
-    white-space: nowrap;
     text-align: center;
     font-family: Segoe UI;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1em;
     color: rgba(0, 0, 0, 1);
     letter-spacing: 0.05px;
     position: relative;

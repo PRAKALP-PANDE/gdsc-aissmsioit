@@ -26,7 +26,7 @@ ul {
 
 li {
   font-weight: 400;
-  margin: 8px;
+  margin: 1%;
   font-weight: 500;
 }
 
@@ -284,5 +284,51 @@ nav {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 1400px) {
+  li {
+    margin: 0%;
+  }
+}
+
+@media (min-width: 900px) and (min-width: 1200px) {
+  .site-menu {
+    width: 105%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .site-menu {
+    width: 126%;
+  }
+
+  .site-logo div {
+    text-align: center;
+  }
+
+  .member-description {
+    padding: 9rem 5rem 1rem 5rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .site-menu {
+    width: 110%;
+  }
+
+  .second-div {
+    width: 100%;
+  }
+
+  .member-description {
+    padding: 8rem 2rem 0rem 2rem;
+  }
+
+  .home-svg>img {
+    width: 22em;
+    height: 26em;
+    margin-top: 6em;
   }
 }

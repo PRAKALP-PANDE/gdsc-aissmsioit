@@ -58,6 +58,7 @@ const App = () => {
             <Route path="/team" exact component={Team} />
             <Route path="/community" exact component={Community} />
             <Route path="/getintouch" exact component={GetInTouch} />
+            <Route path="/gdsc-aissmsioit-web" component={Home} />
             <Route path="*" exact component={Error} />
           </Switch>
           <Footer />

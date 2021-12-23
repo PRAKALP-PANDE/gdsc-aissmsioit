@@ -8,7 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Event.css";
 
 import EventCard from "./EventCard";
-// import WorkshopCard from "./WorkshopCard";
+import WorkshopCard from "./WorkshopCard";
+
+import events from "./events";
+import workshops from "./workshops";
+
+import CloseButton from "../../images/event/close-button-png-30227.png";
+import Gdsc_Logo from "../../images/google_gdsc_logo.png";
 
 const Event = () => {
   useEffect(() => {
@@ -77,24 +83,24 @@ const Event = () => {
     past_workshops = [],
     live_workshops = [];
 
-  const eventSession = JSON.parse(sessionStorage.getItem("events"));
-  const workshopSession = JSON.parse(sessionStorage.getItem("workshops"));
+  // const eventSession = JSON.parse(sessionStorage.getItem("events"));
+  // const workshopSession = JSON.parse(sessionStorage.getItem("workshops"));
 
-  let events = [];
-  if (eventSession === null) {
-    fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
-      .then((res) => res.json())
-      .then((data) => (events = data));
-    sessionStorage.setItem("events", JSON.stringify(events));
-  } else events = eventSession;
+  // let events = [];
+  // if (eventSession === null) {
+  //   fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
+  //     .then((res) => res.json())
+  //     .then((data) => (events = data));
+  //   sessionStorage.setItem("events", JSON.stringify(events));
+  // } else events = eventSession;
 
-  let workshops = [];
-  if (workshopSession === null) {
-    fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
-      .then((res) => res.json())
-      .then((data) => (workshops = data));
-    sessionStorage.setItem("workshops", JSON.stringify(workshops));
-  } else workshops = workshopSession;
+  // let workshops = [];
+  // if (workshopSession === null) {
+  //   fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
+  //     .then((res) => res.json())
+  //     .then((data) => (workshops = data));
+  //   sessionStorage.setItem("workshops", JSON.stringify(workshops));
+  // } else workshops = workshopSession;
 
   const curr_date = new Date();
 
@@ -121,32 +127,40 @@ const Event = () => {
   });
 
   const upcoming_events_map = upcoming_events.map((event, index) => (
-    <EventCard key={index} name={event.name} />
+    <EventCard key={event.id} event={event} />
   ));
 
   const past_events_map = past_events.map((event, index) => (
-    <EventCard key={index} name={event.name} />
+    <EventCard key={event.id} event={event} />
   ));
 
   // const live_events_map = live_events.map((event, index) => (
-  //   <EventCard key={index} name={event.name} />
+  //   <EventCard key={event.id} event={event} />
   // ));
 
-  const upcoming_workshops_map = upcoming_workshops.map((event, index) => (
-    <EventCard key={index} name={event.name} />
+  const upcoming_workshops_map = upcoming_workshops.map((workshop, index) => (
+    <WorkshopCard key={workshop.id} workshop={workshop} />
   ));
 
-  const past_workshops_map = past_workshops.map((event, index) => (
-    <EventCard key={index} name={event.name} />
+  const past_workshops_map = past_workshops.map((workshop, index) => (
+    <WorkshopCard key={workshop.id} workshop={workshop} />
   ));
 
-  // const live_workshops_map = live_workshops.map((event, index) => (
-  //   <EventCard key={index} name={event.name} />
+  // const live_workshops_map = live_workshops.map((workshop, index) => (
+  //   <WorkshopCard key={workshop.id} workshop={workshop} />
   // ));
 
   const [eventSlider, setEventSlider] = useState(
     window.screen.width < 800 ? (
-      <Slider {...settings}>{upcoming_events_map}</Slider>
+      <Slider {...settings}>
+        {upcoming_events_map.length === 0 ? (
+          <h2 className="text-center">No Upcoming Events</h2>
+        ) : (
+          upcoming_events_map
+        )}
+      </Slider>
+    ) : upcoming_events_map.length === 0 ? (
+      <h2 className="text-center">No Upcoming Events</h2>
     ) : (
       upcoming_events_map
     )
@@ -154,7 +168,15 @@ const Event = () => {
 
   const [workshopSlider, setWorkshopSlider] = useState(
     window.screen.width < 800 ? (
-      <Slider {...settings}>{upcoming_workshops_map}</Slider>
+      <Slider {...settings}>
+        {upcoming_workshops_map.length === 0 ? (
+          <h2 className="text-center">No Upcoming Workshops</h2>
+        ) : (
+          upcoming_workshops_map
+        )}
+      </Slider>
+    ) : upcoming_workshops_map.length === 0 ? (
+      <h2 className="text-center">No Upcoming Workshops</h2>
     ) : (
       upcoming_workshops_map
     )
@@ -162,13 +184,39 @@ const Event = () => {
 
   const responsive = (media) => {
     if (media.matches) {
-      setEventSlider(<Slider {...settings}>{upcoming_events_map}</Slider>);
+      setEventSlider(
+        <Slider {...settings}>
+          {upcoming_events_map.length === 0 ? (
+            <h2 className="text-center">No Upcoming Events</h2>
+          ) : (
+            upcoming_events_map
+          )}
+        </Slider>
+      );
       setWorkshopSlider(
-        <Slider {...settings}>{upcoming_workshops_map}</Slider>
+        <Slider {...settings}>
+          {upcoming_workshops_map.length === 0 ? (
+            <h2 className="text-center">No Upcoming Workshops</h2>
+          ) : (
+            upcoming_workshops_map
+          )}
+        </Slider>
       );
     } else {
-      setEventSlider(upcoming_events_map);
-      setWorkshopSlider(upcoming_workshops_map);
+      setEventSlider(
+        upcoming_events_map.length === 0 ? (
+          <h2 className="text-center">No Upcoming Events</h2>
+        ) : (
+          upcoming_events_map
+        )
+      );
+      setWorkshopSlider(
+        upcoming_workshops_map.length === 0 ? (
+          <h2 className="text-center">No Upcoming Workshops</h2>
+        ) : (
+          upcoming_workshops_map
+        )
+      );
     }
   };
 
@@ -179,7 +227,15 @@ const Event = () => {
   const upcomingEventsClick = () => {
     setEventSlider(
       window.screen.width < 800 ? (
-        <Slider {...settings}>{upcoming_events_map}</Slider>
+        <Slider {...settings}>
+          {upcoming_events_map.length === 0 ? (
+            <h2 className="text-center">No Upcoming Events</h2>
+          ) : (
+            upcoming_events_map
+          )}
+        </Slider>
+      ) : upcoming_events_map.length === 0 ? (
+        <h2 className="text-center">No Upcoming Events</h2>
       ) : (
         upcoming_events_map
       )
@@ -189,7 +245,15 @@ const Event = () => {
   const pastEventsClick = () => {
     setEventSlider(
       window.screen.width < 800 ? (
-        <Slider {...settings}>{past_events_map}</Slider>
+        <Slider {...settings}>
+          {past_events_map.length === 0 ? (
+            <h2 className="text-center">No Past Events</h2>
+          ) : (
+            past_events_map
+          )}
+        </Slider>
+      ) : past_events_map.length === 0 ? (
+        <h2 className="text-center">No Past Events</h2>
       ) : (
         past_events_map
       )
@@ -199,7 +263,15 @@ const Event = () => {
   const upcomingWorkshopsClick = () => {
     setWorkshopSlider(
       window.screen.width < 800 ? (
-        <Slider {...settings}>{upcoming_workshops_map}</Slider>
+        <Slider {...settings}>
+          {upcoming_workshops_map.length === 0 ? (
+            <h2 className="text-center">No Upcoming Workshops</h2>
+          ) : (
+            upcoming_workshops_map
+          )}
+        </Slider>
+      ) : upcoming_workshops_map.length === 0 ? (
+        <h2 className="text-center">No Upcoming Workshops</h2>
       ) : (
         upcoming_workshops_map
       )
@@ -209,7 +281,15 @@ const Event = () => {
   const pastWorkshopsClick = () => {
     setWorkshopSlider(
       window.screen.width < 800 ? (
-        <Slider {...settings}>{past_workshops_map}</Slider>
+        <Slider {...settings}>
+          {past_workshops_map.length === 0 ? (
+            <h2 className="text-center">No Past Workshops</h2>
+          ) : (
+            past_workshops_map
+          )}
+        </Slider>
+      ) : past_workshops_map.length === 0 ? (
+        <h2 className="text-center">No Past Workshops</h2>
       ) : (
         past_workshops_map
       )
@@ -351,19 +431,14 @@ const Event = () => {
               </div>
 
               <span className="close">
-                <img
-                  width="20"
-                  height="20"
-                  src="../images/event/close-button-png-30227.png"
-                  alt="Close"
-                />
+                <img width="20" height="20" src={CloseButton} alt="Close" />
               </span>
 
               <div className="title">
                 <h1>Submit Your Event Idea</h1>
               </div>
 
-              <img src="../images/google_gdsc_logo.png" alt="GDSC LOGO" />
+              <img src={Gdsc_Logo} alt="GDSC LOGO" />
 
               <div className="subscribe">
                 <h1>
