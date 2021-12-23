@@ -1,13 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import events from "./events";
+import workshops from "./workshops";
 
 import "./Eventdetails.css";
 
-const Eventdetails = () => {
+const Workshopdetails = () => {
   const { id } = useParams();
-  const event = events[id - 1];
+  const workshop = workshops[id - 1];
 
   return (
     <>
@@ -18,10 +18,10 @@ const Eventdetails = () => {
         data-aos-delay="100"
         data-aos-anchor=".example-selector"
         data-aos-anchor-placement="top-center"
-        className="row"
+        className="row workshops"
       >
-        <div id="Events">
-          <span>Event Details</span>
+        <div id="Worshops" className="m-4">
+          <span>Workshop Details</span>
         </div>
         <div className="Rectangle_6_Div">
           <svg className="Rectangle_6">
@@ -50,34 +50,34 @@ const Eventdetails = () => {
           >
             <img
               src="https://source.unsplash.com/600x400/?computer"
-              alt="Events_Image"
+              alt="Workshops_Image"
               className="events-image"
             />
           </div>
-          <div
-            className="events-main"
-            data-aos="fade-left"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-          >
-            <div className="events-body">
+          <div className="events-main">
+            <div
+              className="events-body"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+              data-aos-anchor=".example-selector"
+              data-aos-anchor-placement="top-center"
+            >
               <span>
-                <b> {event.name}</b>
+                <b> {workshop.name}</b>
               </span>
               <span>
-                <b>Date :</b> {event.date}
+                <b>Date :</b> {workshop.date}
               </span>
               <span>
-                <b>Day :</b> {event.day}
+                <b>Day :</b> {workshop.day}
               </span>
               <span>
-                <b>Speaker :</b> {event.speaker}
+                <b>Speaker :</b> {workshop.speaker}
               </span>
               <div>
-                <b>Description :</b> {event.about}
+                <b>Description :</b> {workshop.about}
               </div>
             </div>
           </div>
@@ -87,4 +87,4 @@ const Eventdetails = () => {
   );
 };
 
-export default Eventdetails;
+export default Workshopdetails;

@@ -6,10 +6,15 @@ const ScrollToTop = () => {
   // Top: 0 takes us all the way back to the top of the page
   // Behavior: smooth keeps it smooth!
   const scrollToTop = () => {
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-      window.requestAnimationFrame(scrollToTop);
-      document.body.scrollTo(0, c - c / 40);
+    // const c = document.documentElement.scrollTop || document.body.scrollTop;
+    // if (c > 0) {
+    //   window.requestAnimationFrame(scrollToTop);
+    //   document.body.scrollTo(0, c - c / 10);
+    // }.
+    let top = document.body.scrollTop;
+    while (top > 0) {
+      document.body.scrollTo({ top: top, behavior: "smooth" });
+      top--;
     }
   };
 

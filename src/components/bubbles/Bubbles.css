@@ -16,7 +16,7 @@
     animation: rise 10s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -30rem;
+    bottom: -20rem;
 }
 
 .blue {
@@ -27,7 +27,7 @@
     animation: rise 10s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -30rem;
+    bottom: -20rem;
 }
 
 .green {
@@ -38,7 +38,7 @@
     animation: rise 10s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -30rem;
+    bottom: -20rem;
 }
 
 .yellow {
@@ -49,7 +49,7 @@
     animation: rise 10s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -30rem;
+    bottom: -20rem;
 }
 
 .bubble:nth-child(1) {

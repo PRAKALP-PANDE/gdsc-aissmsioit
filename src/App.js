@@ -12,6 +12,7 @@ import Footer from "./components/footer/Footer";
 import Team from "./components/team/Team";
 import Event from "./components/events/Event";
 import Eventdetails from "./components/events/Eventdetails";
+import Workshopdetails from "./components/events/Workshopdetails";
 import Community from "./components/community/Community";
 import Blog from "./components/blog/Blog";
 import GetInTouch from "./components/getintouch/GetInTouch";
@@ -54,6 +55,7 @@ const App = () => {
             <Route path="/" exact component={Home} />
             <Route path="/events" exact component={Event} />
             <Route path="/events/:id/" exact component={Eventdetails} />
+            <Route path="/workshops/:id/" exact component={Workshopdetails} />
             <Route path="/blogs" exact component={Blog} />
             <Route path="/team" exact component={Team} />
             <Route path="/community" exact component={Community} />

@@ -122,9 +122,10 @@ body {
     font-family: Segoe UI;
     font-style: normal;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 50px;
     color: rgba(0, 0, 0, 1);
     letter-spacing: 0.4px;
+    margin-top: 2%;
 }
 
 /* .main {
@@ -137,7 +138,7 @@ body {
     font-family: Segoe UI;
     font-style: normal;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 50px;
     color: rgba(0, 0, 0, 1);
     letter-spacing: 0.4px;
     margin-top: 10%;

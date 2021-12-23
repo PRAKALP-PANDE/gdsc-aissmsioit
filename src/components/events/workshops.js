@@ -1,15 +1,6 @@
 const workshops = [
   {
-    name: "Git and Github Hands-on Workshop",
-    date: "2021-09-27",
-    day: "Mon",
-    about: "Get yourself introduced to the world of open-source. Get familiar with basic Git terminology and Github interface in this hands-on workshop! This workshop is an add-on to Developer Hacks - 21.",
-    speaker: "Aditya Gandhamal, Prarthana Chandak",
-    imageSrc: "",
-    imageSrcSet: "",
-    dataAos: "fade-right"
-  },
-  {
+    id: 1,
     name: "Heroku - Project To Production",
     date: "2021-09-28",
     day: "Tue",
@@ -17,7 +8,18 @@ const workshops = [
     speaker: "Ashish Patil",
     imageSrc: "",
     imageSrcSet: "",
-    dataAos: "fade-up"
+    dataAos: "fade-up",
+  },
+  {
+    id: 2,
+    name: "Git and Github Hands-on Workshop",
+    date: "2021-09-27",
+    day: "Mon",
+    about: "Get yourself introduced to the world of open-source. Get familiar with basic Git terminology and Github interface in this hands-on workshop! This workshop is an add-on to Developer Hacks - 21.",
+    speaker: "Aditya Gandhamal, Prarthana Chandak",
+    imageSrc: "",
+    imageSrcSet: "",
+    dataAos: "fade-right",
   },
 ];
 
