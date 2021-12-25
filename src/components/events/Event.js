@@ -16,6 +16,8 @@ import workshops from "./workshops";
 import CloseButton from "../../images/event/close-button-png-30227.png";
 import Gdsc_Logo from "../../images/google_gdsc_logo.png";
 
+import Fade from "react-reveal/Fade";
+
 const Event = () => {
   useEffect(() => {
     const upcomingEvents = document.getElementById("Upcoming_Events_Span");
@@ -403,23 +405,17 @@ const Event = () => {
           <div className="row">{eventSlider}</div>
         </div>
 
-        <div
-          data-aos="fade-up"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1000"
-          data-aos-delay="100"
-          data-aos-anchor=".example-selector"
-          data-aos-anchor-placement="top-center"
-          className="container text-center submit_event_idea"
-        >
-          <a href="#pop-up" className="cta button">
-            <span>Submit Event Idea</span>
-            <svg width="13px" height="10px" viewBox="0 0 13 10">
-              <path d="M1,5 L11,5"></path>
-              <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-          </a>
-        </div>
+        <Fade up>
+          <div className="container text-center submit_event_idea">
+            <a href="#pop-up" className="cta button">
+              <span>Submit Event Idea</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </Fade>
 
         <div id="pop-up" className="pop-up">
           <div className="content">
@@ -464,67 +460,51 @@ const Event = () => {
           </div>
         </div>
 
-        <div
-          data-aos="fade-up"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1000"
-          data-aos-delay="100"
-          data-aos-anchor=".example-selector"
-          data-aos-anchor-placement="top-center"
-          className="row workshops"
-        >
-          <div id="Worshops">
-            <span>Workshops</span>
+        <Fade up>
+          <div className="row workshops">
+            <div id="Worshops">
+              <span>Workshops</span>
+            </div>
+            <div className="Rectangle_6_Div">
+              <svg className="Rectangle_6">
+                <rect
+                  className="Rectangle_6_Rect"
+                  rx="2.5557963848114014"
+                  ry="2.5557963848114014"
+                  x="100"
+                  y="0"
+                  width="102.232"
+                  height="5.112"
+                ></rect>
+              </svg>
+            </div>
           </div>
-          <div className="Rectangle_6_Div">
-            <svg className="Rectangle_6">
-              <rect
-                className="Rectangle_6_Rect"
-                rx="2.5557963848114014"
-                ry="2.5557963848114014"
-                x="100"
-                y="0"
-                width="102.232"
-                height="5.112"
-              ></rect>
-            </svg>
-          </div>
-        </div>
+        </Fade>
+
         <div className="row">
-          <div
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-            className="col-6 Upcoming"
-          >
-            <button
-              id="Upcoming_Workshops_Span"
-              className="custom-btn btn-13 Upcoming_Span Upcoming_Workshops_Span"
-              onClick={upcomingWorkshopsClick}
-            >
-              <span>Upcoming Workshops</span>
-            </button>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-            className="col-6 Past"
-          >
-            <button
-              id="Past_Workshops_Span"
-              className="custom-btn btn-14 Past_Span Past_Workshops_Span"
-              onClick={pastWorkshopsClick}
-            >
-              <span>Past Workshops</span>
-            </button>
-          </div>
+          <Fade up>
+            <div className="col-6 Upcoming">
+              <button
+                id="Upcoming_Workshops_Span"
+                className="custom-btn btn-13 Upcoming_Span Upcoming_Workshops_Span"
+                onClick={upcomingWorkshopsClick}
+              >
+                <span>Upcoming Workshops</span>
+              </button>
+            </div>
+          </Fade>
+
+          <Fade up>
+            <div className="col-6 Past">
+              <button
+                id="Past_Workshops_Span"
+                className="custom-btn btn-14 Past_Span Past_Workshops_Span"
+                onClick={pastWorkshopsClick}
+              >
+                <span>Past Workshops</span>
+              </button>
+            </div>
+          </Fade>
         </div>
 
         <div className="container mt-5">

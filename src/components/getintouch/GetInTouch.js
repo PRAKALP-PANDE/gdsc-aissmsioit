@@ -7,6 +7,8 @@ import Typewriter from "typewriter-effect";
 
 import Animation from "../../images/getintouch/animation.svg";
 
+import Zoom from "react-reveal/Zoom";
+
 const Contact = () => {
   const defaultOptions = {
     loop: true,
@@ -44,20 +46,20 @@ const Contact = () => {
       const contactError = document.getElementById("contact_error");
       contactError.innerHTML = "Please Enter Valid Data!";
     } else {
-      const response = await fetch(
-        "https://gdsc-web-default-rtdb.firebaseio.com/contacts.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: fullname,
-            email: email,
-            message: msg,
-          }),
-        }
-      );
+      // const response = await fetch(
+      //   "https://gdsc-web-default-rtdb.firebaseio.com/contacts.json",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       name: fullname,
+      //       email: email,
+      //       message: msg,
+      //     }),
+      //   }
+      // );
 
       setisSubmit((isSubmit = true));
     }
@@ -105,100 +107,102 @@ const Contact = () => {
             <Row>
               <Col sm={12} lg={5} md={5} xl={5}>
                 <div className="contact-illustration">
-                  <img src={Animation} alt="" />
+                  <img src={Animation} alt="Animation Image" />
                 </div>
               </Col>
 
               <Col sm={12} lg={7} md={7} xl={7}>
-                <h3 id="contact_error" className="text-danger"></h3>
-                <div className="my-5 ">
-                  <h2
-                    className="text-center font-weight-bolder"
-                    style={{
-                      fontFamily: "Segoe UI",
-                      fontStyle: " normal",
-                      fontWeight: "bold",
-                      fontSize: "30px",
-                      color: "rgba(0,0,0,1)",
-                    }}
-                  >
-                    Get in Touch
-                  </h2>
-                </div>
-                <div className="row">
-                  <div className="col-md-6 col-10 mx-auto">
-                    <div className="mb-3">
-                      <form onSubmit={formSubmit}>
-                        <div className="mb-3">
-                          <label
-                            style={labelStyle}
-                            htmlFor="exampleFormControlInput1"
-                            className="form-label"
-                          >
-                            Name
-                          </label>
-                          <input
-                            style={inputStyle}
-                            autoComplete="off"
-                            type="text"
-                            className="form-control"
-                            id="exampleFormControlInput1"
-                            name="fullname"
-                            value={data.fullname}
-                            onChange={InputEvent}
-                          />
-                        </div>
-                        <div className="mb-3">
-                          <label
-                            style={labelStyle}
-                            htmlFor="exampleFormControlInput1"
-                            className="form-label"
-                          >
-                            Email
-                          </label>
-                          <input
-                            style={inputStyle}
-                            autoComplete="off"
-                            type="email"
-                            className="form-control"
-                            id="exampleFormControlInput1"
-                            name="email"
-                            value={data.email}
-                            onChange={InputEvent}
-                          />
-                        </div>
+                <Zoom out>
+                  <h3 id="contact_error" className="text-danger"></h3>
+                  <div className="my-5 ">
+                    <h2
+                      className="text-center font-weight-bolder"
+                      style={{
+                        fontFamily: "Segoe UI",
+                        fontStyle: " normal",
+                        fontWeight: "bold",
+                        fontSize: "30px",
+                        color: "rgba(0,0,0,1)",
+                      }}
+                    >
+                      Get in Touch
+                    </h2>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6 col-10 mx-auto">
+                      <div className="mb-3">
+                        <form onSubmit={formSubmit}>
+                          <div className="mb-3">
+                            <label
+                              style={labelStyle}
+                              htmlFor="exampleFormControlInput1"
+                              className="form-label"
+                            >
+                              Name
+                            </label>
+                            <input
+                              style={inputStyle}
+                              autoComplete="off"
+                              type="text"
+                              className="form-control"
+                              id="exampleFormControlInput1"
+                              name="fullname"
+                              value={data.fullname}
+                              onChange={InputEvent}
+                            />
+                          </div>
+                          <div className="mb-3">
+                            <label
+                              style={labelStyle}
+                              htmlFor="exampleFormControlInput1"
+                              className="form-label"
+                            >
+                              Email
+                            </label>
+                            <input
+                              style={inputStyle}
+                              autoComplete="off"
+                              type="email"
+                              className="form-control"
+                              id="exampleFormControlInput1"
+                              name="email"
+                              value={data.email}
+                              onChange={InputEvent}
+                            />
+                          </div>
 
-                        <div className="mb-3">
-                          <label
-                            style={labelStyle}
-                            htmlFor="exampleFormControlTextarea1"
-                            className="form-label"
-                          >
-                            Message
-                          </label>
-                          <textarea
-                            style={inputStyle}
-                            autoComplete="off"
-                            className="form-control"
-                            id="exampleFormControlTextarea1"
-                            rows="3"
-                            name="msg"
-                            value={data.msg}
-                            onChange={InputEvent}
-                          ></textarea>
-                        </div>
-                        <div className="col-12 text-center">
-                          <button
-                            className="btn btn-outline-primary font-weight-bold"
-                            type="submit"
-                          >
-                            SEND
-                          </button>
-                        </div>
-                      </form>
+                          <div className="mb-3">
+                            <label
+                              style={labelStyle}
+                              htmlFor="exampleFormControlTextarea1"
+                              className="form-label"
+                            >
+                              Message
+                            </label>
+                            <textarea
+                              style={inputStyle}
+                              autoComplete="off"
+                              className="form-control"
+                              id="exampleFormControlTextarea1"
+                              rows="3"
+                              name="msg"
+                              value={data.msg}
+                              onChange={InputEvent}
+                            ></textarea>
+                          </div>
+                          <div className="col-12 text-center">
+                            <button
+                              className="btn btn-outline-primary font-weight-bold"
+                              type="submit"
+                            >
+                              SEND
+                            </button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Zoom>
               </Col>
             </Row>
           </div>
@@ -206,7 +210,7 @@ const Contact = () => {
           <div className="success-submit">
             <Row className="p-2 m-2">
               <Col sm={12} lg={7} md={7} xl={6.5}>
-                <div className="contact-tag p-5 h1">
+                <div className="contact-tag p-lg-5 p-0 h1">
                   <Typewriter
                     options={{
                       strings: ["Thank you for your response..."],
@@ -222,7 +226,7 @@ const Contact = () => {
 
               <Col sm={12} lg={5} md={5} xl={5}>
                 <div className="lottie-social">
-                  <Lottie options={defaultOptions} height={400} width={400} />
+                  <Lottie options={defaultOptions} />
                 </div>
               </Col>
             </Row>

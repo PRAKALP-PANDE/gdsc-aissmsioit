@@ -12,6 +12,8 @@ import Home_Svg from "../../images/home/home_svg.png";
 
 import Bubbles from "../bubbles/Bubbles";
 
+import Fade from "react-reveal/Fade";
+
 const Home = () => {
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
@@ -128,94 +130,76 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container d-flex align-items-center justify-content-center mt-5">
-          <div
-            className="all-divs mt-5"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-          >
-            <h1 className="text-center">Upcoming Events</h1>
-          </div>
-        </div>
-        <div className="container events mt-2 mt-lg-5">{eventSlider}</div>
-        <div className="container d-flex align-items-center justify-content-center mt-5">
-          <div
-            className="all-divs"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-          >
-            <h1 className="text-center">About Community</h1>
-
-            <p className="text-center">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-              soluta, in explicabo aliquid totam et. Ipsam temporibus modi,
-              beatae aliquam iusto minus iure, nemo, laboriosam sit vero et id
-              maxime. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Exercitationem officiis, fugiat quisquam consequuntur ex
-              voluptatem dolorem mollitia blanditiis culpa eum.
-            </p>
-            <div className="btn-section">
-              <button className="other-btns">Check Out</button>
+        <Fade up>
+          <div className="container d-flex align-items-center justify-content-center mt-5">
+            <div className="all-divs mt-5">
+              <h1 className="text-center">Upcoming Events</h1>
             </div>
           </div>
-        </div>
+        </Fade>
 
-        <div className="container d-flex align-items-center justify-content-center">
-          <div
-            className="all-divs"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-          >
-            <h1 className="text-center">Our Blog</h1>
-            <p className="text-center">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-              soluta, in explicabo aliquid totam et. Ipsam temporibus modi,
-              beatae aliquam iusto minus iure, nemo, laboriosam sit vero et id
-              maxime. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Exercitationem officiis, fugiat quisquam consequuntur ex
-              voluptatem dolorem mollitia blanditiis culpa eum.
-            </p>
-            <div className="btn-section">
-              <button className="other-btns mb-3">Check Out</button>
-              <button className="other-btns">Submit Your Blog</button>
+        <Fade up>
+          <div className="container events mt-2 mt-lg-5">{eventSlider}</div>
+        </Fade>
+
+        <Fade up>
+          <div className="container d-flex align-items-center justify-content-center mt-5">
+            <div className="all-divs">
+              <h1 className="text-center">About Community</h1>
+
+              <p className="text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
+                modi, beatae aliquam iusto minus iure, nemo, laboriosam sit vero
+                et id maxime. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Exercitationem officiis, fugiat quisquam
+                consequuntur ex voluptatem dolorem mollitia blanditiis culpa
+                eum.
+              </p>
+              <div className="btn-section">
+                <button className="other-btns">Check Out</button>
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
 
-        <div className="container d-flex align-items-center justify-content-center">
-          <div
-            className="all-divs"
-            data-aos="fade-left"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-          >
-            <h1 className="text-center">Stay Updated</h1>
-            <p className="text-center">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-              soluta, in explicabo aliquid totam et. Ipsam temporibus modi,
-              beatae aliquam iusto minus iure, nemo, laboriosam sit vero et id
-              maxime.
-            </p>
-            <div className="btn-section mb-0">
-              <button className="other-btns">Join With Us</button>
+        <Fade up>
+          <div className="container d-flex align-items-center justify-content-center">
+            <div className="all-divs">
+              <h1 className="text-center">Our Blog</h1>
+              <p className="text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
+                modi, beatae aliquam iusto minus iure, nemo, laboriosam sit vero
+                et id maxime. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Exercitationem officiis, fugiat quisquam
+                consequuntur ex voluptatem dolorem mollitia blanditiis culpa
+                eum.
+              </p>
+              <div className="btn-section">
+                <button className="other-btns mb-3">Check Out</button>
+                <button className="other-btns">Submit Your Blog</button>
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
+
+        <Fade up>
+          <div className="container d-flex align-items-center justify-content-center">
+            <div className="all-divs">
+              <h1 className="text-center">Stay Updated</h1>
+              <p className="text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
+                modi, beatae aliquam iusto minus iure, nemo, laboriosam sit vero
+                et id maxime.
+              </p>
+              <div className="btn-section mb-0">
+                <button className="other-btns">Join With Us</button>
+              </div>
+            </div>
+          </div>
+        </Fade>
       </div>
 
       <Bubbles />

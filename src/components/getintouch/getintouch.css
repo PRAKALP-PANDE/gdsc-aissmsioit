@@ -1,8 +1,8 @@
-:root{
-    --gdsc-yellow:#FCC500;
-    --gdsc-blue:#519BF7;
-    --gdsc-green:#00AA6A;
-    --gdsc-red:#F15B44;
+:root {
+    --gdsc-yellow: #FCC500;
+    --gdsc-blue: #519BF7;
+    --gdsc-green: #00AA6A;
+    --gdsc-red: #F15B44;
 
 }
 
@@ -12,29 +12,40 @@
     font-size: 3.2vh;
 }
 
-.contact-illustration{
+.contact-illustration {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
-.form-label{
+.form-label {
     pointer-events: none;
 }
 
-.lottie-social{
-    height:80vh;
-    width:40vw;
+.lottie-social {
+    height: 80vh;
+    width: 40vw;
     padding-top: 12vh;
 }
-.contact-tag{
+
+.contact-tag {
     line-height: 50px;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 40px;
-	
-	letter-spacing: 0.4px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.4px;
+}
+
+.lottie-social div {
+    height: 20em !important;
+    width: 20em !important;
+}
+
+@media screen and (max-width: 800px) {
+    .lottie-social div {
+        margin-left: -3.5em !important;
+    }
 }

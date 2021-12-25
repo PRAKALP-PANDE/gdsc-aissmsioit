@@ -8,7 +8,7 @@ import "./Eventdetails.css";
 const Eventdetails = () => {
   const { id } = useParams();
   const event = events[id - 1];
-  const points = event.about.split('. ');
+  const points = event.about.split(". ");
 
   return (
     <>
@@ -49,11 +49,13 @@ const Eventdetails = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img
-              src="https://source.unsplash.com/600x400/?computer"
-              alt="Events_Image"
-              className="events-image"
-            />
+            <a title="Community Page Event Link" target="_blank" rel="noreferrer" href={event.eventLink}>
+              <img
+                src="https://source.unsplash.com/600x400/?computer"
+                alt="Events_Image"
+                className="events-image"
+              />
+            </a>
           </div>
           <div
             className="events-main"
@@ -78,7 +80,10 @@ const Eventdetails = () => {
                 <b>Speaker :</b> {event.speaker}
               </span>
               <div>
-                <b>Description :</b> {points.map(point => <li>{point}</li>)}
+                <b>Description :</b>{" "}
+                {points.map((point) => (
+                  <li>{point}</li>
+                ))}
               </div>
             </div>
           </div>

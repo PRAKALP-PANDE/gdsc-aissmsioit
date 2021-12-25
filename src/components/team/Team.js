@@ -5,6 +5,8 @@ import "./Team.css";
 import Team_Img from "../../images/team/team2.jpg";
 import Lead from "../../images/team/lead.png";
 
+import Fade from "react-reveal/Fade";
+
 const Team = () => {
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
@@ -34,11 +36,7 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img
-              className="img-fluid"
-              src={Team_Img}
-              alt="Team_Image"
-            />
+            <img className="img-fluid" src={Team_Img} alt="Team_Image" />
           </div>
           <div
             className="col-lg 6 col-sm-12 team-body"
@@ -60,105 +58,81 @@ const Team = () => {
         </div>
       </div>
       <div className="container-fluid team-members">
+        <Fade up>
+          <div className="row">
+            <div className="col-lg-12 col-sm-12 member-body">
+              <Fade up>
+                <h3>GDSC Lead</h3>
+              </Fade>
+              <img src={Lead} className="img-fluid lead-img" alt="Lead_Image" />
+              <h5>Prarthana Chandak</h5>
+              <span></span>
+              <div className="social-ico">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </Fade>
+
         <div className="row">
-          <div
-            className="col-lg-12 col-sm-12 member-body"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-          >
-            <h3>GDSC Lead</h3>
-            <img
-              src={Lead}
-              className="img-fluid lead-img"
-              alt="Lead_Image"
-            />
-            <h5>Prarthana Chandak</h5>
-            <span></span>
-            <div className="social-ico">
-              <a href="#0">
-                <i className="fa fa-linkedin ico-link"></i>
-              </a>
-              <a href="#0">
-                <i className="fa fa-instagram ico-insta"></i>
-              </a>
-              <a href="#0">
-                <i className="fa fa-facebook ico-face"></i>
-              </a>
+          <Fade up>
+            <h3>Web Team</h3>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-6 col-sm-12 web-team-body-left">
+              <img
+                src={Lead}
+                className="img-fluid team-img-left"
+                alt="Lead_Image"
+              />
+              <h5>Ashish Patil</h5>
+              <h5>Web Development Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-6 float-right">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
             </div>
-          </div>
-        </div>
-        <div
-          className="row"
-          data-aos="fade-up"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1000"
-          data-aos-delay="100"
-          data-aos-anchor=".example-selector"
-          data-aos-anchor-placement="top-center"
-        >
-          <h3>Web Team</h3>
-          <div
-            className="col-lg-6 col-sm-12 web-team-body-left"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-          >
-            <img
-              src={Lead}
-              className="img-fluid team-img-left"
-              alt="Lead_Image"
-            />
-            <h5>Ashish Patil</h5>
-            <h5>Web Development Lead</h5>
-            <span></span>
-            <div className="social-ico-web col-lg-6 float-right">
-              <a href="#0">
-                <i className="fa fa-linkedin ico-link"></i>
-              </a>
-              <a href="#0">
-                <i className="fa fa-instagram ico-insta"></i>
-              </a>
-              <a href="#0">
-                <i className="fa fa-facebook ico-face"></i>
-              </a>
+          </Fade>
+
+          <Fade up>
+            <div className="col-lg-6 col-sm-12 web-team-body-right">
+              <img
+                src={Lead}
+                className="img-fluid team-img-right"
+                alt="Lead_Image"
+              />
+              <h5>Ganesh</h5>
+              <h5>Web Development Co-Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-6 float-left">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
             </div>
-          </div>
-          <div
-            className="col-lg-6 col-sm-12 web-team-body-right"
-            data-aos="fade-left"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-anchor=".example-selector"
-            data-aos-anchor-placement="top-center"
-          >
-            <img
-              src={Lead}
-              className="img-fluid team-img-right"
-              alt="Lead_Image"
-            />
-            <h5>Ganesh</h5>
-            <h5>Web Development Co-Lead</h5>
-            <span></span>
-            <div className="social-ico-web col-lg-6 float-left">
-              <a href="#0">
-                <i className="fa fa-linkedin ico-link"></i>
-              </a>
-              <a href="#0">
-                <i className="fa fa-instagram ico-insta"></i>
-              </a>
-              <a href="#0">
-                <i className="fa fa-facebook ico-face"></i>
-              </a>
-            </div>
-          </div>
+          </Fade>
         </div>
       </div>
     </>

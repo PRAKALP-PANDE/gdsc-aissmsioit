@@ -11,6 +11,19 @@ const Navbar = () => {
     window.screen.width < 800
       ? (mainNav.style.display = "none")
       : (mainNav.style.display = "block");
+
+    const imgFluids = document.getElementsByClassName("img-fluid");
+    Array.from(imgFluids).forEach((img) => {
+      img.addEventListener("mouseover", () => {
+        img.classList.remove("out");
+        img.classList.add("over");
+      });
+
+      img.addEventListener("mouseout", () => {
+        img.classList.remove("over");
+        img.classList.add("out");
+      });
+    });
   });
 
   const toggle = () => {
@@ -67,7 +80,7 @@ const Navbar = () => {
               <h1 className="m-2 site-logo">
                 <div className="m-2">
                   <NavLink to="/">
-                    <img className="logo" src={Gdsc_Logo} alt="Gdsc Logo" />
+                    <img className="logo img-fluid" src={Gdsc_Logo} alt="Gdsc Logo" />
                   </NavLink>
                   <MenuOpenIcon
                     onClick={toggle}
