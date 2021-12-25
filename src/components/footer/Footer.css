@@ -240,6 +240,10 @@ ul.social-network li {
   right: 0;
 }
 
+.GDSC-LOGO {
+  width: 76%;
+}
+
 @media (max-width: 320px) {
   .gotopbtn {
     left: calc(80vw - 10px);

@@ -60,6 +60,40 @@
     padding-left: 5rem;
 }
 
+.img-fluid {
+    cursor: pointer;
+}
+
+.img-fluid.out {
+    animation-name: out;
+    animation-duration: 1s;
+}
+
+.img-fluid.over {
+    animation-name: in;
+    animation-duration: 1s;
+}
+
+@keyframes in {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes out {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 .team-members {
     margin-top: 5rem;
     text-align: center;

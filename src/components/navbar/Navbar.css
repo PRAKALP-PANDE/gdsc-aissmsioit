@@ -192,6 +192,41 @@ nav {
   right: -28px;
 }
 
+.toggle-up {
+  animation-name: toggle-up;
+  animation-delay: 0.15s;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+.toggle-down {
+  animation-name: toggle-down;
+  animation-delay: 0.15s;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  transform: rotate(270deg);
+}
+
+@keyframes toggle-up {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes toggle-down {
+  from {
+    transform: rotate(270deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .gdsc-icon {
   font-weight: bold;
 }

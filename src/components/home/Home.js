@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 
 import Slider from "react-slick";
@@ -13,6 +13,21 @@ import Home_Svg from "../../images/home/home_svg.png";
 import Bubbles from "../bubbles/Bubbles";
 
 const Home = () => {
+  useEffect(() => {
+    const imgFluids = document.getElementsByClassName("img-fluid");
+    Array.from(imgFluids).forEach((img) => {
+      img.addEventListener("mouseover", () => {
+        img.classList.remove("out");
+        img.classList.add("over");
+      });
+
+      img.addEventListener("mouseout", () => {
+        img.classList.remove("over");
+        img.classList.add("out");
+      });
+    });
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -86,7 +101,7 @@ const Home = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img src={Home_Svg} alt="Home_Svg" />
+            <img className="img-fluid" src={Home_Svg} alt="Home_Svg" />
           </div>
           <div
             className="column"

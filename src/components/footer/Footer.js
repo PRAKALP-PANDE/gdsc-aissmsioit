@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import "./Footer.css";
@@ -8,6 +8,21 @@ import Gdsc_All from "../../images/gdsc-all.png";
 import ScrollToTop from "./ScrollToTop";
 
 const Footer = () => {
+  useEffect(() => {
+    const imgFluids = document.getElementsByClassName("img-fluid");
+    Array.from(imgFluids).forEach((img) => {
+      img.addEventListener("mouseover", () => {
+        img.classList.remove("out");
+        img.classList.add("over");
+      });
+
+      img.addEventListener("mouseout", () => {
+        img.classList.remove("over");
+        img.classList.add("out");
+      });
+    });
+  }, []);
+
   return (
     <>
       <footer className="mainfooter" role="contentinfo">
@@ -21,7 +36,7 @@ const Footer = () => {
                     <img
                       width="100%"
                       height="100%"
-                      className="GDSC-LOGO"
+                      className="GDSC-LOGO img-fluid"
                       src={Gdsc_All}
                       alt="GDSC-LOGO"
                     />

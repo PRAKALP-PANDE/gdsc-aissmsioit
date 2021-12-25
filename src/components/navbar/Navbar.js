@@ -15,13 +15,19 @@ const Navbar = () => {
 
   const toggle = () => {
     const mainNav = document.getElementById("main-ul");
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+
     if (mainNav.style.display === "none") {
-      setTimeout(function () {
+      setTimeout(() => {
         mainNav.style.display = "block";
+        hamburgerIcon.classList.add("toggle-up");
+        hamburgerIcon.classList.remove("toggle-down");
       }, 100);
     } else {
-      setTimeout(function () {
+      setTimeout(() => {
         mainNav.style.display = "none";
+        hamburgerIcon.classList.add("toggle-down");
+        hamburgerIcon.classList.remove("toggle-up");
       }, 100);
     }
   };
@@ -43,6 +49,10 @@ const Navbar = () => {
 
   const NavDisplay = () => {
     const mainNav = document.getElementById("main-ul");
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    hamburgerIcon.classList.add("toggle-down");
+    hamburgerIcon.classList.remove("toggle-up");
+
     window.screen.width < 800
       ? (mainNav.style.display = "none")
       : (mainNav.style.display = "block");
@@ -57,7 +67,7 @@ const Navbar = () => {
               <h1 className="m-2 site-logo">
                 <div className="m-2">
                   <NavLink to="/">
-                    <img className="logo" src={Gdsc_Logo} alt="GDSC Logo" />
+                    <img className="logo" src={Gdsc_Logo} alt="Gdsc Logo" />
                   </NavLink>
                   <MenuOpenIcon
                     onClick={toggle}

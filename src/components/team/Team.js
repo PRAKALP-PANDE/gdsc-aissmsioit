@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Team.css";
 
@@ -6,11 +6,24 @@ import Team_Img from "../../images/team/team2.jpg";
 import Lead from "../../images/team/lead.png";
 
 const Team = () => {
+  useEffect(() => {
+    const imgFluids = document.getElementsByClassName("img-fluid");
+    Array.from(imgFluids).forEach((img) => {
+      img.addEventListener("mouseover", () => {
+        img.classList.remove("out");
+        img.classList.add("over");
+      });
+
+      img.addEventListener("mouseout", () => {
+        img.classList.remove("over");
+        img.classList.add("out");
+      });
+    });
+  }, []);
+
   return (
     <>
-      <div
-        className="container-fluid team-heading"
-      >
+      <div className="container-fluid team-heading">
         <div className="row">
           <div
             className="col-lg-6 col-sm-12 vector-img"
@@ -21,7 +34,11 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img className="img-fluid" src={Team_Img} alt="Team_Image" />
+            <img
+              className="img-fluid"
+              src={Team_Img}
+              alt="Team_Image"
+            />
           </div>
           <div
             className="col-lg 6 col-sm-12 team-body"
@@ -54,7 +71,11 @@ const Team = () => {
             data-aos-anchor-placement="top-center"
           >
             <h3>GDSC Lead</h3>
-            <img src={Lead} className="img-fluid lead-img" alt="Lead_Image" />
+            <img
+              src={Lead}
+              className="img-fluid lead-img"
+              alt="Lead_Image"
+            />
             <h5>Prarthana Chandak</h5>
             <span></span>
             <div className="social-ico">
