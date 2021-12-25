@@ -10,6 +10,8 @@ import Card from "./Card";
 
 import Home_Svg from "../../images/home/home_svg.png";
 
+import Bubbles from "../bubbles/Bubbles";
+
 const Home = () => {
   const settings = {
     dots: true,
@@ -200,6 +202,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <Bubbles />
     </div>
   );
 };

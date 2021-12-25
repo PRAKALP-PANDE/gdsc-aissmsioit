@@ -53,7 +53,7 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <h3>Meet Our DSC Lead</h3>
+            <h3>GDSC Lead</h3>
             <img src={Lead} className="img-fluid lead-img" alt="Lead_Image" />
             <h5>Prarthana Chandak</h5>
             <span></span>

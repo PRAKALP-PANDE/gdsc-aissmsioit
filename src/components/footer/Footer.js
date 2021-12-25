@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Bubbles from "../bubbles/Bubbles";
 
 import "./Footer.css";
 
@@ -127,7 +126,6 @@ const Footer = () => {
         </div>
 
         <ScrollToTop />
-        <Bubbles />
       </footer>
     </>
   );

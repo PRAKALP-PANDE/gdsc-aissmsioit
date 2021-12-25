@@ -8,6 +8,7 @@ import "./Eventdetails.css";
 const Workshopdetails = () => {
   const { id } = useParams();
   const workshop = workshops[id - 1];
+  const points = workshop.about.split('. ');
 
   return (
     <>
@@ -77,7 +78,7 @@ const Workshopdetails = () => {
                 <b>Speaker :</b> {workshop.speaker}
               </span>
               <div>
-                <b>Description :</b> {workshop.about}
+                <b>Description :</b> {points.map(point => <li>{point}</li>)}
               </div>
             </div>
           </div>
