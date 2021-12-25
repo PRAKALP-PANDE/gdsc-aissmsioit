@@ -42,9 +42,9 @@ const Contact = () => {
   const formSubmit = async (event) => {
     event.preventDefault();
     const { fullname, email, msg } = data;
+    const contactError = document.getElementById("contact_error");
     if (fullname.length === 0 || email.length === 0 || msg.length === 0) {
-      const contactError = document.getElementById("contact_error");
-      contactError.innerHTML = "Please Enter Valid Data!";
+      contactError.classList.remove("d-none");
     } else {
       // const response = await fetch(
       //   "https://gdsc-web-default-rtdb.firebaseio.com/contacts.json",
@@ -62,6 +62,8 @@ const Contact = () => {
       // );
 
       setisSubmit((isSubmit = true));
+
+      contactError.classList.add("d-none");
     }
   };
 
@@ -107,13 +109,15 @@ const Contact = () => {
             <Row>
               <Col sm={12} lg={5} md={5} xl={5}>
                 <div className="contact-illustration">
-                  <img src={Animation} alt="Animation Image" />
+                  <img src={Animation} alt="Animation_Image" />
                 </div>
               </Col>
 
               <Col sm={12} lg={7} md={7} xl={7}>
                 <Zoom out>
-                  <h3 id="contact_error" className="text-danger"></h3>
+                  <h3 id="contact_error" className="text-danger d-none">
+                    Please Enter Valid Data!
+                  </h3>
                   <div className="my-5 ">
                     <h2
                       className="text-center font-weight-bolder"
