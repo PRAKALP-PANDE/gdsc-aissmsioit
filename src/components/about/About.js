@@ -3,7 +3,7 @@ import React from "react";
 import Logo from "../../images/community/logo.jpg";
 import Card_Img from "../../images/community/r.jpg";
 
-const Community = () => {
+const About = () => {
   return (
     <>
       <div className="container my-4">
@@ -37,7 +37,7 @@ const Community = () => {
             </div>
 
             <div className="col-md-3">
-              <img src={Logo} className="img-fluid" alt="Logo"  />
+              <img src={Logo} className="img-fluid" alt="Logo" />
             </div>
           </div>
         </div>
@@ -48,11 +48,7 @@ const Community = () => {
           <h5 className="card-titler">What we do</h5>
           <div className="card-group">
             <div className="card mx-2">
-              <img
-                src={Card_Img}
-                className="card-img-top"
-                alt="Card" 
-              />
+              <img src={Card_Img} className="card-img-top" alt="Card" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
@@ -63,11 +59,7 @@ const Community = () => {
               </div>
             </div>
             <div className="card mx-2">
-              <img
-                src={Card_Img}
-                className="card-img-top"
-                alt="Card" 
-              />
+              <img src={Card_Img} className="card-img-top" alt="Card" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
@@ -77,11 +69,7 @@ const Community = () => {
               </div>
             </div>
             <div className="card mx-2">
-              <img
-                src={Card_Img}
-                className="card-img-top"
-                alt="Card" 
-              />
+              <img src={Card_Img} className="card-img-top" alt="Card" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
@@ -134,4 +122,4 @@ const Community = () => {
   );
 };
 
-export default Community;
+export default About;

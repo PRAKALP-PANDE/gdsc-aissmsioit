@@ -86,7 +86,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-md-3 follow-us">
-                <h4 className="heading-4">Follow Us</h4>
+                <h4 className="heading-4">Connect</h4>
 
                 <ul className="social-network social-circle">
                   <li>

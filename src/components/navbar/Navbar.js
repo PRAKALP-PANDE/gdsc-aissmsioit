@@ -97,9 +97,9 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/community">
+                    <NavLink to="/about">
                       <span onClick={NavDisplay} className="gblue">
-                        Community
+                        About
                       </span>
                     </NavLink>
                   </li>
