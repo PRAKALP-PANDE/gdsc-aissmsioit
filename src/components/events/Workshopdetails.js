@@ -50,7 +50,7 @@ const Workshopdetails = () => {
             data-aos-anchor-placement="top-center"
           >
             <img
-              src="https://source.unsplash.com/600x400/?computer"
+              src={workshop.imageSrc}
               alt="Workshops_Image"
               className="events-image"
             />

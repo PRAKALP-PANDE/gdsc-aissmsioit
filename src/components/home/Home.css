@@ -245,22 +245,10 @@
   justify-content: space-around;
 }
 
-/* * {
-    outline: 1px solid red;
-  } */
-
 .home-svg>img {
   width: 41em;
   height: 33em;
 }
-
-/* .home-main {
-    display: flex;
-  }
-  .home-description {
-    background: url("./home_svg.png");
-    background-size: cover;
-  } */
 
 .cta {
   border: none;

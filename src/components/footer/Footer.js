@@ -32,13 +32,13 @@ const Footer = () => {
               <div className="col-md-3 col-sm-6">
                 <div className="footer-pad">
                   <h4 className="heading-1">GDSC AISSMS IOIT</h4>
-                  <ul className="list-unstyled">
+                  <ul className="list-unstyled Gdsc-Logo-List">
                     <img
                       width="100%"
                       height="100%"
-                      className="GDSC-LOGO img-fluid"
+                      className="Gdsc-Logo img-fluid"
                       src={Gdsc_All}
-                      alt="GDSC-LOGO"
+                      alt="Gdsc-Logo"
                     />
                   </ul>
                 </div>

@@ -240,7 +240,7 @@ ul.social-network li {
   right: 0;
 }
 
-.GDSC-LOGO {
+.Gdsc-Logo {
   width: 76%;
 }
 
@@ -252,7 +252,9 @@ ul.social-network li {
 }
 
 @media (max-width: 800px) {
-  .team, .quick-links {
+
+  .team,
+  .quick-links {
     width: 50%;
     margin-top: 20px;
   }
@@ -264,5 +266,13 @@ ul.social-network li {
 
   .donotcross {
     margin-top: 10px;
+  }
+
+  .Gdsc-Logo {
+    width: 50%;
+  }
+
+  .Gdsc-Logo-List {
+    text-align: center;
   }
 }

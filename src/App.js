@@ -25,7 +25,9 @@ import "./App.css";
 
 const App = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1500,
+    });
   }, []);
 
   const [loaderDisplay, setLoaderDisplay] = useState("");

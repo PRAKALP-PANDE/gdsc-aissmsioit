@@ -22,8 +22,7 @@ const EventCard = (props) => {
       <NavLink to={`/events/${props.event.id}/`}>
         <img
           className="n_0_days_of_Google_Cloud_Progr"
-          src="../images/event/GDSC__1_cb.png"
-          srcSet="../images/event/GDSC__1_cb.png 1x, ../images/event/GDSC__1_cb@2x.png 2x"
+          src={props.event.imageSrc}
           alt="Event_Image"
         />
       </NavLink>

@@ -148,22 +148,6 @@ body {
     margin-bottom: 0%;
 }
 
-.n_0_Days_Of_Google__Cloud_Prog {
-    left: 86.786px;
-    top: 421.681px;
-    position: absolute;
-    overflow: visible;
-    width: 300px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    color: rgba(0, 0, 0, 1);
-    letter-spacing: 0.05px;
-}
-
 .Line_2 {
     overflow: visible;
     position: absolute;
@@ -241,6 +225,7 @@ body {
     position: relative;
     padding: 20% 20% 10% 20%;
     cursor: pointer;
+    border-radius: 40px;
 }
 
 .n_0_days_of_Google_Cloud_Progr:hover {
@@ -998,6 +983,7 @@ body {
     .Upcoming_Workshops_Span,
     .Past_Workshops_Span {
         font-size: 12px;
+        font-weight: bold;
     }
 
     .Rectangle_24 {

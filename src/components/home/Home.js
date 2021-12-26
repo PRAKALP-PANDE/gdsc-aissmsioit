@@ -14,6 +14,8 @@ import Bubbles from "../bubbles/Bubbles";
 
 import Fade from "react-reveal/Fade";
 
+import events from "../events/events";
+
 const Home = () => {
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
@@ -42,22 +44,22 @@ const Home = () => {
 
   let upcoming_events = [];
 
-  const eventSession = JSON.parse(sessionStorage.getItem("events"));
+  // const eventSession = JSON.parse(sessionStorage.getItem("events"));
 
-  let events = [];
-  if (eventSession === null) {
-    fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
-      .then((res) => res.json())
-      .then((data) => {
-        events = data;
-        sessionStorage.setItem("events", JSON.stringify(events));
-      });
-  } else events = eventSession;
+  // let events = [];
+  // if (eventSession === null) {
+  //   fetch("https://gdsc-web-default-rtdb.firebaseio.com/Events.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       events = data;
+  //       sessionStorage.setItem("events", JSON.stringify(events));
+  //     });
+  // } else events = eventSession;
 
   const curr_date = new Date();
 
   events.forEach((event) => {
-    if (event) {
+    if (event.id < 4) {
       const event_date = new Date(event.date);
       if (event_date.getTime() - 157237218 < curr_date.getTime())
         upcoming_events.push(event);
@@ -65,7 +67,7 @@ const Home = () => {
   });
 
   const upcoming_events_map = upcoming_events.map((event, index) => (
-    <Card key={index} name={event.name} />
+    <Card key={index} event={event} />
   ));
 
   const [eventSlider, setEventSlider] = useState(

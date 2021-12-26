@@ -51,7 +51,7 @@ const Eventdetails = () => {
           >
             <a title="Community Page Event Link" target="_blank" rel="noreferrer" href={event.eventLink}>
               <img
-                src="https://source.unsplash.com/600x400/?computer"
+                src={event.imageSrc}
                 alt="Events_Image"
                 className="events-image"
               />

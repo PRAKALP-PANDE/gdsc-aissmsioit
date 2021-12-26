@@ -152,17 +152,26 @@ const Event = () => {
   //   <WorkshopCard key={workshop.id} workshop={workshop} />
   // ));
 
+  const noUpcomingEvents =
+    "There are no upcoming events at the moment. Please check again soon.";
+  const noUpcomingWorkshops =
+    "There are no upcoming workshops at the moment. Please check again soon.";
+
   const [eventSlider, setEventSlider] = useState(
     window.screen.width < 800 ? (
       <Slider {...settings}>
         {upcoming_events_map.length === 0 ? (
-          <h2 className="text-center">No Upcoming Events</h2>
+          <h5 className="text-center" data-aos="fade-up">
+            {noUpcomingEvents}
+          </h5>
         ) : (
           upcoming_events_map
         )}
       </Slider>
     ) : upcoming_events_map.length === 0 ? (
-      <h2 className="text-center">No Upcoming Events</h2>
+      <h5 className="text-center" data-aos="fade-up">
+        {noUpcomingEvents}
+      </h5>
     ) : (
       upcoming_events_map
     )
@@ -172,13 +181,17 @@ const Event = () => {
     window.screen.width < 800 ? (
       <Slider {...settings}>
         {upcoming_workshops_map.length === 0 ? (
-          <h2 className="text-center">No Upcoming Workshops</h2>
+          <Fade up>
+            <h5 className="text-center">{noUpcomingWorkshops}</h5>
+          </Fade>
         ) : (
           upcoming_workshops_map
         )}
       </Slider>
     ) : upcoming_workshops_map.length === 0 ? (
-      <h2 className="text-center">No Upcoming Workshops</h2>
+      <Fade up>
+        <h5 className="text-center">{noUpcomingWorkshops}</h5>
+      </Fade>
     ) : (
       upcoming_workshops_map
     )
@@ -189,7 +202,9 @@ const Event = () => {
       setEventSlider(
         <Slider {...settings}>
           {upcoming_events_map.length === 0 ? (
-            <h2 className="text-center">No Upcoming Events</h2>
+            <h5 className="text-center" data-aos="fade-up">
+              {noUpcomingEvents}
+            </h5>
           ) : (
             upcoming_events_map
           )}
@@ -198,7 +213,9 @@ const Event = () => {
       setWorkshopSlider(
         <Slider {...settings}>
           {upcoming_workshops_map.length === 0 ? (
-            <h2 className="text-center">No Upcoming Workshops</h2>
+            <Fade up>
+              <h5 className="text-center">{noUpcomingWorkshops}</h5>
+            </Fade>
           ) : (
             upcoming_workshops_map
           )}
@@ -207,14 +224,18 @@ const Event = () => {
     } else {
       setEventSlider(
         upcoming_events_map.length === 0 ? (
-          <h2 className="text-center">No Upcoming Events</h2>
+          <h5 className="text-center" data-aos="fade-up">
+            {noUpcomingEvents}
+          </h5>
         ) : (
           upcoming_events_map
         )
       );
       setWorkshopSlider(
         upcoming_workshops_map.length === 0 ? (
-          <h2 className="text-center">No Upcoming Workshops</h2>
+          <Fade up>
+            <h5 className="text-center">{noUpcomingWorkshops}</h5>
+          </Fade>
         ) : (
           upcoming_workshops_map
         )
@@ -231,13 +252,17 @@ const Event = () => {
       window.screen.width < 800 ? (
         <Slider {...settings}>
           {upcoming_events_map.length === 0 ? (
-            <h2 className="text-center">No Upcoming Events</h2>
+            <h5 className="text-center" data-aos="fade-up">
+              {noUpcomingEvents}
+            </h5>
           ) : (
             upcoming_events_map
           )}
         </Slider>
       ) : upcoming_events_map.length === 0 ? (
-        <h2 className="text-center">No Upcoming Events</h2>
+        <h5 className="text-center" data-aos="fade-up">
+          {noUpcomingEvents}
+        </h5>
       ) : (
         upcoming_events_map
       )
@@ -247,15 +272,7 @@ const Event = () => {
   const pastEventsClick = () => {
     setEventSlider(
       window.screen.width < 800 ? (
-        <Slider {...settings}>
-          {past_events_map.length === 0 ? (
-            <h2 className="text-center">No Past Events</h2>
-          ) : (
-            past_events_map
-          )}
-        </Slider>
-      ) : past_events_map.length === 0 ? (
-        <h2 className="text-center">No Past Events</h2>
+        <Slider {...settings}>{past_events_map}</Slider>
       ) : (
         past_events_map
       )
@@ -267,13 +284,17 @@ const Event = () => {
       window.screen.width < 800 ? (
         <Slider {...settings}>
           {upcoming_workshops_map.length === 0 ? (
-            <h2 className="text-center">No Upcoming Workshops</h2>
+            <Fade up>
+              <h5 className="text-center">{noUpcomingWorkshops}</h5>
+            </Fade>
           ) : (
             upcoming_workshops_map
           )}
         </Slider>
       ) : upcoming_workshops_map.length === 0 ? (
-        <h2 className="text-center">No Upcoming Workshops</h2>
+        <Fade up>
+          <h5 className="text-center">{noUpcomingWorkshops}</h5>
+        </Fade>
       ) : (
         upcoming_workshops_map
       )
@@ -283,15 +304,7 @@ const Event = () => {
   const pastWorkshopsClick = () => {
     setWorkshopSlider(
       window.screen.width < 800 ? (
-        <Slider {...settings}>
-          {past_workshops_map.length === 0 ? (
-            <h2 className="text-center">No Past Workshops</h2>
-          ) : (
-            past_workshops_map
-          )}
-        </Slider>
-      ) : past_workshops_map.length === 0 ? (
-        <h2 className="text-center">No Past Workshops</h2>
+        <Slider {...settings}>{past_workshops_map}</Slider>
       ) : (
         past_workshops_map
       )
