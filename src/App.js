@@ -17,6 +17,7 @@ import About from "./components/about/About";
 import Blog from "./components/blog/Blog";
 import GetInTouch from "./components/getintouch/GetInTouch";
 import Error from "./components/error/Error";
+import Community2 from "./components/community/community2"
 
 import AOS from "aos";
 import "aos/dist/aos.css";

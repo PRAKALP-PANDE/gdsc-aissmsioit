@@ -1,0 +1,19 @@
+html,
+body {
+    scroll-behavior: smooth;
+   
+
+}
+
+:root{
+    --gdsc-yellow:#FCC500;
+    --gdsc-blue:#519BF7;
+    --gdsc-green:#00AA6A;
+    --gdsc-red:#F15B44;
+}
+.community-body{
+    border : 2px solid black;
+    padding: 10px;
+    height : calc(100vh - 100px) ;
+}
+

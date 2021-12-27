@@ -1,0 +1,93 @@
+html,
+body {
+    scroll-behavior: smooth;
+    
+
+}
+
+
+
+.card{
+
+    border:none;
+}
+
+/* .col1{
+    border:2px black solid;
+} */
+
+.card-title{
+    font-family: Segoe UI;
+    font-style : normal;
+    font-weight : bold;
+    font-size: 30px;
+    color : rgba(0,0,0,1);
+}
+
+.msg-card{
+    /* border:2px black solid; */
+    height: 40vh;
+    width: 70vw;
+    margin:20px;
+}
+
+.msg-wrap{
+    position: absolute;
+    margin:5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.msg-block{
+    position: relative;
+    width: 70%;
+    
+}
+
+.msg-text{
+    /* position: relative; */
+    margin:0;
+}
+.msg-img{
+    
+    width:300px;
+    height:300px;
+    background-color: rgb(248, 255, 255);
+    border-radius: 50%;
+    box-shadow:
+  2.7px 2.9px 2.7px rgba(0, 0, 0, 0.022),
+  6.8px 7.3px 6.9px rgba(0, 0, 0, 0.031),
+  13.8px 14.9px 14.2px rgba(0, 0, 0, 0.039),
+  28.5px 30.7px 29.2px rgba(0, 0, 0, 0.048),
+  78px 84px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.who{
+    /* border:2px black solid;  */
+    box-shadow:
+  1.7px 2.2px 33.6px -30px rgba(0, 0, 0, 0.064),
+  4.1px 5.2px 55.7px -30px rgba(0, 0, 0, 0.083),
+  7.8px 9.8px 66px -30px rgba(0, 0, 0, 0.091),
+  13.8px 17.4px 68.6px -30px rgba(0, 0, 0, 0.096),
+  25.9px 32.6px 81.1px -30px rgba(0, 0, 0, 0.102),
+  62px 78px 136px -30px rgba(0, 0, 0, 0.13)
+;
+}
+
+.who-design-left{
+    height: 55%;
+    position: relative;
+    right:-65%;
+    top:-15%;
+}
+
+.who-design-right{
+    height: 55%;
+    position: relative;
+    right:25%;
+    top:-15%;
+    transform: scaleX(-1);
+}
