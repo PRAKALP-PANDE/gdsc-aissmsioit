@@ -5,7 +5,8 @@ import Lottie from "react-lottie";
 import animationData from "./social-media-influencer.json";
 import Typewriter from "typewriter-effect";
 
-import Animation from "../../images/getintouch/animation.svg";
+import Animation from "../../images/getintouch/Envelope-bro.svg";
+// import Animation from "animation.svg";
 
 import Zoom from "react-reveal/Zoom";
 

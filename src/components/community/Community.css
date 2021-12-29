@@ -1,0 +1,223 @@
+html,
+body {
+    scroll-behavior: smooth;
+    
+
+}
+
+.card{
+
+    border:none;
+}
+
+.card-title{
+    font-family: "Segoe UI";
+    font-style : normal;
+    font-weight : bold;
+    font-size: 30px;
+    color : rgba(0,0,0,1);
+}
+
+.msg-card{
+    height: 40vh;
+    width: 70vw;
+    margin:20px;
+}
+
+.msg-wrap{
+    position: absolute;
+    margin:5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;  
+}
+.msg-block{
+    position: relative;
+    width: 70%;
+    
+}
+
+.msg-text{
+    margin:0;
+}
+.msg-img{
+    
+    width:300px;
+    height:300px;
+    background-color: rgb(248, 255, 255);
+    border-radius: 50%;
+    box-shadow:
+  2.7px 2.9px 2.7px rgba(0, 0, 0, 0.022),
+  6.8px 7.3px 6.9px rgba(0, 0, 0, 0.031),
+  13.8px 14.9px 14.2px rgba(0, 0, 0, 0.039),
+  28.5px 30.7px 29.2px rgba(0, 0, 0, 0.048),
+  78px 84px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.who_block{
+    padding: 10px;
+}
+.who{
+    margin: 20% 0 0 15vw;
+    min-height: 200px;
+    width: 60vw;
+    box-shadow:
+  1.7px 2.2px 33.6px -30px rgba(0, 0, 0, 0.064),
+  4.1px 5.2px 55.7px -30px rgba(0, 0, 0, 0.083),
+  7.8px 9.8px 66px -30px rgba(0, 0, 0, 0.091),
+  13.8px 17.4px 68.6px -30px rgba(0, 0, 0, 0.096),
+  25.9px 32.6px 81.1px -30px rgba(0, 0, 0, 0.102),
+  62px 78px 136px -30px rgba(0, 0, 0, 0.13)
+;
+}
+
+
+.who-design-left{
+    position: absolute;
+    display: block;
+    height: 5vw;
+    left:-10%;
+    top:-10%;
+
+}
+
+.who-design-right{
+    position: absolute;
+    height: 5vw;
+    right:-10%;
+    top:-10%;
+    transform: scaleX(-1);
+    margin: 0;
+
+}
+
+.about-img{
+height: 80%;
+display: block;
+}
+
+.about-txt{
+    display: flex;
+    height: 100%;
+
+}
+.about-info{
+
+height: 90vh;
+}
+
+.about-body p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    overflow: hidden;
+}
+
+.what_we_do{
+    margin:2vh;
+}
+
+.what_we_do_img{
+    height: 80%;
+    width: 80%;
+}
+
+@media (max-width: 768px){
+    
+.about-txt{
+    flex-direction: column;
+}
+
+    
+.who-design-left{
+    height: 15vw;
+}
+
+.who-design-right{
+    height: 15vw;
+}
+
+.msg-card{
+    height: auto;
+    width: auto;
+}
+
+.msg-wrap{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.mission{
+    flex-direction: column-reverse;
+}
+
+.msg-block{
+   
+    height: 50%;
+}
+
+
+.msg-img{
+   
+    display: block;
+    height: 200px;
+    width: 200px;
+    
+}
+
+
+
+}
+
+@media (orientation: portrait) {
+    .who-design-left{
+        top:-2%;
+        left:-25%;
+    
+    }
+    .who-design-right{
+        right:-25%;
+        top:-2%;
+    
+
+
+    }
+
+    .about-img{
+        height: 70%;
+        display: block;
+        
+        }
+        
+        .about-txt{
+            display: flex;
+           
+            height: 70%;
+        
+        }
+        .about-info{
+        
+        height: 90vh;
+        }
+ 
+  }
+
+  @media  (min-width : 768px) and ( max-width : 1354px)  and (orientation : portrait){
+      
+.who-design-left{
+    left:-15px;
+    top:-15px;
+
+}
+
+.who-design-right{
+    right:-15px;
+    top:-15px;
+
+}
+  }

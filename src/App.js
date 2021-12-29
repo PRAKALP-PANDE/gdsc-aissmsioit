@@ -13,10 +13,10 @@ import Team from "./components/team/Team";
 import Event from "./components/events/Event";
 import Eventdetails from "./components/events/Eventdetails";
 import Workshopdetails from "./components/events/Workshopdetails";
-import About from "./components/about/About";
 import Blog from "./components/blog/Blog";
 import GetInTouch from "./components/getintouch/GetInTouch";
 import Error from "./components/error/Error";
+import Community from "./components/community/Community"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -60,7 +60,7 @@ const App = () => {
             <Route path="/workshops/:id/" exact component={Workshopdetails} />
             <Route path="/blogs" exact component={Blog} />
             <Route path="/team" exact component={Team} />
-            <Route path="/about" exact component={About} />
+            <Route path="/about" exact component={Community} />
             <Route path="/getintouch" exact component={GetInTouch} />
             <Route path="/gdsc-aissmsioit-web" component={Home} />
             <Route path="*" exact component={Error} />
