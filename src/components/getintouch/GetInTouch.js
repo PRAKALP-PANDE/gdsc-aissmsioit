@@ -197,8 +197,8 @@ const Contact = () => {
                           </div>
                           <div className="col-12 text-center get-btndiv">
                             <button className="get-btn">
-                              <div class="svg-wrapper-1">
-                                <div class="svg-wrapper">
+                              <div className="svg-wrapper-1">
+                                <div className="svg-wrapper">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"
