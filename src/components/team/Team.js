@@ -57,7 +57,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid team-members">
+      <div className="container team-members">
         <Fade up>
           <div className="row">
             <div className="col-lg-12 col-sm-12 member-body">
@@ -87,16 +87,16 @@ const Team = () => {
             <h3>Web Team</h3>
           </Fade>
           <Fade up>
-            <div className="col-lg-6 col-sm-12 web-team-body-left">
+            <div className="col-lg-3 col-sm-12 web-team">
               <img
                 src={Lead}
-                className="img-fluid team-img-left"
+                className="img-fluid team-img"
                 alt="Lead_Image"
               />
               <h5>Ashish Patil</h5>
               <h5>Web Development Lead</h5>
               <span></span>
-              <div className="social-ico-web col-lg-6 float-right">
+              <div className="social-ico-web col-lg-12">
                 <a href="#0">
                   <i className="fa fa-linkedin ico-link"></i>
                 </a>
@@ -111,16 +111,404 @@ const Team = () => {
           </Fade>
 
           <Fade up>
-            <div className="col-lg-6 col-sm-12 web-team-body-right">
+            <div className="col-lg-3 col-sm-12 web-team">
               <img
                 src={Lead}
-                className="img-fluid team-img-right"
+                className="img-fluid team-img"
                 alt="Lead_Image"
               />
-              <h5>Ganesh</h5>
+              <h5>Ganesh Birajdar</h5>
               <h5>Web Development Co-Lead</h5>
               <span></span>
-              <div className="social-ico-web col-lg-6 float-left">
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-3 col-sm-12 web-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Sarang Kulkarni</h5>
+              <h5>Web Development Member</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-3 col-sm-12 web-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Prakalp Pande</h5>
+              <h5>Web Development Member</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="row">
+          <Fade up>
+            <h3>Cloud Team</h3>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-6 col-sm-12 cloud-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Shrinivas Khond</h5>
+              <h5>Cloud Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-6 col-sm-12 cloud-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Isha Nadkar</h5>
+              <h5>Cloud Co-Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="row">
+          <h3>DSA/CP Team</h3>
+          <Fade up>
+            <div className="col-lg-12 col-sm-12 DSA-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Harshal Raundal</h5>
+              <h5>DSA Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="row">
+          <h3>Machine Learning Team</h3>
+          <Fade up>
+            <div className="col-lg-6 col-sm-12 ML-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Akshada Bhandari</h5>
+              <h5>ML Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-6 col-sm-12 ML-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Aditya Gandhamal</h5>
+              <h5>ML Co-Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="row">
+          <h3>Android Team</h3>
+          <Fade up>
+            <div className="col-lg-3 col-sm-12 android-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Parth Desai</h5>
+              <h5>Android Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-3 col-sm-12 android-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Prathamesh Chaudhari</h5>
+              <h5>Android Co-Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-3 col-sm-12 android-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Aniruddh Karekar</h5>
+              <h5>Android Member</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-3 col-sm-12 android-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Het Bhalala</h5>
+              <h5>Android Member</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="row">
+          <h3>Management Team</h3>
+          <Fade up>
+            <div className="col-lg-4 col-sm-12 management-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Omkar Danave</h5>
+              <h5>Management Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-4 col-sm-12 management-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Krishna Waske</h5>
+              <h5>Management Member</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-4 col-sm-12 management-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Shrusti Kharche</h5>
+              <h5>Management Member</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="row">
+          <h3>Design & Social Media Team</h3>
+          <Fade up>
+            <div className="col-lg-6 col-sm-12 design-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Sanyukta Kamble</h5>
+              <h5>Social Media Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
+                <a href="#0">
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a href="#0">
+                  <i className="fa fa-facebook ico-face"></i>
+                </a>
+              </div>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="col-lg-6 col-sm-12 design-team">
+              <img
+                src={Lead}
+                className="img-fluid team-img"
+                alt="Lead_Image"
+              />
+              <h5>Pornima Lokhande</h5>
+              <h5>Design Lead</h5>
+              <span></span>
+              <div className="social-ico-web col-lg-12">
                 <a href="#0">
                   <i className="fa fa-linkedin ico-link"></i>
                 </a>

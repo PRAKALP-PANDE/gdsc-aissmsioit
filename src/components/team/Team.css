@@ -18,20 +18,57 @@
     width: 4rem;
 }
 
-.web-team-body-left span::after {
+.web-team span::after {
     display: table;
     margin: 0 auto;
-    margin-left: 70%;
     content: '';
     border: 0.2rem solid #2b98c3;
     border-radius: 4px;
     width: 4rem;
 }
-
-.web-team-body-right span::after {
+.cloud-team span::after {
     display: table;
     margin: 0 auto;
-    margin-right: 70%;
+    content: '';
+    border: 0.2rem solid #2b98c3;
+    border-radius: 4px;
+    width: 4rem;
+}
+.DSA-team span::after {
+    display: table;
+    margin: 0 auto;
+    content: '';
+    border: 0.2rem solid #2b98c3;
+    border-radius: 4px;
+    width: 4rem;
+}
+.ML-team span::after {
+    display: table;
+    margin: 0 auto;
+    content: '';
+    border: 0.2rem solid #2b98c3;
+    border-radius: 4px;
+    width: 4rem;
+}
+.android-team span::after {
+    display: table;
+    margin: 0 auto;
+    content: '';
+    border: 0.2rem solid #2b98c3;
+    border-radius: 4px;
+    width: 4rem;
+}
+.management-team span::after {
+    display: table;
+    margin: 0 auto;
+    content: '';
+    border: 0.2rem solid #2b98c3;
+    border-radius: 4px;
+    width: 4rem;
+}
+.design-team span::after {
+    display: table;
+    margin: 0 auto;
     content: '';
     border: 0.2rem solid #2b98c3;
     border-radius: 4px;
@@ -108,18 +145,8 @@
     box-shadow: 0px -1px 30px 10px rgba(0, 0, 0, 0.3);
 }
 
-.team-img-left {
+.team-img {
     margin-top: 2rem;
-    margin-left: 50%;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    box-shadow: 0px -1px 30px 10px rgba(0, 0, 0, 0.3);
-}
-
-.team-img-right {
-    margin-top: 2rem;
-    margin-right: 50%;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -130,16 +157,27 @@
     margin-top: 1rem;
 }
 
-.web-team-body-left h5 {
+.web-team h5 {
     margin-top: 1rem;
-    margin-left: 50%;
 }
-
-.web-team-body-right h5 {
+.cloud-team h5 {
     margin-top: 1rem;
-    margin-right: 50%;
 }
-
+.DSA-team h5 {
+    margin-top: 1rem;
+}
+.ML-team h5 {
+    margin-top: 1rem;
+}
+.android-team h5 {
+    margin-top: 1rem;
+}
+.management-team h5 {
+    margin-top: 1rem;
+}
+.design-team h5 {
+    margin-top: 1rem;
+}
 .social-ico-web {
     margin-bottom: 3rem;
 }
@@ -206,28 +244,8 @@
         width: auto;
         padding: 0%;
     }
-
-    .team-img-left {
-        margin-left: 0;
-    }
-
-    .team-img-right {
-        margin-right: 0;
-    }
-
-    .web-team-body-left h5 {
-        margin-left: 0;
-    }
-
-    .web-team-body-right h5 {
-        margin-right: 0;
-    }
-
-    .web-team-body-left span::after {
+    
+    .web-team span::after {
         margin-left: auto;
-    }
-
-    .web-team-body-right span::after {
-        margin-right: auto;
     }
 }
