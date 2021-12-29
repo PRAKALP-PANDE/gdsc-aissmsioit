@@ -1,51 +1,120 @@
 :root {
-    --gdsc-yellow: #FCC500;
-    --gdsc-blue: #519BF7;
-    --gdsc-green: #00AA6A;
-    --gdsc-red: #F15B44;
-
+  --gdsc-yellow: #fcc500;
+  --gdsc-blue: #519bf7;
+  --gdsc-green: #00aa6a;
+  --gdsc-red: #f15b44;
 }
 
 .contact-body {
-    min-height: 100vh;
-    font-weight: 500;
-    font-size: 3.2vh;
+  min-height: 100vh;
+  font-weight: 500;
+  font-size: 3.2vh;
 }
 
 .contact-illustration {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .form-label {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .lottie-social {
-    height: 80vh;
-    width: 40vw;
-    padding-top: 12vh;
+  height: 80vh;
+  width: 40vw;
+  padding-top: 12vh;
 }
 
 .contact-tag {
-    line-height: 50px;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 0.4px;
+  line-height: 50px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.4px;
 }
 
 .lottie-social div {
-    height: 20em !important;
-    width: 20em !important;
+  height: 20em !important;
+  width: 20em !important;
+}
+.get-btndiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-btn {
+  text-align: center;
+  font-family: inherit;
+  font-size: 20px;
+  background: #4285f4;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+  background-image: linear-gradient(
+    45deg,
+    #09c6f9 0%,
+    #007bff 51%,
+    #009ffd 100%
+  );
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  background-size: 800% 400%;
+}
+
+.get-btn span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-btn svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.get-btn:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.get-btn:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.get-btn:hover span {
+  transform: translateX(5em);
+}
+
+.get-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .lottie-social div {
-        margin-left: -3.5em !important;
-    }
+  .lottie-social div {
+    margin-left: -3.5em !important;
+  }
 }
