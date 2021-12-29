@@ -5,19 +5,13 @@ body {
 
 }
 
-
-
 .card{
 
     border:none;
 }
 
-/* .col1{
-    border:2px black solid;
-} */
-
 .card-title{
-    font-family: Segoe UI;
+    font-family: "Segoe UI";
     font-style : normal;
     font-weight : bold;
     font-size: 30px;
@@ -25,7 +19,6 @@ body {
 }
 
 .msg-card{
-    /* border:2px black solid; */
     height: 40vh;
     width: 70vw;
     margin:20px;
@@ -37,8 +30,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;  
 }
 .msg-block{
     position: relative;
@@ -47,7 +39,6 @@ body {
 }
 
 .msg-text{
-    /* position: relative; */
     margin:0;
 }
 .msg-img{
@@ -65,8 +56,13 @@ body {
 ;
 }
 
+.who_block{
+    padding: 10px;
+}
 .who{
-    /* border:2px black solid;  */
+    margin: 20% 0 0 15vw;
+    min-height: 200px;
+    width: 60vw;
     box-shadow:
   1.7px 2.2px 33.6px -30px rgba(0, 0, 0, 0.064),
   4.1px 5.2px 55.7px -30px rgba(0, 0, 0, 0.083),
@@ -77,17 +73,151 @@ body {
 ;
 }
 
+
 .who-design-left{
-    height: 55%;
-    position: relative;
-    right:-65%;
-    top:-15%;
+    position: absolute;
+    display: block;
+    height: 5vw;
+    left:-10%;
+    top:-10%;
+
 }
 
 .who-design-right{
-    height: 55%;
-    position: relative;
-    right:25%;
-    top:-15%;
+    position: absolute;
+    height: 5vw;
+    right:-10%;
+    top:-10%;
     transform: scaleX(-1);
+    margin: 0;
+
 }
+
+.about-img{
+height: 80%;
+display: block;
+}
+
+.about-txt{
+    display: flex;
+    height: 100%;
+
+}
+.about-info{
+
+height: 90vh;
+}
+
+.about-body p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    overflow: hidden;
+}
+
+.what_we_do{
+    margin:2vh;
+}
+
+.what_we_do_img{
+    height: 80%;
+    width: 80%;
+}
+
+@media (max-width: 768px){
+    
+.about-txt{
+    flex-direction: column;
+}
+
+    
+.who-design-left{
+    height: 15vw;
+}
+
+.who-design-right{
+    height: 15vw;
+}
+
+.msg-card{
+    height: auto;
+    width: auto;
+}
+
+.msg-wrap{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.mission{
+    flex-direction: column-reverse;
+}
+
+.msg-block{
+   
+    height: 50%;
+}
+
+
+.msg-img{
+   
+    display: block;
+    height: 200px;
+    width: 200px;
+    
+}
+
+
+
+}
+
+@media (orientation: portrait) {
+    .who-design-left{
+        top:-2%;
+        left:-25%;
+    
+    }
+    .who-design-right{
+        right:-25%;
+        top:-2%;
+    
+
+
+    }
+
+    .about-img{
+        height: 70%;
+        display: block;
+        
+        }
+        
+        .about-txt{
+            display: flex;
+           
+            height: 70%;
+        
+        }
+        .about-info{
+        
+        height: 90vh;
+        }
+ 
+  }
+
+  @media  (min-width : 768px) and ( max-width : 1354px)  and (orientation : portrait){
+      
+.who-design-left{
+    left:-15px;
+    top:-15px;
+
+}
+
+.who-design-right{
+    right:-15px;
+    top:-15px;
+
+}
+  }
