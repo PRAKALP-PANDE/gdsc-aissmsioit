@@ -144,7 +144,7 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <h1>Meet Our Team</h1>
+            <h1 className="font-weight-bold">Meet Our Team</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
