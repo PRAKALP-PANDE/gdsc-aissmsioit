@@ -100,15 +100,13 @@
 .technical_btn {
   /* width: 140px;
   height: 45px;
-  font-size: 23px; */
-
+ */
   height: 3em;
   width: 9em;
   width: 150px;
-
+  font-family: "Google Sans";
   font-size: 1.2rem;
   cursor: pointer;
-  font-family: inherit;
   border: none;
   background: transparent;
   font-weight: 600;

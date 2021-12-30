@@ -126,7 +126,7 @@ const Contact = () => {
                     <h2
                       className="text-center font-weight-bolder"
                       style={{
-                        fontFamily: "Segoe UI",
+                        fontFamily: "Google Sans",
                         fontStyle: " normal",
                         fontWeight: "bold",
                         fontSize: "30px",
