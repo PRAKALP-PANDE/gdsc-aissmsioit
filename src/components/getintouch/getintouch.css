@@ -10,7 +10,9 @@
   font-weight: 500;
   font-size: 3.2vh;
 }
-
+.h5 {
+  font-family: "Google Sans";
+}
 .contact-illustration {
   height: 100%;
   display: flex;
