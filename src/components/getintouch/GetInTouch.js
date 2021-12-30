@@ -9,6 +9,7 @@ import Animation from "../../images/getintouch/Envelope-bro.svg";
 // import Animation from "animation.svg";
 
 import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Contact = () => {
   const defaultOptions = {
@@ -110,7 +111,9 @@ const Contact = () => {
             <Row>
               <Col sm={12} lg={5} md={5} xl={5}>
                 <div className="contact-illustration">
-                  <img src={Animation} alt="Animation_Image" />
+                  <Fade left>
+                    <img src={Animation} alt="Animation_Image" />
+                  </Fade>
                 </div>
               </Col>
 
@@ -149,7 +152,7 @@ const Contact = () => {
                               style={inputStyle}
                               autoComplete="off"
                               type="text"
-                              className="form-control"
+                              className="form-control contact-input"
                               id="exampleFormControlInput1"
                               name="fullname"
                               value={data.fullname}
@@ -168,7 +171,7 @@ const Contact = () => {
                               style={inputStyle}
                               autoComplete="off"
                               type="email"
-                              className="form-control"
+                              className="form-control contact-input"
                               id="exampleFormControlInput1"
                               name="email"
                               value={data.email}
@@ -187,7 +190,7 @@ const Contact = () => {
                             <textarea
                               style={inputStyle}
                               autoComplete="off"
-                              className="form-control"
+                              className="form-control contact-input"
                               id="exampleFormControlTextarea1"
                               rows="3"
                               name="msg"

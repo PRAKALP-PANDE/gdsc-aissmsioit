@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Bubbles from "../bubbles/Bubbles";
-
 import "./Footer.css";
 
 import Gdsc_All from "../../images/gdsc-all.png";
@@ -9,6 +7,21 @@ import Gdsc_All from "../../images/gdsc-all.png";
 import ScrollToTop from "./ScrollToTop";
 
 const Footer = () => {
+  useEffect(() => {
+    const imgFluids = document.getElementsByClassName("img-fluid");
+    Array.from(imgFluids).forEach((img) => {
+      img.addEventListener("mouseover", () => {
+        img.classList.remove("out");
+        img.classList.add("over");
+      });
+
+      img.addEventListener("mouseout", () => {
+        img.classList.remove("over");
+        img.classList.add("out");
+      });
+    });
+  }, []);
+
   return (
     <>
       <footer className="mainfooter" role="contentinfo">
@@ -18,11 +31,11 @@ const Footer = () => {
               <div className="col-md-3 col-sm-6">
                 <div className="footer-pad">
                   <h4 className="heading-1">GDSC AISSMS IOIT</h4>
-                  <ul className="list-unstyled">
+                  <ul className="list-unstyled gdsc-logo-list">
                     <img
                       width="100%"
                       height="100%"
-                      className="GDSC-LOGO"
+                      className="Gdsc-Logo img-fluid"
                       src={Gdsc_All}
                       alt="GDSC-LOGO"
                     />
@@ -127,7 +140,6 @@ const Footer = () => {
         </div>
 
         <ScrollToTop />
-        <Bubbles />
       </footer>
     </>
   );

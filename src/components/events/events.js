@@ -18,7 +18,7 @@ const events = [
     about:"📌93% of IT decision-makers around the world agree that certified employees provide added value above and beyond the cost of certification. 📌87% of Google Cloud-certified individuals are more confident about their cloud skills. 📌More than 1 in 4 Google Cloud certified individuals took on more responsibilities or leadership roles in their respective domains. Google Cloud certifications validate your expertise and showcase your ability to transform businesses with Google Cloud technology. Join us for the event CloudFest 2.0: Road to Google Cloud Certifications with GDSC AISSMS IOIT that will take you to Google Cloud certification journey and will be helping you to begin your journey of becoming Google Cloud certified. Discover all about Google Cloud Certifications and get all your queries answered!",
     speaker: "Magda Jary",
     eventLink: "https://gdsc.community.dev/events/details/developer-student-clubs-aissms-institute-of-information-technology-pune-presents-road-to-google-cloud-certifications/",
-    imageSrc: "",
+    imageSrc: "https://lh3.google.com/u/0/d/1D3RU3GTHkJYsfF4DvbcLVGHdLE_Xtwc-=w3000-h5334-iv1",
     dataAos: "fade-up",
   },
   {
@@ -56,7 +56,7 @@ const events = [
     sponsor: "Tech Mahindra",
     recording: "https://youtu.be/DKzCNpLOjX4",
     eventLink: "https://gdsc.community.dev/events/details/developer-student-clubs-aissms-institute-of-information-technology-pune-presents-gdsc-kick-off/",
-    imageSrc: "",
+    imageSrc: "https://lh3.google.com/u/0/d/1L-ZWhq_1paOyxWCB9OU7ZXM4RUVmVjHF=w3000-h5334-iv1",
     dataAos: "fade-up",
   },
   {
@@ -69,7 +69,7 @@ const events = [
     guest: "Ankita Ugale",
     recording: "https://youtu.be/qWuQMssG0nQ",
     eventLink: "https://gdsc.community.dev/events/details/developer-student-clubs-aissms-institute-of-information-technology-pune-presents-intro-meet-of-gdsc-aissms-ioit/",
-    imageSrc: "",
+    imageSrc: "https://lh3.google.com/u/0/d/1fAH846thdgBVt0s7VcGjGbGjlo7Ht8hg=w1920-h822-iv1",
     dataAos: "fade-left",
   },
 ];

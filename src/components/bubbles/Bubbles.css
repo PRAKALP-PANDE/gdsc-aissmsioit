@@ -13,10 +13,10 @@
     background: #db4437;
     opacity: 0.5;
     width: 40px;
-    animation: rise 10s infinite ease-in;
+    animation: rise 15s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -20rem;
+    bottom: -120rem;
 }
 
 .blue {
@@ -24,10 +24,10 @@
     background: #4285f4;
     opacity: 0.5;
     width: 40px;
-    animation: rise 10s infinite ease-in;
+    animation: rise 15s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -20rem;
+    bottom: -120rem;
 }
 
 .green {
@@ -35,10 +35,10 @@
     background: #0f9d58;
     opacity: 0.5;
     width: 40px;
-    animation: rise 10s infinite ease-in;
+    animation: rise 15s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -20rem;
+    bottom: -120rem;
 }
 
 .yellow {
@@ -46,40 +46,40 @@
     background: #f4b400;
     opacity: 0.5;
     width: 40px;
-    animation: rise 10s infinite ease-in;
+    animation: rise 15s infinite ease-in;
     border-radius: 50%;
     width: 40px;
-    bottom: -20rem;
+    bottom: -120rem;
 }
 
 .bubble:nth-child(1) {
     width: 40px;
     height: 40px;
     left: 10%;
-    animation-duration: 8s;
+    animation-duration: 12s;
 }
 
 .bubble:nth-child(2) {
     width: 20px;
     height: 20px;
     left: 20%;
-    animation-duration: 5s;
-    animation-delay: 1s;
+    animation-duration: 8s;
+    animation-delay: 2s;
 }
 
 .bubble:nth-child(3) {
     width: 50px;
     height: 50px;
     left: 35%;
-    animation-duration: 7s;
-    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-delay: 4s;
 }
 
 .bubble:nth-child(4) {
     width: 80px;
     height: 80px;
     left: 50%;
-    animation-duration: 11s;
+    animation-duration: 18s;
     animation-delay: 0s;
 }
 
@@ -87,15 +87,15 @@
     width: 35px;
     height: 35px;
     left: 55%;
-    animation-duration: 6s;
-    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-delay: 2s;
 }
 
 .bubble:nth-child(6) {
     width: 45px;
     height: 45px;
     left: 65%;
-    animation-duration: 8s;
+    animation-duration: 12s;
     animation-delay: 3s;
 }
 
@@ -103,31 +103,31 @@
     width: 90px;
     height: 90px;
     left: 70%;
-    animation-duration: 12s;
-    animation-delay: 2s;
+    animation-duration: 18s;
+    animation-delay: 4s;
 }
 
 .bubble:nth-child(8) {
     width: 25px;
     height: 25px;
     left: 80%;
-    animation-duration: 6s;
-    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-delay: 4s;
 }
 
 .bubble:nth-child(9) {
     width: 15px;
     height: 15px;
     left: 70%;
-    animation-duration: 5s;
-    animation-delay: 1s;
+    animation-duration: 8s;
+    animation-delay: 2s;
 }
 
 .bubble:nth-child(10) {
     width: 90px;
     height: 90px;
     left: 25%;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-delay: 4s;
 }
 

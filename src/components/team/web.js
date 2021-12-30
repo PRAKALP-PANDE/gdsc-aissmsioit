@@ -1,0 +1,48 @@
+const Web = [
+  {
+    id: 1,
+    name: "Ashish Patil",
+    position: "Web Development Lead",
+    image: "https://lh3.google.com/u/0/d/1KunMBans_krPb9mplVflf40BaHCTO17Y=w3000-h5334-iv1",
+    alt: "Lead_Image",
+    col: 3,
+    linkedin: "",
+    instagram: "",
+    github: "",
+  },
+  {
+    id: 2,
+    name: "Ganesh Birajdar",
+    position: "Web Development Co-Lead",
+    image: "https://lh3.google.com/u/0/d/1DeA3u0g_Iuk-ZnXxVn6PkefbjxoYoETY=w3000-h5334-iv1",
+    alt: "Co_Lead_Image",
+    col: 3,
+    linkedin: "",
+    instagram: "",
+    github: "",
+  },
+  {
+    id: 3,
+    name: "Sarang Kulkarni",
+    position: "Web Development Member",
+    image: "https://lh3.google.com/u/0/d/1x7ezF8jRdigcGfmulFQ5lPFlkN1o3vUn=w1920-h822-iv2",
+    alt: "Member_Image",
+    col: 3,
+    linkedin: "",
+    instagram: "",
+    github: "",
+  },
+  {
+    id: 4,
+    name: "Prakalp Pande",
+    position: "Web Development Member",
+    image: "https://lh3.google.com/u/0/d/1EdqwuchixrE7gjO8jtbCOBG9WFSD_HJK=w1920-h822-iv1",
+    alt: "Member_Image",
+    col: 3,
+    linkedin: "",
+    instagram: "",
+    github: "",
+  },
+];
+
+export default Web;
