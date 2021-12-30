@@ -204,11 +204,11 @@
 
 .events .card {
   position: relative;
-  width: 300px;
+  width: 280px;
   height: 300px;
   background: #fff;
   display: flex;
-  margin: 0 20px 20px 18px;
+  margin: 0 45px 20px 30px;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
@@ -286,6 +286,11 @@
 .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.home-headings {
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 769px) {

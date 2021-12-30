@@ -49,7 +49,12 @@ const Eventdetails = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <a title="Community Page Event Link" target="_blank" rel="noreferrer" href={event.eventLink}>
+            <a
+              title="Community Page Event Link"
+              target="_blank"
+              rel="noreferrer"
+              href={event.eventLink}
+            >
               <img
                 src={event.imageSrc}
                 alt="Events_Image"

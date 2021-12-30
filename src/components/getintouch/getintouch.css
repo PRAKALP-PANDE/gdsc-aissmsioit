@@ -20,6 +20,8 @@
 
 .form-label {
   pointer-events: none;
+  font-weight: bold;
+  font-size: 2.6vh !important;
 }
 
 .lottie-social {
@@ -37,19 +39,25 @@
   letter-spacing: 0.4px;
 }
 
+.contact-input {
+  font-size: 2.4vh !important;
+}
+
 .lottie-social div {
   height: 20em !important;
   width: 20em !important;
 }
+
 .get-btndiv {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .get-btn {
   text-align: center;
   font-family: inherit;
-  font-size: 20px;
+  font-size: 15px;
   background: #4285f4;
   color: white;
   padding: 0.7em 1em;
@@ -63,12 +71,10 @@
   transition: all 0.5s ease-in-out;
   animation: gradient 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
   background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
-  background-image: linear-gradient(
-    45deg,
-    #09c6f9 0%,
-    #007bff 51%,
-    #009ffd 100%
-  );
+  background-image: linear-gradient(45deg,
+      #09c6f9 0%,
+      #007bff 51%,
+      #009ffd 100%);
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;

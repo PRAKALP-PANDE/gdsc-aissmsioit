@@ -9,8 +9,8 @@ const Card = (props) => {
           <img
             src={props.event.imageSrc}
             className="img-fluid event-img"
-            alt="Card"
-          ></img>
+            alt="Event_Image"
+          />
         </NavLink>
       </div>
     </div>

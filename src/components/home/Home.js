@@ -90,8 +90,6 @@ const Home = () => {
   media.addEventListener("change", responsive);
   window.onload = () => responsive(media);
 
-  console.log("Good");
-
   return (
     <div className="container home">
       <div className="contents">
@@ -126,7 +124,7 @@ const Home = () => {
             </p>
             <ul className="content">
               <li className="content-item">
-                <button className="beamember-btn ">Be a Member</button>
+                <button className="beamember-btn">Be a Member</button>
               </li>
             </ul>
           </div>
@@ -135,7 +133,7 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
             <div className="all-divs mt-5">
-              <h1 className="text-center">Upcoming Events</h1>
+              <h1 className="text-center home-headings">Upcoming Events</h1>
             </div>
           </div>
         </Fade>
@@ -147,7 +145,7 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
             <div className="all-divs">
-              <h1 className="text-center">About Community</h1>
+              <h1 className="text-center home-headings">About Community</h1>
 
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -168,7 +166,7 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
-              <h1 className="text-center">Our Blog</h1>
+              <h1 className="text-center home-headings">Our Blog</h1>
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
@@ -189,7 +187,7 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
-              <h1 className="text-center">Stay Updated</h1>
+              <h1 className="text-center home-headings">Stay Updated</h1>
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
