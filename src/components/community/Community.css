@@ -11,8 +11,8 @@ body {
   font-family: "Google Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
   color: rgba(0, 0, 0, 1);
+  font-size: 30px;
 }
 
 .msg-card {
