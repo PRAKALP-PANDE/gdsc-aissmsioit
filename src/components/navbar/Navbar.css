@@ -227,15 +227,7 @@ nav {
   }
 }
 
-.gdsc-icon {
-  font-weight: bold;
-}
-
-.nav-link {
-  font-weight: bold;
-}
-
-li {
+li span {
   font-weight: bold;
 }
 

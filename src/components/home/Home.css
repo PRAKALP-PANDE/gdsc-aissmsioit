@@ -208,7 +208,7 @@
   height: 300px;
   background: #fff;
   display: flex;
-  margin: 0 45px 20px 30px;
+  margin: 0 85px 20px 30px;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
@@ -330,9 +330,5 @@
 
   .events .card {
     height: 400px;
-  }
-
-  .event-img {
-    height: 350px;
   }
 }

@@ -784,6 +784,7 @@ body {
     -moz-animation: float 6s ease-in-out infinite;
     -o-animation: float 6s ease-in-out infinite;
     animation: float 6s ease-in-out infinite;
+    z-index: -5;
 }
 
 @media (min-width: 768px) {
@@ -805,6 +806,7 @@ body {
     -moz-animation: float 8s ease-in-out infinite;
     -o-animation: float 8s ease-in-out infinite;
     animation: float 8s ease-in-out infinite;
+    z-index: -5;
 }
 
 .pop-up .content .dots .dot:nth-of-type(3) {
@@ -817,6 +819,7 @@ body {
     -moz-animation: float 4s ease-in-out infinite;
     -o-animation: float 4s ease-in-out infinite;
     animation: float 4s ease-in-out infinite;
+    z-index: -5;
 }
 
 .pop-up .content .title h1 {
@@ -994,10 +997,6 @@ body {
         margin-top: 20% !important;
     }
 
-    /* .main {
-        margin-top: -80%;
-    } */
-
     .Path_39_ba {
         margin: 0%;
         height: 430px;
@@ -1014,7 +1013,7 @@ body {
 
     .pop-up {
         width: 95%;
-        top: 190%;
+        top: 60%;
     }
 
     .pop-up .content .title h1 {
@@ -1030,11 +1029,34 @@ body {
     }
 
     .pop-up {
-        height: 60%;
+        height: 50%;
     }
 
     .pop-up .content {
-        min-height: 60vh;
+        min-height: 0vh;
+        height: 50vh;
+    }
+
+    .content {
+        padding: 0%;
+    }
+
+    .pop-up .content .container {
+        padding: 60px 0px 140px;
+    }    
+
+    .pop-up .content .dots .dot:nth-of-type(1) {
+        top: -100px;
+        right: -80px;
+    }
+
+    .pop-up .content .dots .dot:nth-of-type(2) {
+        bottom: -100px;
+        left: -140px;
+    }
+
+    .pop-up .content .dots .dot:nth-of-type(3) {
+        bottom: -40px;
     }
 }
 
@@ -1046,6 +1068,20 @@ body {
     }
 
     .pop-up {
-        height: 70%;
+        height: 60%;
+    }
+
+    .pop-up .content {
+        min-height: 0vh;
+        height: 60vh;
+    }
+
+    .pop-up .content .dots .dot:nth-of-type(2) {
+        bottom: -160px;
+        left: -140px;
+    }
+
+    .pop-up .content .dots .dot:nth-of-type(3) {
+        bottom: -50px;
     }
 }

@@ -132,7 +132,7 @@ const Home = () => {
 
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
-            <div className="all-divs mt-5">
+            <div className="all-divs mt-lg-5">
               <h1 className="text-center home-headings">Upcoming Events</h1>
             </div>
           </div>
@@ -144,8 +144,8 @@ const Home = () => {
 
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
-            <div className="all-divs">
-              <h1 className="text-center home-headings">About Community</h1>
+            <div className="all-divs mt-lg-5">
+              <h1 className="text-center home-headings mt-5 mt-lg-0">About Community</h1>
 
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.

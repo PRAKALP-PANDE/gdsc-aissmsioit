@@ -19,9 +19,11 @@ footer {
   color: white;
   margin-top: 100px;
 }
+
 h4 {
   font-weight: 600;
 }
+
 .heading-1 {
   color: #db4437;
 }
@@ -165,14 +167,12 @@ ul.social-network li {
 }
 
 .social-network a.icoInstagram:hover {
-  background: linear-gradient(
-    59deg,
-    #fbad50,
-    #fccc63,
-    #e95950,
-    #bc2a8d,
-    #8a3ab9
-  );
+  background: linear-gradient(59deg,
+      #fbad50,
+      #fccc63,
+      #e95950,
+      #bc2a8d,
+      #8a3ab9);
 }
 
 .social-network a.icoYoutube:hover {
@@ -247,6 +247,10 @@ ul.social-network li {
   width: 76%;
 }
 
+.list-unstyled a {
+  font-weight: bold;
+}
+
 @media (max-width: 320px) {
   .gotopbtn {
     left: calc(80vw - 10px);
@@ -255,6 +259,7 @@ ul.social-network li {
 }
 
 @media (max-width: 800px) {
+
   .team,
   .quick-links {
     width: 50%;
@@ -276,5 +281,5 @@ ul.social-network li {
 
   .Gdsc-Logo {
     width: 50%;
-  }  
+  }
 }

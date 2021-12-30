@@ -145,7 +145,7 @@ const Team = () => {
             data-aos-anchor-placement="top-center"
           >
             <h1 className="font-weight-bold">Meet Our Team</h1>
-            <p>
+            <p className="font-weight-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam. Duis aute irure dolor in reprehenderit in
