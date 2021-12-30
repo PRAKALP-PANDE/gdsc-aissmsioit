@@ -40,13 +40,11 @@ body {
 }
 
 .msg-img {
-
   width: 12em;
   height: 12em;
   background-color: rgb(248, 255, 255);
   border-radius: 50%;
-  box-shadow:
-    2.7px 2.9px 2.7px rgba(0, 0, 0, 0.022),
+  box-shadow: 2.7px 2.9px 2.7px rgba(0, 0, 0, 0.022),
     6.8px 7.3px 6.9px rgba(0, 0, 0, 0.031),
     13.8px 14.9px 14.2px rgba(0, 0, 0, 0.039),
     28.5px 30.7px 29.2px rgba(0, 0, 0, 0.048),
@@ -61,8 +59,7 @@ body {
   margin: 0% 0 0 14vw;
   min-height: 200px;
   width: 66vw;
-  box-shadow:
-    1.7px 2.2px 33.6px -30px rgba(0, 0, 0, 0.064),
+  box-shadow: 1.7px 2.2px 33.6px -30px rgba(0, 0, 0, 0.064),
     4.1px 5.2px 55.7px -30px rgba(0, 0, 0, 0.083),
     7.8px 9.8px 66px -30px rgba(0, 0, 0, 0.091),
     13.8px 17.4px 68.6px -30px rgba(0, 0, 0, 0.096),
@@ -75,7 +72,7 @@ body {
   display: block;
   height: 5vw;
   left: -10%;
-  top: -10%
+  top: -10%;
 }
 
 .who-design-right {
@@ -120,8 +117,11 @@ body {
   margin-top: 6%;
 }
 
-@media (max-width: 768px) {
+.events .card {
+  margin: 0 50px 20px 50px;
+}
 
+@media (max-width: 768px) {
   .about-txt {
     flex-direction: column;
   }
@@ -195,6 +195,10 @@ body {
   .what_we_do {
     margin-top: 22%;
   }
+
+  .events .card {
+    margin: 0 80px 20px 30px;
+  }
 }
 
 @media (orientation: portrait) {
@@ -210,7 +214,7 @@ body {
 
   .about-img {
     height: 70%;
-    display: block
+    display: block;
   }
 
   .about-txt {
@@ -219,8 +223,7 @@ body {
   }
 }
 
-@media (min-width : 768px) and (max-width : 1354px) and (orientation : portrait) {
-
+@media (min-width: 768px) and (max-width: 1354px) and (orientation: portrait) {
   .who-design-left {
     left: -15px;
     top: -15px;

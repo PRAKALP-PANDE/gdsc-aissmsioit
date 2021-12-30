@@ -12,7 +12,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Card from "../home/Card";
+import Card from "./Card";
 
 import Fade from "react-reveal/Fade";
 
@@ -61,7 +61,7 @@ const Community = () => {
   };
 
   const WhatWeDo = What_we_do.map((element) => (
-    <Card key={element.id} event={element} />
+    <Card key={element.id} element={element} />
   ));
 
   const [whatWeDoSlider, setWhatWeDoSlider] = useState(
