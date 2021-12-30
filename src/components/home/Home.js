@@ -66,8 +66,8 @@ const Home = () => {
     }
   });
 
-  const upcoming_events_map = upcoming_events.map((event, index) => (
-    <Card key={index} event={event} />
+  const upcoming_events_map = upcoming_events.map((event) => (
+    <Card key={event.id} event={event} />
   ));
 
   const [eventSlider, setEventSlider] = useState(
