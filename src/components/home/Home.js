@@ -141,11 +141,19 @@ const Home = () => {
         <Fade up>
           <div className="container events mt-2 mt-lg-5">{eventSlider}</div>
         </Fade>
-
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
             <div className="all-divs mt-lg-5">
-              <h1 className="text-center home-headings mt-5 mt-lg-0">About Community</h1>
+              <h1 className="text-center home-headings mt-5 mt-lg-0">
+                About Community
+              </h1>
 
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
