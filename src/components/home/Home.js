@@ -124,7 +124,16 @@ const Home = () => {
             </p>
             <ul className="content">
               <li className="content-item">
-                <button className="beamember-btn">Be a Member</button>
+                <button className="beamember-btn">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
+                  >
+                    {" "}
+                    Be a Member
+                  </a>
+                </button>
               </li>
             </ul>
           </div>

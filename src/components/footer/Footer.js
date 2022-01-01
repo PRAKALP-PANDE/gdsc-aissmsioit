@@ -92,7 +92,15 @@ const Footer = () => {
                         target="_blank"
                         href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
                       >
-                        <span>Be a Member</span>
+                        <span>
+                          <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
+                          >
+                            Be a Member
+                          </a>
+                        </span>
                       </a>
                     </li>
                   </ul>
