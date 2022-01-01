@@ -147,6 +147,7 @@ const Home = () => {
           <div className="dot"></div>
           <div className="dot"></div>
           <div className="dot"></div>
+          <div className="dot"></div>
         </div>
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
