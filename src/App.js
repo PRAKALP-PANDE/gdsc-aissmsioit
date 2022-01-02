@@ -1,6 +1,6 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Route,
 } from "react-router-dom/cjs/react-router-dom.min";
@@ -51,7 +51,7 @@ const App = () => {
         </div>
       </div>
       <div className={contentDisplay}>
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <Switch>
             <Route path="/" exact component={Home} />
@@ -67,7 +67,7 @@ const App = () => {
             <Route path="*" exact component={Error} />
           </Switch>
           <Footer />
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </>
   );
