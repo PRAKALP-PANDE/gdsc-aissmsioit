@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/gdsc-aissmsioit-web/static/css/main.05baa844.css",
+    "main.js": "/gdsc-aissmsioit-web/static/js/main.f42ef673.js",
+    "static/js/787.c0d5fc75.chunk.js": "/gdsc-aissmsioit-web/static/js/787.c0d5fc75.chunk.js",
+    "static/media/GoogleSans-Regular.svg": "/gdsc-aissmsioit-web/static/media/GoogleSans-Regular.0799d6a6a976d9c1e405.svg",
+    "static/media/team2.jpg": "/gdsc-aissmsioit-web/static/media/team2.7a7b5bcedbcea56ca7ef.jpg",
+    "static/media/about.png": "/gdsc-aissmsioit-web/static/media/about.654e0646072baa25de6b.png",
+    "static/media/GoogleSans-Regular.eot": "/gdsc-aissmsioit-web/static/media/GoogleSans-Regular.3a46696b78afa7117bf1.eot",
+    "static/media/GoogleSans-Regular.ttf": "/gdsc-aissmsioit-web/static/media/GoogleSans-Regular.3136b8568e68a45ffa11.ttf",
+    "static/media/home_svg.png": "/gdsc-aissmsioit-web/static/media/home_svg.8512bfdab1f088c79a00.png",
+    "static/media/gdsc_logo.png": "/gdsc-aissmsioit-web/static/media/gdsc_logo.a55231a691a1c20c3606.png",
+    "static/media/GoogleSans-Regular.woff": "/gdsc-aissmsioit-web/static/media/GoogleSans-Regular.d822df7a3f9a23640e87.woff",
+    "static/media/GoogleSans-Regular.woff2": "/gdsc-aissmsioit-web/static/media/GoogleSans-Regular.8a085c1ee088a9571a3f.woff2",
+    "static/media/Envelope-bro.svg": "/gdsc-aissmsioit-web/static/media/Envelope-bro.833dbade652925ef4a2746a0d8a324d4.svg",
+    "static/media/logo.jpg": "/gdsc-aissmsioit-web/static/media/logo.4caae11dc1d366226e2c.jpg",
+    "static/media/gdsc-all.png": "/gdsc-aissmsioit-web/static/media/gdsc-all.9cc6b2a1a804f65b6869.png",
+    "static/media/slick.svg": "/gdsc-aissmsioit-web/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/gdsc-aissmsioit-web/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/gdsc-aissmsioit-web/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/gdsc-aissmsioit-web/index.html",
+    "static/media/slick.woff": "/gdsc-aissmsioit-web/static/media/slick.295183786cd8a1389865.woff",
+    "main.05baa844.css.map": "/gdsc-aissmsioit-web/static/css/main.05baa844.css.map",
+    "main.f42ef673.js.map": "/gdsc-aissmsioit-web/static/js/main.f42ef673.js.map",
+    "787.c0d5fc75.chunk.js.map": "/gdsc-aissmsioit-web/static/js/787.c0d5fc75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05baa844.css",
+    "static/js/main.f42ef673.js"
+  ]
+}
