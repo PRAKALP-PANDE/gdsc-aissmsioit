@@ -89,7 +89,7 @@ const Contact = () => {
       <div className="container-fluid contact-divi p-3">
         <Row>
           {isSubmit === false && (
-            <div className="contact-tag  px-5">
+            <div className="contact-tag px-lg-5">
               <Typewriter
                 options={{
                   strings: ["Want to ask something?"],

@@ -17,9 +17,11 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
 .h5 {
   font-family: "Google Sans";
 }
+
 .form-label {
   pointer-events: none;
   font-weight: bold;
@@ -39,6 +41,7 @@
   font-weight: bold;
   font-size: 40px;
   letter-spacing: 0.4px;
+  margin-top: 2em;
 }
 
 .contact-input {
@@ -73,12 +76,10 @@
   transition: all 0.5s ease-in-out;
   animation: gradient 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
   background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
-  background-image: linear-gradient(
-    45deg,
-    #09c6f9 0%,
-    #007bff 51%,
-    #009ffd 100%
-  );
+  background-image: linear-gradient(45deg,
+      #09c6f9 0%,
+      #007bff 51%,
+      #009ffd 100%);
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;

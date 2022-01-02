@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
 import "./Home.css";
 
 import Slider from "react-slick";
@@ -15,6 +17,8 @@ import Bubbles from "../bubbles/Bubbles";
 import Fade from "react-reveal/Fade";
 
 import events from "../events/events";
+
+import { scrollToTop } from "../footer/ScrollToTop";
 
 const Home = () => {
   useEffect(() => {
@@ -130,7 +134,6 @@ const Home = () => {
                     target="_blank"
                     href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
                   >
-                    {" "}
                     Be a Member
                   </a>
                 </button>
@@ -156,7 +159,6 @@ const Home = () => {
           <div className="dot"></div>
           <div className="dot"></div>
           <div className="dot"></div>
-          <div className="dot"></div>
         </div>
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
@@ -175,7 +177,11 @@ const Home = () => {
                 eum.
               </p>
               <div className="btn-section">
-                <button className="other-btns">Check Out</button>
+                <button className="other-btns">
+                  <NavLink onClick={scrollToTop} to="/about">
+                    Check Out
+                  </NavLink>
+                </button>
               </div>
             </div>
           </div>
@@ -195,7 +201,11 @@ const Home = () => {
                 eum.
               </p>
               <div className="btn-section">
-                <button className="other-btns mb-3">Check Out</button>
+                <button className="other-btns mb-3">
+                  <NavLink onClick={scrollToTop} to="/blogs">
+                    Check Out
+                  </NavLink>
+                </button>
                 <button className="other-btns">Submit Your Blog</button>
               </div>
             </div>
@@ -213,7 +223,13 @@ const Home = () => {
                 et id maxime.
               </p>
               <div className="btn-section mb-0">
-                <button className="other-btns">Join With Us</button>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
+                >
+                  <button className="other-btns">Join With Us</button>
+                </a>
               </div>
             </div>
           </div>

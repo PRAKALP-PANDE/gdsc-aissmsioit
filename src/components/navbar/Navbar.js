@@ -5,6 +5,8 @@ import "./Navbar.css";
 
 import Gdsc_Logo from "../../images/gdsc_logo.png";
 
+import { scrollToTop } from "../footer/ScrollToTop";
+
 const Navbar = () => {
   useEffect(() => {
     const mainNav = document.getElementById("main-ul");
@@ -24,6 +26,19 @@ const Navbar = () => {
         img.classList.add("out");
       });
     });
+
+    const navbar = document.getElementById("Navbar");
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (document.body.scrollTop > 100) {
+          navbar.style.backgroundColor = "white";
+        } else {
+          navbar.style.backgroundColor = "transparent";
+        }
+      },
+      true
+    );
   });
 
   const toggle = () => {
@@ -80,7 +95,11 @@ const Navbar = () => {
               <h1 className="m-2 site-logo">
                 <div className="m-2">
                   <NavLink to="/">
-                    <img className="logo img-fluid" src={Gdsc_Logo} alt="Gdsc Logo" />
+                    <img
+                      className="logo img-fluid"
+                      src={Gdsc_Logo}
+                      alt="Gdsc Logo"
+                    />
                   </NavLink>
                   <MenuOpenIcon
                     onClick={toggle}
@@ -94,40 +113,40 @@ const Navbar = () => {
               <nav className="site-navigation position-relative text-right">
                 <ul id="main-ul" className="site-menu">
                   <li>
-                    <NavLink to="/">
+                    <NavLink onClick={scrollToTop} to="/">
                       <span onClick={NavDisplay}>Home</span>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/events">
+                    <NavLink onClick={scrollToTop} to="/events">
                       <span onClick={NavDisplay} className="gred">
                         Events
                       </span>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/blogs">
+                    <NavLink onClick={scrollToTop} to="/blogs">
                       <span onClick={NavDisplay} className="gyellow">
                         Blogs
                       </span>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/team">
+                    <NavLink onClick={scrollToTop} to="/team">
                       <span onClick={NavDisplay} className="ggreen">
                         Team
                       </span>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/about">
+                    <NavLink onClick={scrollToTop} to="/about">
                       <span onClick={NavDisplay} className="gblue">
                         About
                       </span>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/getintouch">
+                    <NavLink onClick={scrollToTop} to="/getintouch">
                       <span onClick={NavDisplay} className="gred">
                         Get In Touch
                       </span>

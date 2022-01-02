@@ -115,7 +115,7 @@ const Community = () => {
                 <h5 className="card-title text-center font-weight-bolder">
                   About Us
                 </h5>
-                <p className="card-text about-para">
+                <p className="card-text about-para font-weight-light">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Accusantium, quibusdam repudiandae, voluptates facere maxime
                   dolore vero, consequuntur asperiores nemo officiis debitis

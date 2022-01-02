@@ -13,7 +13,7 @@ import WorkshopCard from "./WorkshopCard";
 import events from "./events";
 import workshops from "./workshops";
 
-import CloseButton from "../../images/event/close-button-png-30227.png";
+import CloseButton from "../../images/event/close.png";
 import Gdsc_Logo from "../../images/google_gdsc_logo.png";
 
 import Fade from "react-reveal/Fade";

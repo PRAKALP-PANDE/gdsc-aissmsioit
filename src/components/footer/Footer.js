@@ -4,7 +4,7 @@ import "./Footer.css";
 
 import Gdsc_All from "../../images/gdsc-all.png";
 
-import ScrollToTop from "./ScrollToTop";
+import ScrollToTop, { scrollToTop } from "./ScrollToTop";
 
 const Footer = () => {
   useEffect(() => {
@@ -32,13 +32,15 @@ const Footer = () => {
                 <div className="footer-pad">
                   <h4 className="heading-1">GDSC AISSMS IOIT</h4>
                   <ul className="list-unstyled gdsc-logo-list">
-                    <img
-                      width="100%"
-                      height="100%"
-                      className="Gdsc-Logo img-fluid"
-                      src={Gdsc_All}
-                      alt="GDSC-LOGO"
-                    />
+                    <NavLink onClick={scrollToTop} to="/">
+                      <img
+                        width="100%"
+                        height="100%"
+                        className="Gdsc-Logo img-fluid"
+                        src={Gdsc_All}
+                        alt="GDSC-LOGO"
+                      />
+                    </NavLink>
                   </ul>
                 </div>
               </div>
@@ -75,16 +77,24 @@ const Footer = () => {
                   <h4 className="heading-3">Quick Links</h4>
                   <ul className="list-unstyled">
                     <li className="gored">
-                      <NavLink to="/">Home</NavLink>
+                      <NavLink onClick={scrollToTop} to="/">
+                        Home
+                      </NavLink>
                     </li>
                     <li className="goorange">
-                      <NavLink to="/events">Events</NavLink>
+                      <NavLink onClick={scrollToTop} to="/events">
+                        Events
+                      </NavLink>
                     </li>
                     <li className="gogreen">
-                      <NavLink to="/about">About</NavLink>
+                      <NavLink onClick={scrollToTop} to="/about">
+                        About
+                      </NavLink>
                     </li>
                     <li className="gored">
-                      <NavLink to="/team">Team</NavLink>
+                      <NavLink onClick={scrollToTop} to="/team">
+                        Team
+                      </NavLink>
                     </li>
                     <li className="goblue">
                       <a
@@ -92,15 +102,7 @@ const Footer = () => {
                         target="_blank"
                         href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
                       >
-                        <span>
-                          <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
-                          >
-                            Be a Member
-                          </a>
-                        </span>
+                        <span>Be a Member</span>
                       </a>
                     </li>
                   </ul>
@@ -111,26 +113,50 @@ const Footer = () => {
 
                 <ul className="social-network social-circle">
                   <li>
-                    <NavLink to="#" className="icoInstagram" title="Instagram">
+                    <a
+                      href="https://www.instagram.com/gdsc_aissmsioit/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icoInstagram"
+                      title="Instagram"
+                    >
                       <i className="fa fa-instagram"></i>
-                    </NavLink>
+                    </a>
                   </li>
                   <li>
-                    <NavLink to="#" className="icoYoutube" title="Youtube">
+                    <a
+                      href="https://www.youtube.com/channel/UCLcnxEONkPkUnlUDBHe9Omg"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icoYoutube"
+                      title="Youtube"
+                    >
                       <i className="fa fa-youtube-play"></i>
-                    </NavLink>
+                    </a>
                   </li>
                 </ul>
                 <ul className="social-network social-circle">
                   <li>
-                    <NavLink to="#" className="icoLinkedin" title="Linkedin">
+                    <a
+                      href="https://www.linkedin.com/in/gdsc-aissms-ioit-595b9321b/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icoLinkedin"
+                      title="Linkedin"
+                    >
                       <i className="fa fa-linkedin"></i>
-                    </NavLink>
+                    </a>
                   </li>
                   <li>
-                    <NavLink to="#" className="icoEnvelope" title="Envelope">
+                    <a
+                      href="mailto:gdsc.aissmsioit@gmail.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icoEnvelope"
+                      title="Envelope"
+                    >
                       <i className="fa fa-envelope"></i>
-                    </NavLink>
+                    </a>
                   </li>
                 </ul>
               </div>

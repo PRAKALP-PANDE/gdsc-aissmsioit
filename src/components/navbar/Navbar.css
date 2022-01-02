@@ -17,6 +17,13 @@ header {
   margin: auto 0;
 }
 
+#Navbar {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -279,7 +286,7 @@ li span {
   display: inline-block;
   border: none;
   border-radius: 25px;
-  font-size: 17px;
+  font-size: 18px;
   color: white;
   transition: all 0.5s ease-in-out;
   animation: gradient 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
@@ -360,5 +367,15 @@ li span {
     width: 22em;
     height: 26em;
     margin-top: 6em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #Navbar {
+    background-color: white !important;
+  }
+
+  .beamember {
+    margin-bottom: 2em;
   }
 }
