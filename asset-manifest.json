@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gdsc-aissmsioit-web/static/css/main.05baa844.css",
-    "main.js": "/gdsc-aissmsioit-web/static/js/main.f42ef673.js",
+    "main.js": "/gdsc-aissmsioit-web/static/js/main.8ec6fba3.js",
     "static/js/787.c0d5fc75.chunk.js": "/gdsc-aissmsioit-web/static/js/787.c0d5fc75.chunk.js",
     "static/media/GoogleSans-Regular.svg": "/gdsc-aissmsioit-web/static/media/GoogleSans-Regular.0799d6a6a976d9c1e405.svg",
     "static/media/team2.jpg": "/gdsc-aissmsioit-web/static/media/team2.7a7b5bcedbcea56ca7ef.jpg",
@@ -21,11 +21,11 @@
     "index.html": "/gdsc-aissmsioit-web/index.html",
     "static/media/slick.woff": "/gdsc-aissmsioit-web/static/media/slick.295183786cd8a1389865.woff",
     "main.05baa844.css.map": "/gdsc-aissmsioit-web/static/css/main.05baa844.css.map",
-    "main.f42ef673.js.map": "/gdsc-aissmsioit-web/static/js/main.f42ef673.js.map",
+    "main.8ec6fba3.js.map": "/gdsc-aissmsioit-web/static/js/main.8ec6fba3.js.map",
     "787.c0d5fc75.chunk.js.map": "/gdsc-aissmsioit-web/static/js/787.c0d5fc75.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05baa844.css",
-    "static/js/main.f42ef673.js"
+    "static/js/main.8ec6fba3.js"
   ]
 }
