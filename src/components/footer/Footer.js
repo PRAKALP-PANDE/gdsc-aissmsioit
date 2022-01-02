@@ -49,25 +49,39 @@ const Footer = () => {
                   <h4 className="heading-2">Team</h4>
                   <ul className="list-unstyled">
                     <li className="gored">
-                      <NavLink to="#">GDSC Lead</NavLink>
-                    </li>
-                    <li className="gogreen">
-                      <NavLink to="#">Andriod Development</NavLink>
+                      <NavLink onClick={scrollToTop} to="/team/gdsc_lead">
+                        GDSC Lead
+                      </NavLink>
                     </li>
                     <li className="goorange">
-                      <NavLink to="#">Web Development</NavLink>
+                      <NavLink onClick={scrollToTop} to="/team/web_team">
+                        Web Development
+                      </NavLink>
                     </li>
                     <li className="gogreen">
-                      <NavLink to="#">Machine Learning</NavLink>
+                      <NavLink onClick={scrollToTop} to="/team/ml_team">
+                        Machine Learning
+                      </NavLink>
                     </li>
                     <li className="goblue">
-                      <NavLink to="#">Management</NavLink>
+                      <NavLink onClick={scrollToTop} to="/team/management_team">
+                        Management
+                      </NavLink>
                     </li>
-                    <li className="goorange">
-                      <NavLink to="#">DS & Algo</NavLink>
+                    <li className="gogreen">
+                      <NavLink onClick={scrollToTop} to="/team/android_team">
+                        Android Development
+                      </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="#"></NavLink>
+                    <li className="gored">
+                      <NavLink onClick={scrollToTop} to="/team/dsa_cp_team">
+                        DS & Algo
+                      </NavLink>
+                    </li>
+                    <li className="gored">
+                      <NavLink onClick={scrollToTop} to="/team/design_and_socialmedia_team">
+                        Design and Social Media
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -161,7 +175,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="row">
+            <div className="row mt-2">
               <h4 className="divider donotcross">GDSC AISSMS IOIT</h4>
               <div className="col-md-12 copy">
                 <p className="text-center">

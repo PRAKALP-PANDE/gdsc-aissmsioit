@@ -60,6 +60,7 @@ const App = () => {
             <Route path="/workshops/:id/" exact component={Workshopdetails} />
             <Route path="/blogs" exact component={Blog} />
             <Route path="/team" exact component={Team} />
+            <Route path="/team/:id" exact component={Team} />
             <Route path="/about" exact component={Community} />
             <Route path="/getintouch" exact component={GetInTouch} />
             <Route path="/gdsc-aissmsioit-web" component={Home} />

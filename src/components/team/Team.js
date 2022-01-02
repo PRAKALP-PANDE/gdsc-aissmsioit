@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useParams } from "react-router-dom";
+
 import "./Team.css";
 
 import Team_Img from "../../images/team/team2.jpg";
@@ -21,6 +22,8 @@ import DesignAndSocialMedia from "./designandsocialmedia";
 import TeamCard from "./TeamCard";
 
 const Team = () => {
+  const { id } = useParams();
+
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
     Array.from(imgFluids).forEach((img) => {
@@ -34,7 +37,13 @@ const Team = () => {
         img.classList.add("out");
       });
     });
-  }, []);
+
+    if (id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, [id]);
 
   const settings = {
     dots: true,
@@ -157,7 +166,7 @@ const Team = () => {
 
       <div className="container team-members">
         <Fade up>
-          <div className="row">
+          <div id="gdsc_lead" className="row">
             <div className="col-lg-12 col-sm-12 member-body">
               <Fade up>
                 <h3 className="font-weight-bold">GDSC Lead</h3>
@@ -184,23 +193,23 @@ const Team = () => {
           </div>
         </Fade>
 
-        <div className="row">
+        <div id="web_team" className="row">
           <Fade up>
-            <h3 className="mt-5 font-weight-bold">Web Team</h3>
+            <h3 className="my-5 font-weight-bold">Web Team</h3>
           </Fade>
           {teams.web}
         </div>
 
-        <div className="row">
+        <div id="cloud_team" className="row">
           <Fade up>
-            <h3 className="mt-5 font-weight-bold">Cloud Team</h3>
+            <h3 className="my-5 font-weight-bold">Cloud Team</h3>
           </Fade>
           {teams.cloud}
         </div>
 
-        <div className="row">
+        <div id="dsa_cp_team" className="row">
           <Fade up>
-            <h3 className="mt-5 font-weight-bold">DSA/CP Team</h3>
+            <h3 className="my-5 font-weight-bold">DSA/CP Team</h3>
           </Fade>
           <Fade up>
             <div className="col-lg-12 col-sm-12 teams">
@@ -227,30 +236,32 @@ const Team = () => {
           </Fade>
         </div>
 
-        <div className="row">
+        <div id="ml_team" className="row">
           <Fade up>
-            <h3 className="mt-5 font-weight-bold">Machine Learning Team</h3>
+            <h3 className="my-5 font-weight-bold">Machine Learning Team</h3>
           </Fade>
           {teams.ml}
         </div>
 
-        <div className="row">
+        <div id="android_team" className="row">
           <Fade up>
-            <h3 className="mt-5 font-weight-bold">Android Team</h3>
+            <h3 className="my-5 font-weight-bold">Android Team</h3>
           </Fade>
           {teams.android}
         </div>
 
-        <div className="row">
+        <div id="management_team" className="row">
           <Fade up>
-            <h3 className="mt-5 font-weight-bold">Management Team</h3>
+            <h3 className="my-5 font-weight-bold">Management Team</h3>
           </Fade>
           {teams.management}
         </div>
 
-        <div className="row">
+        <div id="design_and_socialmedia_team" className="row">
           <Fade up>
-            <h3 className="mt-5 font-weight-bold">Design and Social Media Team</h3>
+            <h3 className="my-5 font-weight-bold">
+              Design and Social Media Team
+            </h3>
           </Fade>
           {teams.desginandsocialmedia}
         </div>
