@@ -153,7 +153,12 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <h1 className="font-weight-bold">Meet Our Team</h1>
+            <h1 className="font-weight-bold">
+              Meet Our Team{" "}
+              <span role="img" aria-label="">
+                🌐
+              </span>
+            </h1>
             <p className="font-weight-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

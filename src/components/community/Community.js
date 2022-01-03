@@ -114,6 +114,9 @@ const Community = () => {
               <div className="card-body">
                 <h5 className="card-title text-center font-weight-bolder">
                   About Us
+                  <span role="img" aria-label="">
+                    🔎
+                  </span>
                 </h5>
                 <p className="card-text about-para font-weight-light">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -143,6 +146,9 @@ const Community = () => {
 
                   <h5 className="card-title text-center font-weight-bolder">
                     Who we are
+                    <span role="img" aria-label="">
+                      🤔
+                    </span>
                   </h5>
 
                   <img
@@ -169,6 +175,9 @@ const Community = () => {
         <Row className="justify-content-center">
           <h5 className="card-title text-center font-weight-bolder what_we_do">
             What we do
+            <span role="img" aria-label="">
+              📊
+            </span>
           </h5>
           <div className="container events m-0">{whatWeDoSlider}</div>
         </Row>
@@ -182,6 +191,9 @@ const Community = () => {
                 <div className="msg-block mt-4">
                   <div className="msg-title card-title text-center">
                     Our Mission
+                    <span role="img" aria-label="">
+                      🎯
+                    </span>
                   </div>
                   <div className="msg-text text-center">
                     Lorem ipsum dolor sit amet, officia excepteur ex fugiat
@@ -209,6 +221,9 @@ const Community = () => {
                 <div className="msg-block mt-4" style={{ marginLeft: "10px" }}>
                   <div className="msg-title card-title text-center">
                     Our Values
+                    <span role="img" aria-label="">
+                      🔰
+                    </span>
                   </div>
                   <div className="msg-text text-center">
                     Lorem ipsum dolor sit amet, officia excepteur ex fugiat

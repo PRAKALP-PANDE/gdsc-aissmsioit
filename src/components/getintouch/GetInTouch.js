@@ -133,7 +133,10 @@ const Contact = () => {
                         color: "rgba(0,0,0,1)",
                       }}
                     >
-                      Get in Touch
+                      Get in Touch{" "}
+                      <span role="img" aria-label="">
+                        🔗
+                      </span>
                     </h2>
                   </div>
                   <div className="row">

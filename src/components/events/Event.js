@@ -363,6 +363,9 @@ const Event = () => {
         >
           <div id="Events">
             <span>Events</span>
+            <span role="img" aria-label="">
+              📆
+            </span>
           </div>
           <div className="Rectangle_6_Div">
             <svg className="Rectangle_6">
@@ -476,7 +479,10 @@ const Event = () => {
         <Fade up>
           <div className="row workshops">
             <div id="Worshops">
-              <span>Workshops</span>
+              <span>Workshops </span>
+              <span role="img" aria-label="">
+                👨‍💻
+              </span>
             </div>
             <div className="Rectangle_6_Div">
               <svg className="Rectangle_6">

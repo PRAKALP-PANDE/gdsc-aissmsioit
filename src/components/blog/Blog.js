@@ -17,6 +17,9 @@ const Blog = () => {
       >
         <div id="Events">
           <span>Blogs</span>
+          <span role="img" aria-label="">
+            📝
+          </span>
         </div>
         <div className="Rectangle_6_Div">
           <svg className="Rectangle_6">

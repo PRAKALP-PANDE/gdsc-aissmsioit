@@ -100,10 +100,12 @@ body::-webkit-scrollbar-thumb {
 
 /* button */
 .beamember-btn {
-  background-image: linear-gradient(45deg,
-      #09c6f9 0%,
-      #007bff 51%,
-      #009ffd 100%);
+  background-image: linear-gradient(
+    45deg,
+    #09c6f9 0%,
+    #007bff 51%,
+    #009ffd 100%
+  );
   pointer-events: auto;
   cursor: pointer;
   border: none;
@@ -127,6 +129,9 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   text-decoration: none;
 }
+.beamember-btn a:hover {
+  color: #fff;
+}
 
 .beamember-btn:active {
   transform: scale(0.95);
@@ -147,10 +152,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .other-btns {
-  background-image: linear-gradient(45deg,
-      #09c6f9 0%,
-      #007bff 51%,
-      #009ffd 100%);
+  background-image: linear-gradient(
+    45deg,
+    #09c6f9 0%,
+    #007bff 51%,
+    #009ffd 100%
+  );
   pointer-events: auto;
   cursor: pointer;
   border: none;
@@ -160,7 +167,7 @@ body::-webkit-scrollbar-thumb {
   transition: 0.5s;
   box-shadow: 0px 0px 14px -7px #007bff;
   border: 0px;
-  font-weight: 600;
+  /* font-weight: 600; */
   background-size: 200% auto;
   color: white;
   border-radius: 8px;
@@ -175,6 +182,12 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   text-decoration: none;
   transform: translateY(-2px);
+}
+.other-btns-link {
+  font-weight: 500;
+}
+.other-btns-link:hover {
+  color: #fff;
 }
 
 .other-btns:active {
@@ -265,7 +278,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
 }
 
-.home-svg>img {
+.home-svg > img {
   width: 41em;
   height: 33em;
 }

@@ -145,7 +145,12 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
             <div className="all-divs mt-lg-5">
-              <h1 className="text-center home-headings">Upcoming Events</h1>
+              <h1 className="text-center home-headings">
+                Upcoming Events
+                <span role="img" aria-label="">
+                  ⌛{" "}
+                </span>
+              </h1>
             </div>
           </div>
         </Fade>
@@ -165,6 +170,9 @@ const Home = () => {
             <div className="all-divs mt-lg-5">
               <h1 className="text-center home-headings mt-5 mt-lg-0">
                 About Community
+                <span role="img" aria-label="">
+                  🤝
+                </span>
               </h1>
 
               <p className="text-center">
@@ -178,7 +186,11 @@ const Home = () => {
               </p>
               <div className="btn-section">
                 <button className="other-btns">
-                  <NavLink onClick={scrollToTop} to="/about">
+                  <NavLink
+                    className="other-btns-link"
+                    onClick={scrollToTop}
+                    to="/about"
+                  >
                     Check Out
                   </NavLink>
                 </button>
@@ -190,7 +202,13 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
-              <h1 className="text-center home-headings">Our Blog</h1>
+              <h1 className="text-center home-headings">
+                Our Blog
+                <span role="img" aria-label="">
+                  📚
+                </span>
+              </h1>
+
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
@@ -202,7 +220,11 @@ const Home = () => {
               </p>
               <div className="btn-section">
                 <button className="other-btns mb-3">
-                  <NavLink onClick={scrollToTop} to="/blogs">
+                  <NavLink
+                    onClick={scrollToTop}
+                    to="/blogs"
+                    className="other-btns-link"
+                  >
                     Check Out
                   </NavLink>
                 </button>
@@ -215,7 +237,12 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
-              <h1 className="text-center home-headings">Stay Updated</h1>
+              <h1 className="text-center home-headings">
+                Stay Updated{" "}
+                <span role="img" aria-label="">
+                  ⏰
+                </span>
+              </h1>
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
