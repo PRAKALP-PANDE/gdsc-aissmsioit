@@ -35,6 +35,22 @@ const Home = () => {
       });
     });
   }, []);
+  const numCounter = (tagId, maxCount, speed) => {
+    var initialNumber = 0;
+    setInterval(() => {
+      if (initialNumber < maxCount) {
+        initialNumber++;
+        document.getElementById(tagId).innerText = initialNumber;
+      }
+    }, speed);
+  };
+
+  useEffect(() => {
+    numCounter("members", 600, 1);
+    numCounter("organizers", 20, 100);
+    numCounter("workshops", 10, 200);
+    numCounter("projects", 2, 1000);
+  });
 
   const settings = {
     dots: true,
@@ -141,6 +157,32 @@ const Home = () => {
             </ul>
           </div>
         </div>
+        <section id="counts" className="counts">
+          <div className="container">
+            <div className="row counters">
+              <div className="col-lg-3 col-6 text-center">
+                <span id="members">0</span>
+
+                <p>Members</p>
+              </div>
+
+              <div className="col-lg-3 col-6 text-center">
+                <span id="organizers">0</span>
+                <p>Organizers</p>
+              </div>
+
+              <div className="col-lg-3 col-6 text-center">
+                <span id="workshops">0</span>
+                <p>Workshops</p>
+              </div>
+
+              <div className="col-lg-3 col-6 text-center">
+                <span id="projects">0</span>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">

@@ -136,6 +136,38 @@ body::-webkit-scrollbar-thumb {
 .beamember-btn:active {
   transform: scale(0.95);
 }
+/*COUNTERS #FIXME:*/
+
+.counts {
+  margin: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(88, 70, 249, 0.5) 0%,
+    rgba(123, 39, 216, 0.5) 100%
+  );
+  background-image: linear-gradient(
+    45deg,
+    #09c6f9 0%,
+    #007bff 51%,
+    #009ffd 100%
+  );
+  padding: 40px 0 30px 0;
+}
+.counts .counters span {
+  font-size: 48px;
+  display: block;
+  font-weight: 600;
+  color: #000;
+  color: white;
+}
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: #000;
+  color: white;
+}
 
 .all-divs {
   line-height: 30px;
