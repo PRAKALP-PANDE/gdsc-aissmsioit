@@ -2,7 +2,7 @@
   "name": "gdsc-aissmsioit-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Ashish2831.github.io/gdsc-aissmsioit-web",
+  "homepage": "http://Ashish2831.github.io/gdsc-aissmsioit",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
