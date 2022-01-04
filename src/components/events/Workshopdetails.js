@@ -8,7 +8,7 @@ import "./Eventdetails.css";
 const Workshopdetails = () => {
   const { id } = useParams();
   const workshop = workshops[id - 1];
-  const points = workshop.about.split('. ');
+  const points = workshop.about.split(". ");
 
   return (
     <>
@@ -23,6 +23,9 @@ const Workshopdetails = () => {
       >
         <div id="Worshops">
           <span>Workshop Details</span>
+          <span role="img" aria-label="">
+            🖋️
+          </span>
         </div>
         <div className="Rectangle_6_Div">
           <svg className="Rectangle_6">
@@ -78,7 +81,10 @@ const Workshopdetails = () => {
                 <b>Speaker :</b> {workshop.speaker}
               </span>
               <div>
-                <b>Description :</b> {points.map(point => <li>{point}</li>)}
+                <b>Description :</b>{" "}
+                {points.map((point) => (
+                  <li>{point}</li>
+                ))}
               </div>
             </div>
           </div>
