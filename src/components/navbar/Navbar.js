@@ -31,7 +31,7 @@ const Navbar = () => {
     window.addEventListener(
       "scroll",
       () => {
-        if (document.body.scrollTop > 80) {
+        if (document.body.scrollTop > 60) {
           navbar.style.backgroundColor = "white";
         } else {
           navbar.style.backgroundColor = "transparent";
@@ -75,7 +75,16 @@ const Navbar = () => {
   const media = window.matchMedia("(max-width: 800px)");
   media.addEventListener("change", responsive);
 
-  const NavDisplay = () => {
+  const NavDisplay = (event) => {
+    const actives = document.getElementsByClassName("active");
+    Array.from(actives).forEach((active) => {
+      if (event.target === active) {
+        active.classList.add("active_color");
+      } else {
+        active.classList.remove("active_color");
+      }
+    });
+
     const mainNav = document.getElementById("main-ul");
     const hamburgerIcon = document.getElementById("hamburger-icon");
     hamburgerIcon.classList.add("toggle-down");
@@ -114,40 +123,60 @@ const Navbar = () => {
                 <ul id="main-ul" className="site-menu">
                   <li>
                     <NavLink onClick={scrollToTop} to="/">
-                      <span onClick={NavDisplay}>Home</span>
+                      <span
+                        onClick={(event) => NavDisplay(event)}
+                        className="active"
+                      >
+                        Home
+                      </span>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink onClick={scrollToTop} to="/events">
-                      <span onClick={NavDisplay} className="gred">
+                      <span
+                        onClick={(event) => NavDisplay(event)}
+                        className="gred active"
+                      >
                         Events
                       </span>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink onClick={scrollToTop} to="/blogs">
-                      <span onClick={NavDisplay} className="gyellow">
+                      <span
+                        onClick={(event) => NavDisplay(event)}
+                        className="gyellow active"
+                      >
                         Blogs
                       </span>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink onClick={scrollToTop} to="/team">
-                      <span onClick={NavDisplay} className="ggreen">
+                      <span
+                        onClick={(event) => NavDisplay(event)}
+                        className="ggreen active"
+                      >
                         Team
                       </span>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink onClick={scrollToTop} to="/about">
-                      <span onClick={NavDisplay} className="gblue">
+                      <span
+                        onClick={(event) => NavDisplay(event)}
+                        className="gblue active"
+                      >
                         About
                       </span>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink onClick={scrollToTop} to="/getintouch">
-                      <span onClick={NavDisplay} className="gred">
+                      <span
+                        onClick={(event) => NavDisplay(event)}
+                        className="gred active"
+                      >
                         Get In Touch
                       </span>
                     </NavLink>
@@ -158,7 +187,10 @@ const Navbar = () => {
                       target="_blank"
                       href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
                     >
-                      <span onClick={NavDisplay} className="gyellow beamember">
+                      <span
+                        onClick={(event) => NavDisplay(event)}
+                        className="gyellow active_home beamember"
+                      >
                         Be a Member
                       </span>
                     </a>

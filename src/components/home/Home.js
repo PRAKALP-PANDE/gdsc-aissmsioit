@@ -20,7 +20,7 @@ import events from "../events/events";
 
 import { scrollToTop } from "../footer/ScrollToTop";
 
-const Home = () => {
+const Home = (props) => {
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
     Array.from(imgFluids).forEach((img) => {
@@ -34,13 +34,18 @@ const Home = () => {
         img.classList.add("out");
       });
     });
-  }, []);
+
+    // const activeHome = document.getElementById(props.active);
+    // activeHome.style.color = "green";
+  }, [props]);
+
   const numCounter = (tagId, maxCount, speed) => {
     var initialNumber = 0;
     setInterval(() => {
       if (initialNumber < maxCount) {
         initialNumber++;
-        document.getElementById(tagId).innerText = initialNumber;
+        const tagid = document.getElementById(tagId);
+        if (tagid) tagid.innerText = initialNumber;
       }
     }, speed);
   };
@@ -111,7 +116,7 @@ const Home = () => {
   window.onload = () => responsive(media);
 
   return (
-    <div className="container home">
+    <div className="container-fluid home">
       <div className="contents">
         <div className="row">
           <div
@@ -139,8 +144,7 @@ const Home = () => {
               fugiat soluta, eius quo ad eveniet laborum! Quo reiciendis illo
               qui quidem. Quam iste similique provident? Laboriosam quibusdam
               tempora tempore. voluptate dolorem, enim ipsum vel debitis eos
-              quisquam minima quaerat quae soluta. Lorem ipsum dolor sit amet
-              consectetur
+              soluta.
             </p>
             <ul className="content">
               <li className="content-item">
@@ -157,6 +161,33 @@ const Home = () => {
             </ul>
           </div>
         </div>
+
+        <Fade up>
+          <div className="container d-flex align-items-center justify-content-center mt-5">
+            <div className="all-divs mt-lg-5">
+              <h1 className="text-center home-headings">
+                Upcoming Events
+                <span role="img" aria-label="">
+                  ⌛{" "}
+                </span>
+              </h1>
+            </div>
+          </div>
+        </Fade>
+
+        <Fade up>
+          <div className="container events mt-2 mt-lg-5">{eventSlider}</div>
+        </Fade>
+
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
+
         <section id="counts" className="counts">
           <div className="container">
             <div className="row counters">
@@ -185,30 +216,7 @@ const Home = () => {
         </section>
 
         <Fade up>
-          <div className="container d-flex align-items-center justify-content-center mt-5">
-            <div className="all-divs mt-lg-5">
-              <h1 className="text-center home-headings">
-                Upcoming Events
-                <span role="img" aria-label="">
-                  ⌛{" "}
-                </span>
-              </h1>
-            </div>
-          </div>
-        </Fade>
-
-        <Fade up>
-          <div className="container events mt-2 mt-lg-5">{eventSlider}</div>
-        </Fade>
-        <div className="dots">
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-        </div>
-        <Fade up>
-          <div className="container d-flex align-items-center justify-content-center mt-5">
+          <div className="container d-flex align-items-center justify-content-center mt-lg-5 mt-sm-4">
             <div className="all-divs mt-lg-5">
               <h1 className="text-center home-headings mt-5 mt-lg-0">
                 About Community

@@ -177,7 +177,7 @@ const Team = () => {
                 <h3 className="font-weight-bold">GDSC Lead</h3>
               </Fade>
               <img
-                src="https://lh3.google.com/u/0/d/1dRsDXmBucMBtrXUT0rRcWeauLEs6XabB=w3000-h5334-iv1"
+                src="https://i.ibb.co/QbYjh69/Prarthana-Chandak.jpg"
                 className="img-fluid lead-img"
                 alt="Lead_Image"
               />
@@ -191,7 +191,7 @@ const Team = () => {
                   <i className="fa fa-instagram ico-insta"></i>
                 </a>
                 <a href="#0">
-                  <i className="fa fa-facebook ico-face"></i>
+                  <i className="fa fa-github ico-github"></i>
                 </a>
               </div>
             </div>
@@ -219,7 +219,7 @@ const Team = () => {
           <Fade up>
             <div className="col-lg-12 col-sm-12 teams">
               <img
-                src="https://lh3.google.com/u/0/d/1ZFWEBTrKkwnlnM464znw_ShuaFby-sS5=w3000-h5334-iv1"
+                src="https://i.ibb.co/K5WwkbT/HARSHAL-RAUNDAL.jpg"
                 className="img-fluid team-img"
                 alt="Lead_Image"
               />
@@ -234,7 +234,7 @@ const Team = () => {
                   <i className="fa fa-instagram ico-insta"></i>
                 </a>
                 <a href="#0">
-                  <i className="fa fa-facebook ico-face"></i>
+                  <i className="fa fa-github ico-github"></i>
                 </a>
               </div>
             </div>

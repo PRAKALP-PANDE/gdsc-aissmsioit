@@ -21,7 +21,7 @@ const Workshopdetails = () => {
         data-aos-anchor-placement="top-center"
         className="row workshops"
       >
-        <div id="Worshops" className="m-4">
+        <div id="Worshops">
           <span>Workshop Details</span>
         </div>
         <div className="Rectangle_6_Div">

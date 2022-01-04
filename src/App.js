@@ -16,7 +16,7 @@ import Workshopdetails from "./components/events/Workshopdetails";
 import Blog from "./components/blog/Blog";
 import GetInTouch from "./components/getintouch/GetInTouch";
 import Error from "./components/error/Error";
-import Community from "./components/community/Community"
+import Community from "./components/community/Community";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -54,16 +54,52 @@ const App = () => {
         <HashRouter>
           <Navbar />
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/events" exact component={Event} />
-            <Route path="/events/:id/" exact component={Eventdetails} />
-            <Route path="/workshops/:id/" exact component={Workshopdetails} />
-            <Route path="/blogs" exact component={Blog} />
-            <Route path="/team" exact component={Team} />
-            <Route path="/team/:id" exact component={Team} />
-            <Route path="/about" exact component={Community} />
-            <Route path="/getintouch" exact component={GetInTouch} />
-            <Route path="/gdsc-aissmsioit-web" component={Home} />
+            <Route
+              path="/"
+              exact
+              component={() => <Home active="active_home" />}
+            />
+            <Route
+              path="/events"
+              exact
+              component={() => <Event active="active_events" />}
+            />
+            <Route
+              path="/events/:id/"
+              exact
+              component={() => <Eventdetails active="active_events" />}
+            />
+            <Route
+              path="/workshops/:id/"
+              exact
+              component={() => <Workshopdetails active="active_events" />}
+            />
+            <Route
+              path="/blogs"
+              exact
+              component={() => <Blog active="active_blogs" />}
+            />
+            <Route
+              path="/team"
+              exact
+              component={() => <Team active="active_team" />}
+            />
+            <Route
+              path="/team/:id"
+              exact
+              component={() => <Team active="active_team" />}
+            />
+            <Route
+              path="/about"
+              exact
+              component={() => <Community active="active_about" />}
+            />
+            <Route
+              path="/getintouch"
+              exact
+              component={() => <GetInTouch active="active_contact" />}
+            />
+            <Route path="/gdsc-aissmsioit" component={Home} />
             <Route path="*" exact component={Error} />
           </Switch>
           <Footer />

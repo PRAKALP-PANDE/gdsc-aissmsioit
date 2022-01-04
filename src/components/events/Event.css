@@ -113,15 +113,14 @@ body {
 }
 
 #Events {
-  white-space: nowrap;
   text-align: center;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 40px;
   color: rgba(0, 0, 0, 1);
   letter-spacing: 0.4px;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 #Events span:nth-child(1) {
@@ -132,20 +131,15 @@ body {
   font-weight: bolder;
 }
 
-/* .main {
-    margin-top: -16%;
-} */
-
 #Worshops {
-  white-space: nowrap;
   text-align: center;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   color: rgba(0, 0, 0, 1);
   letter-spacing: 0.4px;
-  margin-top: 10%;
+  margin-top: 3em !important;
 }
 
 .workshops_cards {
@@ -995,10 +989,6 @@ body {
 
   .Rectangle_24 {
     width: 100%;
-  }
-
-  .workshops {
-    margin-top: 20% !important;
   }
 
   .Path_39_ba {

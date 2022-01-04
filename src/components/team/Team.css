@@ -55,12 +55,12 @@
 
 .img-fluid.out {
     animation-name: out;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 .img-fluid.over {
     animation-name: in;
-    animation-duration: 1s;
+    animation-duration: 2s;
     transform: scale(1.1);
 }
 

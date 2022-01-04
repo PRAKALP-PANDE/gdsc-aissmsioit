@@ -24,11 +24,11 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="mainfooter" role="contentinfo">
+      <footer className="mainfooter container-fluid" role="contentinfo">
         <div className="footer-middle">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-3 col-sm-6 mt-lg-4">
                 <div className="footer-pad">
                   <h4 className="heading-1">GDSC AISSMS IOIT</h4>
                   <ul className="list-unstyled gdsc-logo-list">
@@ -44,7 +44,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3 col-sm-6 team">
+              <div className="col-md-3 col-sm-6 team mt-lg-4">
                 <div className="footer-pad">
                   <h4 className="heading-2">Team</h4>
                   <ul className="list-unstyled">
@@ -91,7 +91,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3 col-sm-6 quick-links">
+              <div className="col-md-3 col-sm-6 quick-links mt-lg-4">
                 <div className="footer-pad">
                   <h4 className="heading-3">Quick Links</h4>
                   <ul className="list-unstyled">
@@ -127,7 +127,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3 follow-us">
+              <div className="col-md-3 follow-us mt-lg-4">
                 <h4 className="heading-4">Connect</h4>
 
                 <ul className="social-network social-circle">
