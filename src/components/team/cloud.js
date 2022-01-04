@@ -1,14 +1,14 @@
 const Cloud = [
   {
     id: 1,
-    name: "Shrinivas Khond",
+    name: "Shriniwas Khond",
     position: "Cloud Lead",
     image: "https://i.ibb.co/2WF1Q6v/Shriniwas-Khond.jpg",
     alt: "Lead_Image",
     col: 6,
-    linkedin: "",
-    instagram: "",
-    github: "",
+    linkedin: "https://www.linkedin.com/in/shriniwas-khond-906329209/",
+    instagram: "https://www.instagram.com/shriniwas_khond/",
+    github: "https://github.com/ShriniwasKhond",
   },
   {
     id: 2,
