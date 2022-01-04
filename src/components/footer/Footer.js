@@ -53,9 +53,14 @@ const Footer = () => {
                         GDSC Lead
                       </NavLink>
                     </li>
-                    <li className="goorange">
+                    <li className="goblue">
                       <NavLink onClick={scrollToTop} to="/team/web_team">
                         Web Development
+                      </NavLink>
+                    </li>
+                    <li className="goorange">
+                      <NavLink onClick={scrollToTop} to="/team/cloud_team">
+                        Cloud
                       </NavLink>
                     </li>
                     <li className="gogreen">
@@ -63,26 +68,26 @@ const Footer = () => {
                         Machine Learning
                       </NavLink>
                     </li>
-                    <li className="goblue">
-                      <NavLink onClick={scrollToTop} to="/team/management_team">
-                        Management
-                      </NavLink>
-                    </li>
-                    <li className="gogreen">
-                      <NavLink onClick={scrollToTop} to="/team/android_team">
-                        Android Development
-                      </NavLink>
-                    </li>
                     <li className="gored">
                       <NavLink onClick={scrollToTop} to="/team/dsa_cp_team">
                         DS & Algo
                       </NavLink>
                     </li>
-                    <li className="gored">
+                    {/* <li className="goblue">
+                      <NavLink onClick={scrollToTop} to="/team/management_team">
+                        Management
+                      </NavLink>
+                    </li> */}
+                    <li className="gogreen">
+                      <NavLink onClick={scrollToTop} to="/team/android_team">
+                        Android Development
+                      </NavLink>
+                    </li>
+                    {/* <li className="goorange">
                       <NavLink onClick={scrollToTop} to="/team/design_and_socialmedia_team">
                         Design and Social Media
                       </NavLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

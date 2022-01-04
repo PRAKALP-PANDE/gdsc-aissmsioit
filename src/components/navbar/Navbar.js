@@ -31,7 +31,7 @@ const Navbar = () => {
     window.addEventListener(
       "scroll",
       () => {
-        if (document.body.scrollTop > 100) {
+        if (document.body.scrollTop > 80) {
           navbar.style.backgroundColor = "white";
         } else {
           navbar.style.backgroundColor = "transparent";

@@ -423,13 +423,13 @@ const Event = () => {
 
         <Fade up>
           <div className="container text-center submit_event_idea">
-            <a href="#pop-up" className="cta button">
+            <span className="cta button">
               <span>Submit Event Idea</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
-            </a>
+            </span>
           </div>
         </Fade>
 

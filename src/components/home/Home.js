@@ -228,7 +228,7 @@ const Home = () => {
                     Check Out
                   </NavLink>
                 </button>
-                <button className="other-btns">Submit Your Blog</button>
+                {/* <button className="other-btns">Submit Your Blog</button> */}
               </div>
             </div>
           </div>
