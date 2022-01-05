@@ -24,7 +24,7 @@ const Eventdetails = () => {
         <div id="Events">
           <span>Event Details</span>
           <span role="img" aria-label="">
-            🖊️
+            ✒️
           </span>
         </div>
         <div className="Rectangle_6_Div">
