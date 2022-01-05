@@ -28,8 +28,8 @@ const Footer = () => {
         <div className="footer-middle">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-3 col-sm-6 mt-lg-4">
-                <div className="footer-pad">
+              <div className="col-md-3 col-sm-6">
+                <div className="footer-pad mt-3">
                   <h4 className="heading-1">GDSC AISSMS IOIT</h4>
                   <ul className="list-unstyled gdsc-logo-list">
                     <NavLink onClick={scrollToTop} to="/">
@@ -73,21 +73,11 @@ const Footer = () => {
                         DS & Algo
                       </NavLink>
                     </li>
-                    {/* <li className="goblue">
-                      <NavLink onClick={scrollToTop} to="/team/management_team">
-                        Management
-                      </NavLink>
-                    </li> */}
                     <li className="gogreen">
                       <NavLink onClick={scrollToTop} to="/team/android_team">
                         Android Development
                       </NavLink>
                     </li>
-                    {/* <li className="goorange">
-                      <NavLink onClick={scrollToTop} to="/team/design_and_socialmedia_team">
-                        Design and Social Media
-                      </NavLink>
-                    </li> */}
                   </ul>
                 </div>
               </div>

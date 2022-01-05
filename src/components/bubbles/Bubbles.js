@@ -14,14 +14,6 @@ const Bubbles = () => {
         <img className="bubble blue" src={Gdsc_Blue} alt="Gdsc_Blue" />
         <img className="bubble green" src={Gdsc_Green} alt="Gdsc_Green" />
         <img className="bubble yellow" src={Gdsc_Yellow} alt="Gdsc_Yellow" />
-        <img className="bubble red" src={Gdsc_Red} alt="Gdsc_Red" />
-        <img className="bubble blue" src={Gdsc_Blue} alt="Gdsc_Blue" />
-        <img className="bubble green" src={Gdsc_Green} alt="Gdsc_Green" />
-        <img className="bubble yellow" src={Gdsc_Yellow} alt="Gdsc_Yellow" />
-        {/* <img className="bubble red" src={Gdsc_Red} alt="Gdsc_Red" />
-        <img className="bubble blue" src={Gdsc_Blue} alt="Gdsc_Blue" />
-        <img className="bubble red" src={Gdsc_Yellow} alt="Gdsc_Yellow" />
-        <img className="bubble blue" src={Gdsc_Blue} alt="Gdsc_Blue" /> */}
       </section>
     </div>
   );

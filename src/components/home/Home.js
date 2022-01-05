@@ -20,7 +20,7 @@ import events from "../events/events";
 
 import { scrollToTop } from "../footer/ScrollToTop";
 
-const Home = (props) => {
+const Home = () => {
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
     Array.from(imgFluids).forEach((img) => {
@@ -35,9 +35,11 @@ const Home = (props) => {
       });
     });
 
-    // const activeHome = document.getElementById(props.active);
-    // activeHome.style.color = "green";
-  }, [props]);
+    numCounter("members", 600, 1);
+    numCounter("organizers", 20, 100);
+    numCounter("workshops", 10, 200);
+    numCounter("projects", 2, 1000);
+  }, []);
 
   const numCounter = (tagId, maxCount, speed) => {
     var initialNumber = 0;
@@ -49,13 +51,6 @@ const Home = (props) => {
       }
     }, speed);
   };
-
-  useEffect(() => {
-    numCounter("members", 600, 1);
-    numCounter("organizers", 20, 100);
-    numCounter("workshops", 10, 200);
-    numCounter("projects", 2, 1000);
-  });
 
   const settings = {
     dots: true,
@@ -128,7 +123,7 @@ const Home = (props) => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img className="img-fluid" src={Home_Svg} alt="Home_Svg" />
+            <img className="cursor-pointer" src={Home_Svg} alt="Home_Svg" />
           </div>
           <div
             className="column"
@@ -168,7 +163,7 @@ const Home = (props) => {
               <h1 className="text-center home-headings">
                 Upcoming Events
                 <span role="img" aria-label="">
-                  ⌛{" "}
+                  ⌛
                 </span>
               </h1>
             </div>
@@ -217,8 +212,56 @@ const Home = (props) => {
 
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-lg-5 mt-sm-4">
-            <div className="all-divs mt-lg-5">
-              <h1 className="text-center home-headings mt-5 mt-lg-0">
+            <div className="all-divs text-center mt-lg-5">
+              <h1 className="text-center about-home-headings home-headings mt-lg-0">
+                Meet our GDSC Lead
+                <span role="img" aria-label=""></span>
+              </h1>
+
+              <Fade up>
+                <div id="gdsc_lead" className="row">
+                  <div className="col-lg-12 col-sm-12 member-body">
+                    <img
+                      src="https://i.ibb.co/QbYjh69/Prarthana-Chandak.jpg"
+                      className="img-fluid lead-img"
+                      alt="Lead_Image"
+                    />
+                    <h5>Prarthana Chandak</h5>
+                    <span></span>
+                    <div className="social-ico m-0">
+                      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/prarthana-chandak-2a84b81b7">
+                        <i className="fa fa-linkedin ico-link"></i>
+                      </a>
+                      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/prarthanachandak">
+                        <i className="fa fa-instagram ico-insta"></i>
+                      </a>
+                      <a target="_blank" rel="noreferrer" href="https://github.com/prarthanachandak">
+                        <i className="fa fa-github ico-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+
+              <div className="btn-section">
+                <button className="other-btns">
+                  <NavLink
+                    className="other-btns-link"
+                    onClick={scrollToTop}
+                    to="/team"
+                  >
+                    Meet our Team
+                  </NavLink>
+                </button>
+              </div>
+            </div>
+          </div>
+        </Fade>
+
+        <Fade up>
+          <div className="container d-flex align-items-center justify-content-center">
+            <div className="all-divs">
+              <h1 className="text-center about-home-headings home-headings mt-lg-0">
                 About Community
                 <span role="img" aria-label="">
                   🤝
@@ -288,7 +331,7 @@ const Home = (props) => {
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
               <h1 className="text-center home-headings">
-                Stay Updated{" "}
+                Stay Updated
                 <span role="img" aria-label="">
                   ⏰
                 </span>

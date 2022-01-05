@@ -17,9 +17,9 @@ const DesignAndSocialMedia = [
     image: "https://i.ibb.co/PNrtZN4/Pornima-Lokhande.jpg",
     alt: "Lead_Image",
     col: 6,
-    linkedin: "",
-    instagram: "",
-    github: "",
+    linkedin: "www.linkedin.com/in/pornima-lokhande-31b480200",
+    instagram: "https://www.instagram.com/ponu234",
+    github: "https://github.com/PornimaLokhande",
   }
 ];
 

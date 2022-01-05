@@ -112,7 +112,7 @@ const Contact = () => {
               <Col sm={12} lg={5} md={5} xl={5}>
                 <div className="contact-illustration">
                   <Fade left>
-                    <img src={Animation} alt="Animation_Image" />
+                    <img className="img-fluid" src={Animation} alt="Animation_Image" />
                   </Fade>
                 </div>
               </Col>

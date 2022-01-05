@@ -311,6 +311,41 @@ const Event = () => {
     );
   };
 
+  const submitEventIdea = (id) => {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const [eventIdea, setEventIdea] = useState("");
+
+  const InputEvent = (event) => {
+    setEventIdea(event.target.value);
+  };
+
+  const submitEventIdeaForm = async (event) => {
+    event.preventDefault();
+    const submitEventIdeaError = document.getElementById("submitEventIdeaError");
+    if (eventIdea.length === 0) {
+      submitEventIdeaError.classList.remove("d-none");
+    } else {
+      // const response = await fetch(
+      //   "https://gdsc-web-default-rtdb.firebaseio.com/event_ideas.json",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       idea: eventIdea,
+      //     }),
+      //   }
+      // );
+
+      submitEventIdeaError.classList.add("d-none");
+    }
+  };
+
   return (
     <>
       {/* <a
@@ -423,7 +458,10 @@ const Event = () => {
 
         <Fade up>
           <div className="container text-center submit_event_idea">
-            <span className="cta button">
+            <span
+              onClick={() => submitEventIdea("pop-up")}
+              className="cta button"
+            >
               <span>Submit Event Idea</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
@@ -436,7 +474,7 @@ const Event = () => {
         <div id="pop-up" className="pop-up">
           <div className="content">
             <div className="container">
-              <div className="dots">
+              <div className="dots dots-div">
                 <div className="dot"></div>
                 <div className="dot"></div>
                 <div className="dot"></div>
@@ -454,18 +492,21 @@ const Event = () => {
 
               <div className="subscribe">
                 <h1>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.{" "}
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   <span>Deleniti &amp; quibusdam!</span>.
                 </h1>
 
-                <form className="form">
+                <h5 id="submitEventIdeaError" className="text-danger d-none">Please Enter Valid Data!</h5>
+                <form className="form" onSubmit={submitEventIdeaForm}>
                   <input
                     type="email"
                     className="form__field"
                     placeholder="Your Idea"
+                    value={eventIdea}
+                    onChange={InputEvent}
                   />
                   <button
-                    type="button"
+                    type="submit"
                     className="btn- btn--primary btn--inside"
                   >
                     Submit

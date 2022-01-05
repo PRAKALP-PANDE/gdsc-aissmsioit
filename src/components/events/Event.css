@@ -1056,6 +1056,10 @@ body {
   #Events {
     margin-top: 2em;
   }
+
+  .dots-div {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 400px) {

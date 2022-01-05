@@ -37,7 +37,7 @@ const Team = () => {
         img.classList.add("out");
       });
     });
-
+    
     if (id) {
       document.getElementById(id).scrollIntoView({
         behavior: "smooth",
@@ -142,7 +142,7 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img className="img-fluid" src={Team_Img} alt="Team_Image" />
+            <img className="cursor-pointer" src={Team_Img} alt="Team_Image" />
           </div>
           <div
             className="col-lg 6 col-sm-12 team-body"
@@ -154,7 +154,7 @@ const Team = () => {
             data-aos-anchor-placement="top-center"
           >
             <h1 className="font-weight-bold">
-              Meet Our Team{" "}
+              Meet Our Team
               <span role="img" aria-label="">
                 🌐
               </span>
@@ -184,13 +184,13 @@ const Team = () => {
               <h5>Prarthana Chandak</h5>
               <span></span>
               <div className="social-ico">
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/prarthana-chandak-2a84b81b7">
                   <i className="fa fa-linkedin ico-link"></i>
                 </a>
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/prarthanachandak">
                   <i className="fa fa-instagram ico-insta"></i>
                 </a>
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://github.com/prarthanachandak">
                   <i className="fa fa-github ico-github"></i>
                 </a>
               </div>
@@ -227,13 +227,13 @@ const Team = () => {
               <h5>DSA Lead</h5>
               <span></span>
               <div className="social-ico-team col-lg-12">
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harshal-raundal-8a25861a8">
                   <i className="fa fa-linkedin ico-link"></i>
                 </a>
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/_.harshal__/">
                   <i className="fa fa-instagram ico-insta"></i>
                 </a>
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://github.com/HarshalRaundal">
                   <i className="fa fa-github ico-github"></i>
                 </a>
               </div>

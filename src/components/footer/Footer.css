@@ -15,7 +15,7 @@
 
 /* #FIXME: */
 footer {
-  background: #ffffff;
+  background: #f8f7f7;
   color: white;
   margin-top: 100px;
 }
@@ -244,7 +244,7 @@ ul.social-network li {
 }
 
 .Gdsc-Logo {
-  width: 76%;
+  width: 56%;
 }
 
 .list-unstyled a {
@@ -275,11 +275,7 @@ ul.social-network li {
     margin-top: 10px;
   }
 
-  .gdsc-logo-list {
-    text-align: center;
-  }
-
   .Gdsc-Logo {
-    width: 50%;
+    width: 40%;
   }
 }
