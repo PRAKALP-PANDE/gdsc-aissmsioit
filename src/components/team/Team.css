@@ -175,8 +175,8 @@
 
     .vector-img img {
         margin-top: 0;
-        height: auto;
-        width: auto;
+        height: 100%;
+        width: 100%;
         padding: 0%;
     }
 

@@ -142,7 +142,7 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img className="cursor-pointer" src={Team_Img} alt="Team_Image" />
+            <img className="cursor-pointer Team_Image" src={Team_Img} alt="Team_Image" />
           </div>
           <div
             className="col-lg 6 col-sm-12 team-body"
