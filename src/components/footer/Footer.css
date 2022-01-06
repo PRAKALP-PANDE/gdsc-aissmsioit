@@ -109,7 +109,7 @@ ul.social-network {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #f8f7f7;
 }
 
 ul.social-network li {
@@ -130,6 +130,7 @@ ul.social-network li {
   font-size: 30px;
   display: block;
   border-radius: 30px;
+  background-color: #f8f7f7;
 }
 
 .social-circle li i {
@@ -167,12 +168,14 @@ ul.social-network li {
 }
 
 .social-network a.icoInstagram:hover {
-  background: linear-gradient(59deg,
-      #fbad50,
-      #fccc63,
-      #e95950,
-      #bc2a8d,
-      #8a3ab9);
+  background: linear-gradient(
+    59deg,
+    #fbad50,
+    #fccc63,
+    #e95950,
+    #bc2a8d,
+    #8a3ab9
+  );
 }
 
 .social-network a.icoYoutube:hover {
@@ -259,7 +262,6 @@ ul.social-network li {
 }
 
 @media (max-width: 800px) {
-
   .team,
   .quick-links {
     width: 50%;
