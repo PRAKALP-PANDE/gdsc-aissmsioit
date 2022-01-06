@@ -13,7 +13,7 @@ const Blog = () => {
         data-aos-delay="100"
         data-aos-anchor=".example-selector"
         data-aos-anchor-placement="top-center"
-        className="row mt-1"
+        className="row mt-1 pl-lg-5 ml-lg-2"
       >
         <div id="Events">
           <span>Blogs</span>

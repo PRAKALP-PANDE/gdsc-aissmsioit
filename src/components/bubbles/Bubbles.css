@@ -55,14 +55,14 @@
 .bubble:nth-child(1) {
     width: 40px;
     height: 40px;
-    left: 10%;
+    left: 20%;
     animation-duration: 12s;
 }
 
 .bubble:nth-child(2) {
-    width: 20px;
-    height: 20px;
-    left: 20%;
+    width: 60px;
+    height: 60px;
+    left: 40%;
     animation-duration: 8s;
     animation-delay: 2s;
 }
@@ -70,15 +70,15 @@
 .bubble:nth-child(3) {
     width: 50px;
     height: 50px;
-    left: 35%;
+    left: 60%;
     animation-duration: 10s;
     animation-delay: 4s;
 }
 
 .bubble:nth-child(4) {
-    width: 80px;
-    height: 80px;
-    left: 50%;
+    width: 30px;
+    height: 30px;
+    left: 80%;
     animation-duration: 18s;
     animation-delay: 0s;
 }
@@ -86,7 +86,7 @@
 .bubble:nth-child(5) {
     width: 35px;
     height: 35px;
-    left: 55%;
+    left: 30%;
     animation-duration: 10s;
     animation-delay: 2s;
 }
@@ -94,41 +94,9 @@
 .bubble:nth-child(6) {
     width: 45px;
     height: 45px;
-    left: 65%;
+    left: 90%;
     animation-duration: 12s;
     animation-delay: 3s;
-}
-
-.bubble:nth-child(7) {
-    width: 90px;
-    height: 90px;
-    left: 70%;
-    animation-duration: 18s;
-    animation-delay: 4s;
-}
-
-.bubble:nth-child(8) {
-    width: 25px;
-    height: 25px;
-    left: 80%;
-    animation-duration: 10s;
-    animation-delay: 4s;
-}
-
-.bubble:nth-child(9) {
-    width: 15px;
-    height: 15px;
-    left: 70%;
-    animation-duration: 8s;
-    animation-delay: 2s;
-}
-
-.bubble:nth-child(10) {
-    width: 90px;
-    height: 90px;
-    left: 25%;
-    animation-duration: 15s;
-    animation-delay: 4s;
 }
 
 @keyframes rise {

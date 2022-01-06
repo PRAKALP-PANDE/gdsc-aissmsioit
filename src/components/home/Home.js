@@ -81,10 +81,13 @@ const Home = () => {
   events.forEach((event) => {
     if (event.id < 4) {
       const event_date = new Date(event.date);
-      if (event_date.getTime() - 157237218 < curr_date.getTime())
+      if (event_date.getTime() > curr_date.getTime() + 157237218)
         upcoming_events.push(event);
     }
   });
+
+  const noUpcomingEvents =
+    "There are no upcoming events at the moment. Please check again soon.";
 
   const upcoming_events_map = upcoming_events.map((event) => (
     <Card key={event.id} event={event} />
@@ -92,7 +95,19 @@ const Home = () => {
 
   const [eventSlider, setEventSlider] = useState(
     window.screen.width < 800 ? (
-      <Slider {...settings}>{upcoming_events_map}</Slider>
+      <Slider {...settings}>
+        {upcoming_events_map.length === 0 ? (
+          <Fade up>
+            <h5 className="text-center mb-5">{noUpcomingEvents}</h5>
+          </Fade>
+        ) : (
+          upcoming_events_map
+        )}
+      </Slider>
+    ) : upcoming_events_map.length === 0 ? (
+      <Fade up>
+        <h5 className="text-center mb-5">{noUpcomingEvents}</h5>
+      </Fade>
     ) : (
       upcoming_events_map
     )
@@ -183,40 +198,44 @@ const Home = () => {
           <div className="dot"></div>
         </div>
 
-        <section id="counts" className="counts">
-          <div className="container">
-            <div className="row counters">
-              <div className="col-lg-3 col-6 text-center">
-                <span id="members">0</span>
+        <Fade up>
+          <section id="counts" className="counts">
+            <div className="container">
+              <div className="row counters">
+                <div className="col-lg-3 col-6 text-center">
+                  <span id="members">0</span>
 
-                <p>Members</p>
-              </div>
+                  <p>Members</p>
+                </div>
 
-              <div className="col-lg-3 col-6 text-center">
-                <span id="organizers">0</span>
-                <p>Organizers</p>
-              </div>
+                <div className="col-lg-3 col-6 text-center">
+                  <span id="organizers">0</span>
+                  <p>Organizers</p>
+                </div>
 
-              <div className="col-lg-3 col-6 text-center">
-                <span id="workshops">0</span>
-                <p>Workshops</p>
-              </div>
+                <div className="col-lg-3 col-6 text-center">
+                  <span id="workshops">0</span>
+                  <p>Workshops</p>
+                </div>
 
-              <div className="col-lg-3 col-6 text-center">
-                <span id="projects">0</span>
-                <p>Projects</p>
+                <div className="col-lg-3 col-6 text-center">
+                  <span id="projects">0</span>
+                  <p>Projects</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Fade>
 
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-lg-5 mt-sm-4">
             <div className="all-divs text-center mt-lg-5">
-              <h1 className="text-center about-home-headings home-headings mt-lg-0">
-                Meet our GDSC Lead
-                <span role="img" aria-label=""></span>
-              </h1>
+              <Fade up>
+                <h1 className="text-center about-home-headings home-headings mt-lg-0">
+                  Meet Our GDSC Lead
+                  <span role="img" aria-label=""></span>
+                </h1>
+              </Fade>
 
               <Fade up>
                 <div id="gdsc_lead" className="row">
@@ -229,13 +248,25 @@ const Home = () => {
                     <h5>Prarthana Chandak</h5>
                     <span></span>
                     <div className="social-ico m-0">
-                      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/prarthana-chandak-2a84b81b7">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://www.linkedin.com/in/prarthana-chandak-2a84b81b7"
+                      >
                         <i className="fa fa-linkedin ico-link"></i>
                       </a>
-                      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/prarthanachandak">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://www.instagram.com/prarthanachandak"
+                      >
                         <i className="fa fa-instagram ico-insta"></i>
                       </a>
-                      <a target="_blank" rel="noreferrer" href="https://github.com/prarthanachandak">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://github.com/prarthanachandak"
+                      >
                         <i className="fa fa-github ico-github"></i>
                       </a>
                     </div>
@@ -261,12 +292,14 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
-              <h1 className="text-center about-home-headings home-headings mt-lg-0">
-                About Community
-                <span role="img" aria-label="">
-                  🤝
-                </span>
-              </h1>
+              <Fade up>
+                <h1 className="text-center about-home-headings home-headings mt-lg-0">
+                  About Community
+                  <span role="img" aria-label="">
+                    🤝
+                  </span>
+                </h1>
+              </Fade>
 
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -295,12 +328,14 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
-              <h1 className="text-center home-headings">
-                Our Blog
-                <span role="img" aria-label="">
-                  📚
-                </span>
-              </h1>
+              <Fade up>
+                <h1 className="text-center home-headings">
+                  Blogs
+                  <span role="img" aria-label="">
+                    📚
+                  </span>
+                </h1>
+              </Fade>
 
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.

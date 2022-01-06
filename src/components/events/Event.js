@@ -394,7 +394,7 @@ const Event = () => {
           data-aos-delay="100"
           data-aos-anchor=".example-selector"
           data-aos-anchor-placement="top-center"
-          className="row"
+          className="row pl-lg-5"
         >
           <div id="Events">
             <span>Events</span>
@@ -518,9 +518,9 @@ const Event = () => {
         </div>
 
         <Fade up>
-          <div className="row workshops">
+          <div className="row workshops pl-lg-5">
             <div id="Worshops">
-              <span>Workshops </span>
+              <span>Workshops</span>
               <span role="img" aria-label="">
                 👨‍💻
               </span>
