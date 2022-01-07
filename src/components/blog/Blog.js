@@ -119,7 +119,7 @@ const Blog = () => {
             </div>
             <div className="card_main">
               <div className="card__body">
-                <span className="tag tag-red">Hands-On</span>
+                <span className="tag tag-green">Hands-On</span>
                 <h4>Heroku Hands-On Workshop</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -162,7 +162,7 @@ const Blog = () => {
             </div>
             <div className="card_main">
               <div className="card__body">
-                <span className="tag tag-brown">Hands-On</span>
+                <span className="tag tag-green">Hands-On</span>
                 <h4>Git and Github Workshop</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi

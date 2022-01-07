@@ -233,7 +233,9 @@ const Home = () => {
               <Fade up>
                 <h1 className="text-center about-home-headings home-headings mt-lg-0">
                   Meet Our GDSC Lead
-                  <span role="img" aria-label=""></span>
+                  <span role="img" aria-label="">
+                    🙋🏻‍♀️
+                  </span>
                 </h1>
               </Fade>
 
