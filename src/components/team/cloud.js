@@ -14,7 +14,7 @@ const Cloud = [
     id: 2,
     name: "Isha Nadkar",
     position: "Cloud Co-Lead",
-    image: "https://i.ibb.co/SJMRmq0/Isha-Nadkar.png",
+    image: "https://i.ibb.co/6RYcCKh/Isha-Nadkar.jpg",
     alt: "Co_Lead_Image",
     col: 6,
     linkedin: "www.linkedin.com/in/isha-nadkar",

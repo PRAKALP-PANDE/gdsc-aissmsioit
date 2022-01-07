@@ -228,6 +228,37 @@ const Home = () => {
         </Fade>
 
         <Fade up>
+          <div className="container gdsc-revolve">
+            <h1 className="text-center about-home-headings home-headings mt-lg-0">
+              GDSC Revolves Around
+              <span role="img" aria-label=""></span>
+            </h1>
+            <div className="row stacks">
+              <div className="col-lg-4 col-sm-12 stack-name">
+                <a href="#" class="button">Machine Learning</a>
+              </div>
+              <div className="col-lg-4 col-sm-12 stack-name">
+                <a href="#" class="button">Web Development</a>
+              </div>
+              <div className="col-lg-4 col-sm-12 stack-name">
+                <a href="#" class="button">Android Development</a>
+              </div>
+            </div>
+            <div className="row stacks">
+              <div className="col-lg-4 col-sm-12 stack-name">
+                <a href="#" class="button">Artificial Intelligence</a>
+              </div>
+              <div className="col-lg-4 col-sm-12 stack-name">
+                <a href="#" class="button">Cloud</a> 
+              </div>
+              <div className="col-lg-4 col-sm-12 stack-name">
+                <a href="#" class="button">Competitive Programming</a>
+              </div>
+            </div>
+          </div>
+        </Fade>
+
+        <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-lg-5 mt-sm-4">
             <div className="all-divs text-center mt-lg-5">
               <Fade up>
@@ -395,5 +426,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;

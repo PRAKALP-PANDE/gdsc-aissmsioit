@@ -3,7 +3,7 @@ const DesignAndSocialMedia = [
     id: 1,
     name: "Sanyukta Kamble",
     position: "Social Media Lead",
-    image: "https://i.ibb.co/68wr5RX/Sanyukta-kamble.jpg",
+    image: "https://i.ibb.co/f49wvHR/Sanyukta-kamble.jpg",
     alt: "Lead_Image",
     col: 6,
     linkedin: "https://www.linkedin.com/in/sanyukta-kamble-a158711a6",
