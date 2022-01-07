@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
 .home {
   display: flex;
@@ -46,7 +47,7 @@ body::-webkit-scrollbar-thumb {
   background-image: linear-gradient(-225deg,
       #4285f4 0%,
       #0f9d58 29%,
-      #db4437 67%,
+      #ee8379 67%,
       #fff800 100%);
   background-size: auto auto;
   background-clip: border-box;
@@ -65,6 +66,113 @@ body::-webkit-scrollbar-thumb {
   to {
     background-position: 200% center;
   }
+}
+
+.stacks {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.-button {
+  color: #101832;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 0.075em;
+  margin: auto 2em;
+  position: relative;
+  align-self: center;
+  text-transform: uppercase;
+  border: 4px #4285f4 solid;
+  border-image: linear-gradient(45deg, #4285f4 0%, #ee8379 100%);
+  border-image-slice: 1 1 0 0;
+  z-index: 1;
+  box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
+  transform-origin: left bottom;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.-button:before,
+.-button:after {
+  border: 4px #4285f4 solid;
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.-button:before {
+  border-image: linear-gradient(45deg, #4285f4 0%, #4285f4 100%);
+  border-image-slice: 1 1 0 1;
+  height: 116%;
+  left: -0.8em;
+  top: 0.08em;
+  width: 0.8em;
+  transform: skewY(-45deg);
+}
+
+.-button:after {
+  border-image: linear-gradient(45deg, #4285f4 0%, #ee8379 100%);
+  border-image-slice: 1 1 1 0;
+  bottom: -0.66em;
+  right: 0.01em;
+  width: 105%;
+  height: 0.8em;
+  transform: skewX(-45deg);
+}
+
+.-button:hover {
+  background-color: white;
+  background-size: 90%;
+  transform: translate(0.5em, -0.5em);
+  box-shadow: -1em 1em 0.15em rgba(16, 24, 50, 0.1);
+}
+
+.-button:hover:before {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYmNkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwOTdkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(45deg, #4285f4 0%, #4285f4 100%);
+  background-image: -webkit-linear-gradient(45deg, #4285f4 0%, #4285f4 100%);
+  background-image: linear-gradient(45deg, #4285f4 0%, #4285f4 100%);
+  height: calc(114% - .13em);
+  border-image-slice: 1;
+}
+
+.-button:hover:after {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYmNkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmMDBmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(45deg, #4285f4 0%, #ee8379 100%);
+  background-image: -webkit-linear-gradient(45deg, #4285f4 0%, #ee8379 100%);
+  background-image: linear-gradient(45deg, #4285f4 0%, #ee8379 100%);
+  width: calc(103% - .13em);
+  border-image-slice: 1;
+}
+
+.ml-domain {
+  padding: .8em 2.5em;
+}
+
+.web-domain {
+  padding: .8em 2.6em;
+}
+
+.ai-domain {
+  padding: .8em 1em;
+}
+
+.cloud-domain {
+  padding: .8em 2.5em;
+}
+
+.dsacp-domain {
+  padding: .8em 5.5em;
+}
+
+.android-domain {
+  padding: .8em 1.3em;
 }
 
 /* Clear floats after the columns */
@@ -264,7 +372,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .upcoming-event a:focus {
-  color: #db4437;
+  color: #ee8379;
 }
 
 /** EVENTS **/
@@ -355,7 +463,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   left: 0;
   background-color: #007bff;
-  background: linear-gradient(30deg, #db4437, #f4b400, #0f9d58, #4285f4);
+  background: linear-gradient(30deg, #ee8379, #f4b400, #0f9d58, #4285f4);
 
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
@@ -586,16 +694,19 @@ body::-webkit-scrollbar-thumb {
 .gdsc-revolve {
   margin-top: 5rem;
 }
+
 .stacks {
   margin-top: 3rem;
 }
+
 .stack-name {
   text-align: center;
   padding: 1rem 0;
 }
-.stack-name a {
+
+.stack-name span {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 0.8em;
   font-weight: 700;
 }
 
