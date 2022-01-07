@@ -167,10 +167,10 @@ const Home = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <div class="container heading-text">
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <h3 class="animate-charcter">
+            <div className="container heading-text">
+              <div className="row">
+                <div className="col-md-12 text-center">
+                  <h3 className="animate-charcter">
                     Google Developer Student Clubs
                   </h3>
                 </div>
@@ -258,30 +258,36 @@ const Home = () => {
             <Fade up>
               <h1 className="text-center about-home-headings home-headings mt-lg-0">
                 GDSC Revolves Around
-                <span role="img" aria-label=""></span>
+                <span role="img" aria-label="">
+                  🔁
+                </span>
               </h1>
             </Fade>
 
             <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
               <div className="col-lg-4 col-sm-12 stack-name">
-                <span class="-button ml-domain">Machine Learning</span>
+                <span className="-button ml-domain">Machine Learning</span>
               </div>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <span class="-button web-domain">Web Development</span>
+                <span className="-button web-domain">Web Development</span>
               </div>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <span class="-button android-domain">Android Development</span>
+                <span className="-button android-domain">
+                  Android Development
+                </span>
               </div>
             </div>
             <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
               <div className="col-lg-4 col-sm-12 stack-name">
-                <span class="-button ai-domain">Artificial Intelligence</span>
+                <span className="-button ai-domain">
+                  Artificial Intelligence
+                </span>
               </div>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <span class="-button cloud-domain">Cloud Computing</span>
+                <span className="-button cloud-domain">Cloud Computing</span>
               </div>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <span class="-button dsacp-domain">DSA / CP</span>
+                <span className="-button dsacp-domain">DSA / CP</span>
               </div>
             </div>
           </div>
