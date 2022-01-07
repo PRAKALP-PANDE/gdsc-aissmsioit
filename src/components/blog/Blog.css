@@ -53,8 +53,10 @@
 }
 
 .tag-blue {
-  background: #56ccf2;
+  /* background: #56ccf2; */
   background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  background-color: #007bff;
+
   color: #fafafa;
 }
 
@@ -67,6 +69,11 @@
 .tag-red {
   background: #cb2d3e;
   background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+.tag-green {
+  background: #34a853;
+  background: linear-gradient(to bottom, #34a853, #81c784);
   color: #fafafa;
 }
 

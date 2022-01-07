@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import "./Community.css";
 
@@ -6,13 +6,6 @@ import { Row, Col } from "react-bootstrap";
 
 import Logo from "../../images/community/logo.jpg";
 import about_img from "../../images/community/about.png";
-import Card_Img from "../../images/community/r.jpg";
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import Card from "./Card";
 
 import Fade from "react-reveal/Fade";
 
@@ -31,59 +24,7 @@ const Community = () => {
       });
     });
   }, []);
-
-  const What_we_do = [
-    {
-      id: 1,
-      title: "Title",
-      imageSrc: Card_Img,
-    },
-    {
-      id: 2,
-      title: "Title",
-      imageSrc: Card_Img,
-    },
-    {
-      id: 3,
-      title: "Title",
-      imageSrc: Card_Img,
-    },
-  ];
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    // autoplay: true,
-    // autoplaySpeed: 4000,
-  };
-
-  const WhatWeDo = What_we_do.map((element) => (
-    <Card key={element.id} element={element} />
-  ));
-
-  const [whatWeDoSlider, setWhatWeDoSlider] = useState(
-    window.screen.width < 800 ? (
-      <Slider {...settings}>{WhatWeDo}</Slider>
-    ) : (
-      WhatWeDo
-    )
-  );
-
-  const responsive = (media) => {
-    if (media.matches) {
-      setWhatWeDoSlider(<Slider {...settings}>{WhatWeDo}</Slider>);
-    } else {
-      setWhatWeDoSlider(WhatWeDo);
-    }
-  };
-
-  const media = window.matchMedia("(max-width: 800px)");
-  media.addEventListener("change", responsive);
-  window.onload = () => responsive(media);
-
+  
   return (
     <>
       <Row className="justify-content-center">
@@ -145,9 +86,9 @@ const Community = () => {
                   />
 
                   <h5 className="card-title text-center font-weight-bolder">
-                    Who we are
+                    What we do
                     <span role="img" aria-label="">
-                      🤔
+                      📊
                     </span>
                   </h5>
 
@@ -171,7 +112,7 @@ const Community = () => {
         </Row>
       </Fade>
 
-      <Fade up>
+      {/* <Fade up>
         <Row className="justify-content-center">
           <h5 className="card-title text-center font-weight-bolder what_we_do">
             What we do
@@ -181,7 +122,7 @@ const Community = () => {
           </h5>
           <div className="container events m-0">{whatWeDoSlider}</div>
         </Row>
-      </Fade>
+      </Fade> */}
 
       <Fade up>
         <Row className="row2 justify-content-center our_mission">

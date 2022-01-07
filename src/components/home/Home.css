@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
   /* margin-top: 9em; */
   /* margin-left: 5em; */
   /* margin-right: 7em; */
-  padding: 10em 8em 8em 8em;
+  padding: 14em 8em 8em 8em;
   padding-bottom: 0;
   /* padding-right: 1em; */
 
@@ -383,7 +383,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .member-description {
-    padding: 0%;
+    padding: 5%;
   }
 
   .events {
