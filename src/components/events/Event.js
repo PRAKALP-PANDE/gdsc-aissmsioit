@@ -399,7 +399,7 @@ const Event = () => {
           <div id="Events">
             <span>Events</span>
             <span role="img" aria-label="">
-              📆
+              
             </span>
           </div>
           <div className="Rectangle_6_Div">
@@ -522,7 +522,7 @@ const Event = () => {
             <div id="Worshops">
               <span>Workshops</span>
               <span role="img" aria-label="">
-                👨‍💻
+                
               </span>
             </div>
             <div className="Rectangle_6_Div">

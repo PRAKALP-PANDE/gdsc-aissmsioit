@@ -1,3 +1,4 @@
+
 .home {
   display: flex;
   justify-content: center;
@@ -113,7 +114,7 @@ body::-webkit-scrollbar-thumb {
   left: 0;
 }
 
-/* button */
+/* stack-name h5 */
 .beamember-btn {
   background-image: linear-gradient(45deg,
       #09c6f9 0%,
@@ -577,5 +578,29 @@ body::-webkit-scrollbar-thumb {
   .dots .dot:nth-of-type(5) {
     bottom: -122em;
     right: -2.5rem;
+  }
+}
+
+
+/*** Community ***/
+.gdsc-revolve {
+  margin-top: 5rem;
+}
+.stacks {
+  margin-top: 3rem;
+}
+.stack-name {
+  text-align: center;
+  padding: 1rem 0;
+}
+.stack-name a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 769px) {
+  .stacks {
+    margin-top: 0;
   }
 }
