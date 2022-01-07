@@ -115,9 +115,27 @@ const Home = () => {
 
   const responsive = (media) => {
     if (media.matches) {
-      setEventSlider(<Slider {...settings}>{upcoming_events_map}</Slider>);
+      setEventSlider(
+        <Slider {...settings}>
+          {upcoming_events_map.length === 0 ? (
+            <Fade up>
+              <h5 className="text-center mb-5">{noUpcomingEvents}</h5>
+            </Fade>
+          ) : (
+            upcoming_events_map
+          )}
+        </Slider>
+      );
     } else {
-      setEventSlider(upcoming_events_map);
+      setEventSlider(
+        upcoming_events_map.length === 0 ? (
+          <Fade up>
+            <h5 className="text-center mb-5">{noUpcomingEvents}</h5>
+          </Fade>
+        ) : (
+          upcoming_events_map
+        )
+      );
     }
   };
 
@@ -150,11 +168,9 @@ const Home = () => {
             data-aos-anchor-placement="top-center"
           >
             <p className="member-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              fugiat soluta, eius quo ad eveniet laborum! Quo reiciendis illo
-              qui quidem. Quam iste similique provident? Laboriosam quibusdam
-              tempora tempore. voluptate dolorem, enim ipsum vel debitis eos
-              soluta.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              soluta, in explicabo aliquid totam et. Ipsam temporibus modi,
+              beatae aliquam iusto minus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur.
             </p>
             <ul className="content">
               <li className="content-item">
@@ -306,11 +322,7 @@ const Home = () => {
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
-                modi, beatae aliquam iusto minus iure, nemo, laboriosam sit vero
-                et id maxime. Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Exercitationem officiis, fugiat quisquam
-                consequuntur ex voluptatem dolorem mollitia blanditiis culpa
-                eum.
+                modi, beatae aliquam iusto minus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur.
               </p>
               <div className="btn-section">
                 <button className="other-btns">
@@ -342,11 +354,7 @@ const Home = () => {
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
-                modi, beatae aliquam iusto minus iure, nemo, laboriosam sit vero
-                et id maxime. Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Exercitationem officiis, fugiat quisquam
-                consequuntur ex voluptatem dolorem mollitia blanditiis culpa
-                eum.
+                modi, beatae aliquam iusto minus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur.
               </p>
               <div className="btn-section">
                 <button className="other-btns mb-3">
@@ -376,8 +384,7 @@ const Home = () => {
               <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
-                modi, beatae aliquam iusto minus iure, nemo, laboriosam sit vero
-                et id maxime.
+                modi, beatae aliquam iusto minus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur.
               </p>
               <div className="btn-section mb-0">
                 <a
