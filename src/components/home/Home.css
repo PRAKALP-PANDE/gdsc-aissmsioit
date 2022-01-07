@@ -28,27 +28,42 @@ body::-webkit-scrollbar-thumb {
 }
 
 .member-description {
-  /* margin-left: 3em; */
-  /* margin-top: 9em; */
-  /* margin-left: 5em; */
-  /* margin-right: 7em; */
-  padding: 14em 8em 8em 8em;
+  /* padding: 14em 8em 8em 8em; */
+  padding: 0em 1em;
   padding-bottom: 0;
-  /* padding-right: 1em; */
-
   overflow: hidden;
-  /* width: 700px; */
-
-  /* height: 212px; */
   line-height: 30px;
-  /* margin-top: -7.5px; */
   text-align: center;
-
   font-size: 1rem;
-  /* font-size: 2ch; */
-  font-size: clamp(14px, 1vw, 1.5rem);
-  /* color: rgba(61, 60, 60, 1); */
+  font-size: clamp(1.1em, 1vw, 1.5rem);
   letter-spacing: 0.4px;
+}
+
+.animate-charcter {
+  padding-top: 6em;
+  text-transform: capitalize;
+  background-image: linear-gradient(-225deg,
+      #4285f4 0%,
+      #0f9d58 29%,
+      #db4437 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 /* Clear floats after the columns */
@@ -382,7 +397,14 @@ body::-webkit-scrollbar-thumb {
   }
 
   .member-description {
-    padding: 5%;
+    padding: 5% 2%;
+    font-size: 0.95rem;
+    /* text-align: left; */
+  }
+
+  .heading-text {
+    padding: 0%;
+    margin: 0%;
   }
 
   .events {
@@ -392,6 +414,11 @@ body::-webkit-scrollbar-thumb {
 
   .events .card {
     height: 400px;
+  }
+
+  .animate-charcter {
+    padding-top: 0em;
+    font-size: 1.5em;
   }
 }
 
@@ -517,7 +544,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 4em;
   }
 
-  .about-home-headings {
+  .team-home-headings {
     margin-top: 2.5em;
   }
 }

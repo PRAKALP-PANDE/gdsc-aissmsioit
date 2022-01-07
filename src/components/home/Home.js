@@ -167,10 +167,19 @@ const Home = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
+            <div class="container heading-text">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h3 class="animate-charcter">
+                    Google Developer Student Clubs
+                  </h3>
+                </div>
+              </div>
+            </div>
+
             <p className="member-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-              soluta, in explicabo aliquid totam et. Ipsam temporibus modi,
-              beatae aliquam iusto minus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur.
+              Developer Student Clubs is a Google Developers program for
+              students to learn something new, engage themselves in hackathons, events, workshops and Study Jams to grow as a #coder 
             </p>
             <ul className="content">
               <li className="content-item">
@@ -247,7 +256,7 @@ const Home = () => {
           <div className="container d-flex align-items-center justify-content-center mt-lg-5 mt-sm-4">
             <div className="all-divs text-center mt-lg-5">
               <Fade up>
-                <h1 className="text-center about-home-headings home-headings mt-lg-0">
+                <h1 className="text-center team-home-headings home-headings mt-lg-0">
                   Meet Our GDSC Lead
                   <span role="img" aria-label="">
                     🙋🏻‍♀️
@@ -320,9 +329,9 @@ const Home = () => {
               </Fade>
 
               <p className="text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
-                modi, beatae aliquam iusto minus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur.
+                GDSC community thrives to spread awareness about technolgies and
+                engage students in multiple events so that they grow as a
+                developer and meet like minded people.
               </p>
               <div className="btn-section">
                 <button className="other-btns">
@@ -352,9 +361,8 @@ const Home = () => {
               </Fade>
 
               <p className="text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
-                modi, beatae aliquam iusto minus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur.
+                Learn about the latest technologies and happening in the IT
+                industry. Head to the page now to learn something new today.
               </p>
               <div className="btn-section">
                 <button className="other-btns mb-3">
@@ -382,9 +390,9 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus soluta, in explicabo aliquid totam et. Ipsam temporibus
-                modi, beatae aliquam iusto minus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur.
+                Don’t miss out on the latest happenings happening in GDSC AISSMS
+                IOIT, Pune. RSVP below to get updates about the latest workshops
+                and events to be conducted by us.
               </p>
               <div className="btn-section mb-0">
                 <a

@@ -37,7 +37,7 @@ const Team = () => {
         img.classList.add("out");
       });
     });
-    
+
     if (id) {
       document.getElementById(id).scrollIntoView({
         behavior: "smooth",
@@ -142,7 +142,11 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img className="cursor-pointer Team_Image" src={Team_Img} alt="Team_Image" />
+            <img
+              className="cursor-pointer Team_Image"
+              src={Team_Img}
+              alt="Team_Image"
+            />
           </div>
           <div
             className="col-lg 6 col-sm-12 team-body"
@@ -160,10 +164,10 @@ const Team = () => {
               </span>
             </h1>
             <p className="font-weight-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Have a look at the great minds of GDSC AISSMS IOIT. <br /> 
+              "None of us, including me, ever do great things. But we can all do small
+              things, with great love, and together we can do something
+              wonderful."
             </p>
           </div>
         </div>
@@ -184,13 +188,25 @@ const Team = () => {
               <h5>Prarthana Chandak</h5>
               <span></span>
               <div className="social-ico">
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/prarthana-chandak-2a84b81b7">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/prarthana-chandak-2a84b81b7"
+                >
                   <i className="fa fa-linkedin ico-link"></i>
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/prarthanachandak">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/prarthanachandak"
+                >
                   <i className="fa fa-instagram ico-insta"></i>
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://github.com/prarthanachandak">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/prarthanachandak"
+                >
                   <i className="fa fa-github ico-github"></i>
                 </a>
               </div>
@@ -227,13 +243,25 @@ const Team = () => {
               <h5>DSA Lead</h5>
               <span></span>
               <div className="social-ico-team col-lg-12">
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harshal-raundal-8a25861a8">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/harshal-raundal-8a25861a8"
+                >
                   <i className="fa fa-linkedin ico-link"></i>
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/_.harshal__/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/_.harshal__/"
+                >
                   <i className="fa fa-instagram ico-insta"></i>
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://github.com/HarshalRaundal">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/HarshalRaundal"
+                >
                   <i className="fa fa-github ico-github"></i>
                 </a>
               </div>

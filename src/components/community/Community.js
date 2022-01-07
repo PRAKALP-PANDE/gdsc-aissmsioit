@@ -24,7 +24,7 @@ const Community = () => {
       });
     });
   }, []);
-  
+
   return (
     <>
       <Row className="justify-content-center">
@@ -60,12 +60,13 @@ const Community = () => {
                   </span>
                 </h5>
                 <p className="card-text about-para font-weight-light">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Accusantium, quibusdam repudiandae, voluptates facere maxime
-                  dolore vero, consequuntur asperiores nemo officiis debitis
-                  cum? Nam magnam quis vel laborum alias, omnis itaque
-                  voluptates facere maxime dolore vero, consequuntur asperiores
-                  nemo officiis.
+                  Google Developer Student Clubs (GDSC) are community groups for
+                  college and university students interested in Google developer
+                  technologies. Students from all undergraduate or graduate
+                  programs with an interest in growing as a developer are
+                  welcome. By joining a GDSC, students grow their knowledge in a
+                  peer-to-peer learning environment and build solutions for
+                  local businesses and their community.
                 </p>
               </div>
             </div>
@@ -137,12 +138,10 @@ const Community = () => {
                     </span>
                   </div>
                   <div className="msg-text text-center">
-                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                    reprehenderit enim labore culpa sint ad nisi Lorem pariatur
-                    mollit ex esse exercitation amet. Nisi anim cupidatat
-                    excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem
-                    est aliquip amet voluptate voluptate dolor minim nulla est
-                    proident.
+                    Our MISSION and VISION is to build an environment for
+                    students where they can grow as coders and developers and
+                    contribute to the community. We strive to learn and grow
+                    together as one.
                   </div>
                 </div>
                 <div className="msg-img cursor-pointer"></div>
