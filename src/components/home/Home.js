@@ -167,10 +167,10 @@ const Home = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <div class="container heading-text">
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <h3 class="animate-charcter">
+            <div className="container heading-text">
+              <div className="row">
+                <div className="col-md-12 text-center">
+                  <h3 className="animate-charcter">
                     Google Developer Student Clubs
                   </h3>
                 </div>
@@ -179,7 +179,8 @@ const Home = () => {
 
             <p className="member-description">
               Developer Student Clubs is a Google Developers program for
-              students to learn something new, engage themselves in hackathons, events, workshops and Study Jams to grow as a #coder 
+              students to learn something new, engage themselves in hackathons,
+              events, workshops and Study Jams to grow as a #coder
             </p>
             <ul className="content">
               <li className="content-item">
@@ -254,30 +255,39 @@ const Home = () => {
 
         <Fade up>
           <div className="container gdsc-revolve">
-            <h1 className="text-center about-home-headings home-headings mt-lg-0">
-              GDSC Revolves Around
-              <span role="img" aria-label=""></span>
-            </h1>
-            <div className="row stacks">
+            <Fade up>
+              <h1 className="text-center about-home-headings home-headings mt-lg-0">
+                GDSC Revolves Around
+                <span role="img" aria-label="">
+                  🔁
+                </span>
+              </h1>
+            </Fade>
+
+            <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
               <div className="col-lg-4 col-sm-12 stack-name">
-                <a href="#" class="button">Machine Learning</a>
+                <span className="-button ml-domain">Machine Learning</span>
               </div>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <a href="#" class="button">Web Development</a>
+                <span className="-button web-domain">Web Development</span>
               </div>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <a href="#" class="button">Android Development</a>
+                <span className="-button android-domain">
+                  Android Development
+                </span>
               </div>
             </div>
-            <div className="row stacks">
+            <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
               <div className="col-lg-4 col-sm-12 stack-name">
-                <a href="#" class="button">Artificial Intelligence</a>
+                <span className="-button ai-domain">
+                  Artificial Intelligence
+                </span>
               </div>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <a href="#" class="button">Cloud</a> 
+                <span className="-button cloud-domain">Cloud Computing</span>
               </div>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <a href="#" class="button">Competitive Programming</a>
+                <span className="-button dsacp-domain">DSA / CP</span>
               </div>
             </div>
           </div>
@@ -443,6 +453,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;
