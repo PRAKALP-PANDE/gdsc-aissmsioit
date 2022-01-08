@@ -5,6 +5,11 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .column {
@@ -515,36 +520,9 @@ body::-webkit-scrollbar-thumb {
   .team-home-headings {
     margin-top: 2.5em;
   }
-}
 
-@media only screen and (max-width: 500px) and (min-width: 800px) {
   .member-description {
     padding: 2%;
-  }
-
-  .dots .dot:nth-of-type(1) {
-    top: 2em;
-    right: -2em;
-  }
-
-  .dots .dot:nth-of-type(2) {
-    bottom: 3em;
-    left: -4.2em;
-  }
-
-  .dots .dot:nth-of-type(3) {
-    bottom: -72em;
-    right: -2.5rem;
-  }
-
-  .dots .dot:nth-of-type(4) {
-    bottom: -102em;
-    left: -3.8em;
-  }
-
-  .dots .dot:nth-of-type(5) {
-    bottom: -122em;
-    right: -2.5rem;
   }
 }
 
