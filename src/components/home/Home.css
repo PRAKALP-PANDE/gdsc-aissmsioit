@@ -30,18 +30,19 @@ body::-webkit-scrollbar-thumb {
 
 .member-description {
   /* padding: 14em 8em 8em 8em; */
+  margin-top: 1rem;
   padding: 0em 1em;
   padding-bottom: 0;
   overflow: hidden;
   line-height: 30px;
   text-align: center;
   font-size: 1rem;
-  font-size: clamp(1.1em, 1vw, 1.5rem);
+  font-size: clamp(1.3em, 1vw, 1.5rem);
   letter-spacing: 0.4px;
 }
 
 .animate-charcter {
-  padding-top: 6em;
+  margin-top: 10rem;
   text-transform: capitalize;
   background-image: linear-gradient(-225deg,
       #4285f4 0%,
@@ -58,7 +59,7 @@ body::-webkit-scrollbar-thumb {
   animation: textclip 2s linear infinite;
   display: inline-block;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.5rem;
 }
 
 @keyframes textclip {
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb {
   border: none;
   padding: 8px 30px;
   margin: 0;
-  font-size: inherit;
+  font-size: 1.2rem;
   position: relative;
   display: block;
   transition: 0.5s;
@@ -188,6 +189,11 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.4px;
   overflow: hidden;
   width: 100%;
+}
+
+.all-divs p {
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .center-section {
@@ -399,7 +405,8 @@ body::-webkit-scrollbar-thumb {
 
   .member-description {
     padding: 5% 2%;
-    font-size: 0.95rem;
+    font-size: 1.35rem;
+    line-height: 2.2rem;
     /* text-align: left; */
   }
 
@@ -418,8 +425,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   .animate-charcter {
-    padding-top: 0em;
-    font-size: 1.5em;
+    margin-top: 2rem;
+    font-size: 2rem;
   }
 }
 
@@ -595,7 +602,7 @@ body::-webkit-scrollbar-thumb {
 }
 .stack-name a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
 }
 
