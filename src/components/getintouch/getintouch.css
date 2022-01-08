@@ -8,7 +8,7 @@
 .contact-body {
   min-height: 100vh;
   font-weight: 500;
-  font-size: 3.2vh;
+  ;
 }
 
 .contact-illustration {
@@ -24,8 +24,12 @@
 
 .form-label {
   pointer-events: none;
-  font-weight: bold;
-  font-size: 2.6vh !important;
+  font-weight: lighter !important;
+  font-size: 1.5em !important;
+}
+
+.contact-input {
+  font-size: 1em !important;
 }
 
 .lottie-social {
@@ -39,13 +43,9 @@
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2em;
   letter-spacing: 0.4px;
   margin-top: 2em;
-}
-
-.contact-input {
-  font-size: 2.4vh !important;
 }
 
 .lottie-social div {
@@ -62,7 +62,6 @@
 .get-btn {
   text-align: center;
   font-family: inherit;
-  font-size: 15px;
   background: #4285f4;
   color: white;
   padding: 0.7em 1em;

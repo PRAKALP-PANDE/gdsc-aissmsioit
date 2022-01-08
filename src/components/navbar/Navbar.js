@@ -31,7 +31,7 @@ const Navbar = () => {
     window.addEventListener(
       "scroll",
       () => {
-        if (document.body.scrollTop > 60) {
+        if (window.scrollY > 60) {
           navbar.style.backgroundColor = "white";
         } else {
           navbar.style.backgroundColor = "transparent";
@@ -76,6 +76,8 @@ const Navbar = () => {
   media.addEventListener("change", responsive);
 
   const NavDisplay = (event) => {
+    scrollToTop();
+
     const actives = document.getElementsByClassName("active");
     Array.from(actives).forEach((active) => {
       if (event.target === active) {
@@ -122,7 +124,7 @@ const Navbar = () => {
               <nav className="site-navigation position-relative text-right">
                 <ul id="main-ul" className="site-menu">
                   <li>
-                    <NavLink onClick={scrollToTop} to="/">
+                    <NavLink to="/">
                       <span
                         onClick={(event) => NavDisplay(event)}
                         className="active"
@@ -132,7 +134,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink onClick={scrollToTop} to="/events">
+                    <NavLink to="/events">
                       <span
                         onClick={(event) => NavDisplay(event)}
                         className="gred active"
@@ -142,7 +144,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink onClick={scrollToTop} to="/blogs">
+                    <NavLink to="/blogs">
                       <span
                         onClick={(event) => NavDisplay(event)}
                         className="gyellow active"
@@ -152,7 +154,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink onClick={scrollToTop} to="/team">
+                    <NavLink to="/team">
                       <span
                         onClick={(event) => NavDisplay(event)}
                         className="ggreen active"
@@ -162,7 +164,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink onClick={scrollToTop} to="/about">
+                    <NavLink to="/about">
                       <span
                         onClick={(event) => NavDisplay(event)}
                         className="gblue active"
@@ -172,7 +174,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink onClick={scrollToTop} to="/getintouch">
+                    <NavLink to="/getintouch">
                       <span
                         onClick={(event) => NavDisplay(event)}
                         className="gred active"

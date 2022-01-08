@@ -31,7 +31,6 @@
     padding: 9rem;
     padding-top: 1rem;
     line-height: 30px;
-    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0.4px;
     overflow: hidden;
@@ -167,18 +166,9 @@
         padding: 0;
         padding-top: 1rem;
         line-height: 30px;
-        font-size: 1.3rem;
         font-weight: 600;
         letter-spacing: 0.4px;
         overflow: hidden;
-    }
-
-    .team-body h1 {
-        font-size: 2rem;
-    }
-
-    .team-members h3 {
-        font-size: 2rem;
     }
 
     .vector-img img {

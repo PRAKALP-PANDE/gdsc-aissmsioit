@@ -10,14 +10,12 @@ body {
 .card-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 2.5rem;
   color: rgba(0, 0, 0, 1);
 }
 
 .card-text {
   margin-top: 1.5rem;
   padding: 1rem;
-  font-size: 1.3rem;
 }
 
 .msg-card {
@@ -43,7 +41,6 @@ body {
 .msg-text {
   margin-top: 1rem;
   padding: 1rem;
-  font-size: 1.3rem;
 }
 
 .msg-img {
@@ -107,9 +104,8 @@ body {
 .about-body p {
   margin-top: 1rem;
   text-align: center;
-  line-height: 30px;
-  font-size: 1.3rem;
-  font-weight: 600;
+  line-height: 25px;
+-weight: 600;
   letter-spacing: 0.4px;
   overflow: hidden;
 }
@@ -134,7 +130,7 @@ body {
 @media (max-width: 768px) {
   .card-body {
     padding: 0;
-    font-size: 1rem;
+  -top: 2.5em;
   }
 
   .about-txt {

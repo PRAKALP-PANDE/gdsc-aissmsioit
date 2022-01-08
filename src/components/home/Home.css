@@ -30,15 +30,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .member-description {
-  /* padding: 14em 8em 8em 8em; */
   margin-top: 1rem;
   padding: 0em 1em;
   padding-bottom: 0;
   overflow: hidden;
   line-height: 30px;
   text-align: center;
-  font-size: 1rem;
-  font-size: clamp(1.3em, 1vw, 1.5rem);
   letter-spacing: 0.4px;
 }
 
@@ -62,7 +59,6 @@ body::-webkit-scrollbar-thumb {
   animation: textclip 2s linear infinite;
   display: inline-block;
   font-weight: bold;
-  font-size: 2.5rem;
 }
 
 @keyframes textclip {
@@ -225,19 +221,6 @@ body::-webkit-scrollbar-thumb {
   clear: both;
 }
 
-.content {
-  width: 100%;
-  margin: 0 auto;
-  padding: 5vh 25px;
-  max-width: 1300px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: 200px;
-  grid-gap: 4rem;
-  grid-row-gap: 6rem;
-  justify-content: center;
-  list-style: none;
-}
-
 .contents {
   margin-top: 6.5em;
 }
@@ -245,16 +228,6 @@ body::-webkit-scrollbar-thumb {
 .content-item {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  counter-increment: itemcounter;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  pointer-events: none;
   color: #fff;
 }
 
@@ -265,48 +238,7 @@ body::-webkit-scrollbar-thumb {
   left: 0;
 }
 
-/* stack-name h5 */
-.beamember-btn {
-  background-image: linear-gradient(
-    45deg,
-    #09c6f9 0%,
-    #007bff 51%,
-    #009ffd 100%
-  );
-  pointer-events: auto;
-  cursor: pointer;
-  border: none;
-  padding: 8px 30px;
-  margin: 0;
-  font-size: 1.2rem;
-  position: relative;
-  display: block;
-  transition: 0.5s;
-  box-shadow: 0px 0px 14px -7px #007bff;
-  border: 0px;
-  font-weight: 600;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.beamember-btn:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.beamember-btn a:hover {
-  color: #fff;
-}
-
-.beamember-btn:active {
-  transform: scale(0.95);
-}
-
 /*COUNTERS #FIXME:*/
-
 .counts {
   margin: -20px;
   background: linear-gradient(
@@ -321,12 +253,13 @@ body::-webkit-scrollbar-thumb {
     #3aacee 100%
   );
   padding: 40px 0 30px 0;
+  margin-top: 6em;
 }
 
 .counts .counters span {
-  font-size: 48px;
   display: block;
   font-weight: 600;
+  font-size: 2em;
   color: #000;
   color: white;
 }
@@ -334,14 +267,12 @@ body::-webkit-scrollbar-thumb {
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-size: 15px;
   color: #000;
   color: white;
 }
 
 .all-divs {
   line-height: 30px;
-  /* max-width: 50%; */
   letter-spacing: 0.4px;
   overflow: hidden;
   width: 100%;
@@ -349,13 +280,6 @@ body::-webkit-scrollbar-thumb {
 
 .all-divs p {
   margin-top: 1.3rem;
-  font-size: 1.2rem;
-}
-
-.center-section {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
 }
 
 .other-btns {
@@ -369,12 +293,10 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   border: none;
   padding: 6px 30px;
-  font-size: inherit;
   position: relative;
   transition: 0.5s;
   box-shadow: 0px 0px 14px -7px #007bff;
   border: 0px;
-  /* font-weight: 600; */
   background-size: 200% auto;
   color: white;
   border-radius: 8px;
@@ -407,131 +329,13 @@ body::-webkit-scrollbar-thumb {
   margin: 2em 0 4em 0;
 }
 
-.past {
-  margin-left: 2.5rem;
-}
-
-.past-event a {
-  color: #000;
-}
-
-.past-event a:focus {
-  color: #f4b400;
-}
-
-.upcoming {
-  margin-right: 0rem;
-}
-
-.upcoming-event a {
-  color: #000;
-}
-
-.upcoming-event a:focus {
-  color: #ee8379;
-}
-
 /** EVENTS **/
-.events {
-  max-width: 1500px;
-  position: relative;
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  transition: 0.5s;
-}
-
-.events .card {
-  position: relative;
-  width: 280px;
-  height: 300px;
-  background: #fff;
-  display: flex;
-  margin: 0 85px 20px 30px;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  border: none;
-  transform: scale(0.9);
-}
-
-.event-img {
-  height: 300px;
-}
-
-.events:hover .card {
-  filter: blur(5px);
-  transform: scale(0.7);
-}
-
-.events .card:hover {
-  filter: blur(0px);
-  transform: scale(1);
-}
-
-.events .card:hover::before {
-  transform: scaleY(1.15);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.events .card .card-content {
-  text-align: center;
-  z-index: 2;
-  transition: 0.5s;
-}
-
-.two-events {
-  display: flex;
-  justify-content: space-around;
-}
-
 .home-svg > img {
   width: 41em;
   height: 33em;
 }
 
-.cta {
-  border: none;
-  background: none;
-}
-
-.cta span {
-  padding-bottom: 10px;
-  letter-spacing: 1px;
-  padding-right: 15px;
-  font-size: 1.8rem;
-}
-
-.hover-underline-animation {
-  position: relative;
-  color: black;
-  padding-bottom: 20px;
-}
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 5px;
-  bottom: 0;
-  left: 0;
-  background-color: #007bff;
-  background: linear-gradient(30deg, #ee8379, #f4b400, #0f9d58, #4285f4);
-
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.cta:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
 .home-headings {
-  font-size: 2.2em;
   font-weight: bold;
 }
 
@@ -562,10 +366,9 @@ body::-webkit-scrollbar-thumb {
   }
 
   .member-description {
-    padding: 5% 2%;
-    font-size: 1.35rem;
+    padding: 0% 2%;
     line-height: 2.2rem;
-    /* text-align: left; */
+    font-size: 1.1em;
   }
 
   .heading-text {
@@ -583,8 +386,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .animate-charcter {
-    margin-top: 2rem;
-    font-size: 2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -707,7 +509,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .counts {
-    margin-top: 4em;
+    margin-top: 0em;
   }
 
   .team-home-headings {
@@ -748,7 +550,7 @@ body::-webkit-scrollbar-thumb {
 
 /*** Community ***/
 .gdsc-revolve {
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .stacks {
@@ -762,7 +564,6 @@ body::-webkit-scrollbar-thumb {
 
 .stack-name span {
   text-decoration: none;
-  font-size: 0.8em;
   font-weight: 700;
 }
 

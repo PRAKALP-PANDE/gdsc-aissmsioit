@@ -402,7 +402,7 @@ const Event = () => {
               
             </span>
           </div>
-          <div className="Rectangle_6_Div">
+          {/* <div className="Rectangle_6_Div">
             <svg className="Rectangle_6">
               <rect
                 className="Rectangle_6_Rect"
@@ -414,7 +414,7 @@ const Event = () => {
                 height="5.112"
               ></rect>
             </svg>
-          </div>
+          </div> */}
         </div>
         <div className="row">
           <div
@@ -491,13 +491,13 @@ const Event = () => {
               <img src={Gdsc_Logo} alt="GDSC LOGO" />
 
               <div className="subscribe">
-                <h1>
+                <h4>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   <span>Deleniti &amp; quibusdam!</span>.
-                </h1>
+                </h4>
 
                 <h5 id="submitEventIdeaError" className="text-danger d-none">Please Enter Valid Data!</h5>
-                <form className="form" onSubmit={submitEventIdeaForm}>
+                <form className="form mt-lg-5" onSubmit={submitEventIdeaForm}>
                   <input
                     type="email"
                     className="form__field"
@@ -524,19 +524,6 @@ const Event = () => {
               <span role="img" aria-label="">
                 
               </span>
-            </div>
-            <div className="Rectangle_6_Div">
-              <svg className="Rectangle_6">
-                <rect
-                  className="Rectangle_6_Rect"
-                  rx="2.5557963848114014"
-                  ry="2.5557963848114014"
-                  x="100"
-                  y="0"
-                  width="102.232"
-                  height="5.112"
-                ></rect>
-              </svg>
             </div>
           </div>
         </Fade>

@@ -28,9 +28,9 @@ const Footer = () => {
         <div className="footer-middle">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-3 col-sm-12">
                 <div className="footer-pad mt-3">
-                  <h4 className="heading-1">GDSC AISSMS IOIT</h4>
+                  <h2 className="heading-1">GDSC AISSMS IOIT</h2>
                   <ul className="list-unstyled gdsc-logo-list">
                     <NavLink onClick={scrollToTop} to="/">
                       <img
@@ -44,81 +44,51 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3 col-sm-6 team mt-lg-4">
+
+              <div className="col-md-6 col-sm-12 quick-links mt-lg-4">
                 <div className="footer-pad">
-                  <h4 className="heading-2">Team</h4>
-                  <ul className="list-unstyled">
-                    <li className="gored">
-                      <NavLink onClick={scrollToTop} to="/team/gdsc_lead">
-                        GDSC Lead
-                      </NavLink>
-                    </li>
-                    <li className="goblue">
-                      <NavLink onClick={scrollToTop} to="/team/web_team">
-                        Web Development
-                      </NavLink>
-                    </li>
-                    <li className="goorange">
-                      <NavLink onClick={scrollToTop} to="/team/cloud_team">
-                        Cloud
-                      </NavLink>
-                    </li>
-                    <li className="gogreen">
-                      <NavLink onClick={scrollToTop} to="/team/ml_team">
-                        Machine Learning
-                      </NavLink>
-                    </li>
-                    <li className="gored">
-                      <NavLink onClick={scrollToTop} to="/team/dsa_cp_team">
-                        DS & Algo
-                      </NavLink>
-                    </li>
-                    <li className="gogreen">
-                      <NavLink onClick={scrollToTop} to="/team/android_team">
-                        Android Development
-                      </NavLink>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-3 col-sm-6 quick-links mt-lg-4">
-                <div className="footer-pad">
-                  <h4 className="heading-3">Quick Links</h4>
-                  <ul className="list-unstyled">
-                    <li className="gored">
+                  <h2 className="heading-3 text-center">Quick Links</h2>
+                  <ul className="list-unstyled row">
+                    <li className="gored col-lg-2 col-md-4 col-6 quick-links-li">
                       <NavLink onClick={scrollToTop} to="/">
                         Home
                       </NavLink>
                     </li>
-                    <li className="goorange">
+                    <li className="goorange col-lg-2 col-md-4 col-6">
                       <NavLink onClick={scrollToTop} to="/events">
                         Events
                       </NavLink>
                     </li>
-                    <li className="gogreen">
+                    <li className="gogreen col-lg-2 col-md-4 col-6 quick-links-li">
                       <NavLink onClick={scrollToTop} to="/about">
                         About
                       </NavLink>
                     </li>
-                    <li className="gored">
+                    <li className="gored col-lg-2 col-md-4 col-6">
                       <NavLink onClick={scrollToTop} to="/team">
                         Team
                       </NavLink>
                     </li>
-                    <li className="goblue">
+                    <li className="gogreen col-lg-2 col-md-4 col-6 quick-links-li">
+                      <NavLink onClick={scrollToTop} to="/team">
+                        Blogs
+                      </NavLink>
+                    </li>
+                    <li className="goblue col-lg-2 col-md-4 col-6">
                       <a
                         rel="noreferrer"
                         target="_blank"
                         href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
                       >
-                        <span>Be a Member</span>
+                        <span className="font-weight-light">Be a Member</span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3 follow-us mt-lg-4">
-                <h4 className="heading-4">Connect</h4>
+
+              <div className="col-md-3 col-sm-12 follow-us mt-lg-4">
+                <h2 className="heading-4 text-center">Connect</h2>
 
                 <ul className="social-network social-circle">
                   <li>
@@ -170,6 +140,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+
             <div className="row mt-2">
               <h4 className="divider donotcross">GDSC AISSMS IOIT</h4>
               <div className="col-md-12 copy">

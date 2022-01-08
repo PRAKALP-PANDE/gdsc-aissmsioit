@@ -26,7 +26,7 @@ const Contact = () => {
   const [data, setData] = useState({
     fullname: "",
     email: "",
-    phone: "",
+    mobile_number: "",
     msg: "",
   });
 
@@ -43,9 +43,9 @@ const Contact = () => {
 
   const formSubmit = async (event) => {
     event.preventDefault();
-    const { fullname, email, msg } = data;
+    const { fullname, email, mobile_number, msg } = data;
     const contactError = document.getElementById("contact_error");
-    if (fullname.length === 0 || email.length === 0 || msg.length === 0) {
+    if (fullname.length === 0 || email.length === 0 || mobile_number.length ===0 || msg.length === 0) {
       contactError.classList.remove("d-none");
     } else {
       // const response = await fetch(
@@ -58,6 +58,7 @@ const Contact = () => {
       //     body: JSON.stringify({
       //       name: fullname,
       //       email: email,
+      //       mobile_number: mobile_number,
       //       message: msg,
       //     }),
       //   }
@@ -123,21 +124,20 @@ const Contact = () => {
                     Please Enter Valid Data!
                   </h3>
                   <div className="my-5 ">
-                    <h2
+                    <h1
                       className="text-center font-weight-bolder"
                       style={{
                         fontFamily: "Google Sans",
                         fontStyle: " normal",
                         fontWeight: "bold",
-                        fontSize: "30px",
                         color: "rgba(0,0,0,1)",
                       }}
                     >
-                      Get in Touch{" "}
+                      Get in Touch
                       <span role="img" aria-label="">
                         🔗
                       </span>
-                    </h2>
+                    </h1>
                   </div>
                   <div className="row">
                     <div className="col-md-6 col-10 mx-auto">
@@ -162,6 +162,7 @@ const Contact = () => {
                               onChange={InputEvent}
                             />
                           </div>
+
                           <div className="mb-3">
                             <label
                               style={labelStyle}
@@ -178,6 +179,26 @@ const Contact = () => {
                               id="exampleFormControlInput1"
                               name="email"
                               value={data.email}
+                              onChange={InputEvent}
+                            />
+                          </div>
+
+                          <div className="mb-3">
+                            <label
+                              style={labelStyle}
+                              htmlFor="exampleFormControlInput1"
+                              className="form-label"
+                            >
+                              Mobile Number
+                            </label>
+                            <input
+                              style={inputStyle}
+                              autoComplete="off"
+                              type="email"
+                              className="form-control contact-input"
+                              id="exampleFormControlInput1"
+                              name="email"
+                              value={data.mobile_number}
                               onChange={InputEvent}
                             />
                           </div>
@@ -221,12 +242,6 @@ const Contact = () => {
                               </div>
                               <span>Send</span>
                             </button>
-                            {/* <button
-                              className="btn btn-outline-primary font-weight-bold"
-                              type="submit"
-                            >
-                              SEND
-                            </button> */}
                           </div>
                         </form>
                       </div>

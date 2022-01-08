@@ -45,10 +45,9 @@
   align-self: flex-start;
   padding: 0.25em 0.75em;
   border-radius: 1em;
-  font-size: 0.75rem;
 }
 
-.tag + .tag {
+.tag+.tag {
   margin-left: 0.5em;
 }
 
@@ -71,6 +70,7 @@
   background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   color: #fafafa;
 }
+
 .tag-green {
   background: #34a853;
   background: linear-gradient(to bottom, #34a853, #81c784);
@@ -78,7 +78,6 @@
 }
 
 .card__body h4 {
-  font-size: 1.5rem;
   text-transform: capitalize;
 }
 
@@ -101,18 +100,14 @@
   border-radius: 50%;
 }
 
-.user__info > small {
+.user__info>small {
   color: #666;
 }
+
 .technical_btn {
-  /* width: 140px;
-  height: 45px;
- */
-  height: 3em;
-  width: 9em;
-  width: 150px;
+  height: 2.5em;
+  width: 8em;
   font-family: "Google Sans";
-  font-size: 1.2rem;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -123,6 +118,7 @@
   overflow: hidden;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
+
 .technical_btn::before {
   content: "";
   position: absolute;
@@ -133,29 +129,37 @@
   z-index: -1;
   transition: all 0.5s;
 }
+
 .red_btn::before {
   background-color: #f44336;
 }
+
 .green_btn::before {
   background-color: #4caf50;
 }
+
 .technical_btn:hover {
   color: #ffffff;
 }
+
 .technical_btn:hover::before {
   width: 100%;
 }
+
 .technical_btn:active:before {
   background: #b9b9b9;
 }
+
 .red_btn:focus {
   background-color: #f44336;
   color: #fff;
 }
+
 .green_btn:focus {
   background-color: #4caf50;
   color: #fff;
 }
+
 @media (min-width: 768px) {
   .blog-container {
     display: flex;

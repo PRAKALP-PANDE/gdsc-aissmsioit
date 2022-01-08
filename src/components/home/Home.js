@@ -167,13 +167,11 @@ const Home = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <div className="container heading-text">
-              <div className="row">
-                <div className="col-md-12 text-center">
-                  <h3 className="animate-charcter">
-                    Google Developer Student Clubs
-                  </h3>
-                </div>
+            <div className="heading-text">
+              <div className="text-center">
+                <h2 className="animate-charcter">
+                  Google Developer Student Clubs
+                </h2>
               </div>
             </div>
 
@@ -182,12 +180,13 @@ const Home = () => {
               students to learn something new, engage themselves in hackathons,
               events, workshops and Study Jams to grow as a #coder
             </p>
-            <ul className="content">
+            <ul>
               <li className="content-item">
-                <button className="beamember-btn">
+                <button className="other-btns">
                   <a
                     rel="noreferrer"
                     target="_blank"
+                    className="other-btns-link"
                     href="https://gdsc.community.dev/aissms-institute-of-information-technology-pune/"
                   >
                     Be a Member
@@ -201,7 +200,7 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-5">
             <div className="all-divs mt-lg-5">
-              <h1 className="text-center home-headings">
+              <h1 className="text-center home-headings mt-5">
                 Upcoming Events
                 <span role="img" aria-label="">
                   ⌛
@@ -212,7 +211,7 @@ const Home = () => {
         </Fade>
 
         <Fade up>
-          <div className="container events mt-2 mt-lg-5">{eventSlider}</div>
+          <div className="container events mt-2 mt-lg-5 mb-5">{eventSlider}</div>
         </Fade>
 
         <div className="dots">
@@ -225,12 +224,11 @@ const Home = () => {
         </div>
 
         <Fade up>
-          <section id="counts" className="counts">
+          <section id="counts" className="counts mb-5">
             <div className="container">
               <div className="row counters">
                 <div className="col-lg-3 col-6 text-center">
                   <span id="members">0</span>
-
                   <p>Members</p>
                 </div>
 
@@ -253,17 +251,17 @@ const Home = () => {
           </section>
         </Fade>
 
-        <Fade up>
-          <div className="container gdsc-revolve">
-            <Fade up>
-              <h1 className="text-center about-home-headings home-headings mt-lg-0">
-                GDSC Revolves Around
-                <span role="img" aria-label="">
-                  🔁
-                </span>
-              </h1>
-            </Fade>
+        <div className="container gdsc-revolve">
+          <Fade up>
+            <h1 className="text-center about-home-headings home-headings mt-lg-0 mt-5">
+              GDSC Revolves Around
+              <span role="img" aria-label="">
+                🔁
+              </span>
+            </h1>
+          </Fade>
 
+          <Fade up>
             <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
               <div className="col-lg-4 col-sm-12 stack-name">
                 <span className="-button ml-domain">Machine Learning</span>
@@ -277,6 +275,8 @@ const Home = () => {
                 </span>
               </div>
             </div>
+          </Fade>
+          <Fade up>
             <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
               <div className="col-lg-4 col-sm-12 stack-name">
                 <span className="-button ai-domain">
@@ -290,8 +290,8 @@ const Home = () => {
                 <span className="-button dsacp-domain">DSA / CP</span>
               </div>
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
 
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center mt-lg-5 mt-sm-4">

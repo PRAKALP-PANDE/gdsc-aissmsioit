@@ -21,19 +21,6 @@ const Blog = () => {
             
           </span>
         </div>
-        <div className="Rectangle_6_Div">
-          <svg className="Rectangle_6">
-            <rect
-              className="Rectangle_6_Rect"
-              rx="2.5557963848114014"
-              ry="2.5557963848114014"
-              x="100"
-              y="0"
-              width="102.232"
-              height="5.112"
-            ></rect>
-          </svg>
-        </div>
       </div>
       <div className="row">
         <div
