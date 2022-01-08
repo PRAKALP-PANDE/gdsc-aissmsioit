@@ -763,11 +763,7 @@ body::-webkit-scrollbar-thumb {
 
 .stack-name span {
   text-decoration: none;
-<<<<<<< HEAD
-  font-size: 20px;
-=======
   font-size: 0.8em;
->>>>>>> 92e187c1aeb92b76f77bb92644fa9d354d59b53c
   font-weight: 700;
 }
 
