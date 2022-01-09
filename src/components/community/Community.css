@@ -256,4 +256,8 @@ body {
     padding: 0%;
     font-weight: lighter;
   }
+
+  .about-para {
+    text-align: left !important;
+  }
 }

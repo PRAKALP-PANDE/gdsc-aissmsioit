@@ -20,6 +20,8 @@ import events from "../events/events";
 
 import { scrollToTop } from "../footer/ScrollToTop";
 
+import CloseButton from "../../images/event/close.png";
+
 const Home = () => {
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
@@ -296,36 +298,45 @@ const Home = () => {
             </h1>
           </Fade>
 
-          <Fade up>
-            <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
+          <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
+            <Fade up>
               <div className="col-lg-4 col-sm-12 stack-name">
                 <span className="-button ml-domain">Machine Learning</span>
               </div>
+            </Fade>
+            <Fade up>
               <div className="col-lg-4 col-sm-12 stack-name">
                 <span className="-button web-domain">Web Development</span>
               </div>
+            </Fade>
+            <Fade up>
               <div className="col-lg-4 col-sm-12 stack-name">
                 <span className="-button android-domain">
                   Android Development
                 </span>
               </div>
-            </div>
-          </Fade>
-          <Fade up>
-            <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
+            </Fade>
+          </div>
+
+          <div className="row stacks pl-lg-5 pr-lg-5 ml-lg-5 mr-lg-5">
+            <Fade up>
               <div className="col-lg-4 col-sm-12 stack-name">
                 <span className="-button ai-domain">
                   Artificial Intelligence
                 </span>
               </div>
+            </Fade>
+            <Fade up>
               <div className="col-lg-4 col-sm-12 stack-name">
                 <span className="-button cloud-domain">Cloud Computing</span>
               </div>
+            </Fade>
+            <Fade up>
               <div className="col-lg-4 col-sm-12 stack-name">
                 <span className="-button dsacp-domain">DSA / CP</span>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
         </div>
 
         <Fade up>
@@ -452,7 +463,7 @@ const Home = () => {
                 </button>
 
                 <button className="other-btns">
-                  <div className="container text-center ">
+                  <div className="container text-center">
                     <span
                       onClick={() => submitBlogIdea("pop-up")}
                       className="submitblog-btn other-btns-links"
@@ -461,8 +472,9 @@ const Home = () => {
                     </span>
                   </div>
                 </button>
-                <div id="pop-up" className="pop-up">
-                  <div className="content">
+
+                <div id="pop-up" className="pop-up popup">
+                  <div className="content -content">
                     <div className="container">
                       <div className="dots dots-div">
                         <div className="dot"></div>
@@ -471,22 +483,19 @@ const Home = () => {
                       </div>
 
                       <span className="close">
-                        <img width="20" height="20" src="" alt="Close" />
+                        <img
+                          src={CloseButton}
+                          width="20"
+                          height="20"
+                          alt="Close"
+                        />
                       </span>
 
                       <div className="title">
-                        <h1>Submit Your Event Idea</h1>
+                        <h1>Submit Your Blog</h1>
                       </div>
 
-                      <img src="" alt="GDSC LOGO" />
-
                       <div className="subscribe">
-                        <h4>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                          <span>Deleniti &amp; quibusdam!</span>.
-                        </h4>
-
                         <h5
                           id="submitBlogIdeaError"
                           className="text-danger d-none"
@@ -494,19 +503,41 @@ const Home = () => {
                           Please Enter Valid Data!
                         </h5>
                         <form
-                          className="form mt-lg-5"
+                          className="form mt-lg-5 home_form"
                           onSubmit={submitBlogIdeaForm}
                         >
                           <input
-                            type="email"
-                            className="form__field"
-                            placeholder="Your Idea"
+                            type="text"
+                            className="form__field form__fields"
+                            placeholder="Name"
                             value={blogIdea}
                             onChange={InputBlog}
                           />
+                          <input
+                            type="email"
+                            className="form__field form__fields"
+                            placeholder="Email"
+                            value=""
+                            onChange=""
+                          />
+                          <input
+                            type="text"
+                            className="form__field form__fields"
+                            placeholder="Title"
+                            value=""
+                            onChange=""
+                          />
+
+                          <textarea
+                            className="form__field form__fields"
+                            placeholder="Description"
+                            rows="5"
+                            cols="10"
+                          ></textarea>
+
                           <button
                             type="submit"
-                            className="btn- btn--primary btn--inside"
+                            className="btn- btn--primary"
                           >
                             Submit
                           </button>

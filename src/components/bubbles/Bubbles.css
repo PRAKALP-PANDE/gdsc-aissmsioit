@@ -99,6 +99,33 @@
     animation-delay: 3s;
 }
 
+
+@media only screen and (max-width: 800px) {
+
+    .bubble:nth-child(3),
+    .bubble:nth-child(4) {
+        display: none;
+    }
+
+
+    .bubble:nth-child(1) {
+        left: 30%;
+    }
+
+    .bubble:nth-child(2) {
+        left: 50%;
+    }
+
+    .bubble:nth-child(5) {
+        left: 40%;
+    }
+
+    .bubble:nth-child(6) {
+        left: 90%;
+    }
+
+}
+
 @keyframes rise {
     100% {
         bottom: 1080px;

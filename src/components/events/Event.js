@@ -500,17 +500,16 @@ const Event = () => {
                   Please Enter Valid Data!
                 </h5>
                 <form className="form mt-lg-5" onSubmit={submitEventIdeaForm}>
-                  <input
-                    type="email"
+                  <textarea
                     className="form__field"
                     placeholder="Your Idea"
                     value={eventIdea}
                     onChange={InputEvent}
-                  />
-                  <button
-                    type="submit"
-                    className="btn- btn--primary btn--inside"
-                  >
+                    rows="4"
+                    cols="10"
+                  ></textarea>
+
+                  <button type="submit" className="btn- btn--primary">
                     Submit
                   </button>
                 </form>
