@@ -1,9 +1,17 @@
 import React from "react";
 import "./Blog.css";
 
-import Fade from "react-reveal/Fade";
+import BlogCard from "./BlogCard";
+import blogs from "./blogs";
+
+// import Fade from "react-reveal/Fade";
 
 const Blog = () => {
+  const Blogs = [];
+
+  blogs.forEach((blog) => {
+    Blogs.push(blog);
+  });
   return (
     <>
       <div
@@ -17,9 +25,7 @@ const Blog = () => {
       >
         <div id="Events">
           <span>Blogs</span>
-          <span role="img" aria-label="">
-            
-          </span>
+          <span role="img" aria-label=""></span>
         </div>
       </div>
       <div className="row">
@@ -48,7 +54,11 @@ const Blog = () => {
       </div>
 
       <div className="blog-container">
-        <Fade right>
+        {Blogs.map((blog, index) => (
+          <BlogCard key={index} blog={blog} />
+        ))}
+
+        {/* <Fade right>
           <div className="blog-card">
             <div className="card__header">
               <div className="card-image">
@@ -97,12 +107,14 @@ const Blog = () => {
         <Fade left>
           <div className="blog-card">
             <div className="card__header">
-              <img
-                src="https://source.unsplash.com/600x400/?computer"
-                alt="card__image"
-                className="card__image"
-                width="600"
-              />
+              <NavLink>
+                <img
+                  src="https://source.unsplash.com/600x400/?computer"
+                  alt="card__image"
+                  className="card__image"
+                  width="600"
+                />
+              </NavLink>
             </div>
             <div className="card_main">
               <div className="card__body">
@@ -140,12 +152,14 @@ const Blog = () => {
         <Fade right>
           <div className="blog-card">
             <div className="card__header">
-              <img
-                src="https://source.unsplash.com/600x400/?computer"
-                alt="card__image"
-                className="card__image"
-                width="600"
-              />
+              <NavLink>
+                <img
+                  src="https://source.unsplash.com/600x400/?computer"
+                  alt="card__image"
+                  className="card__image"
+                  width="600"
+                />
+              </NavLink>
             </div>
             <div className="card_main">
               <div className="card__body">
@@ -179,7 +193,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-        </Fade>
+        </Fade> */}
       </div>
     </>
   );

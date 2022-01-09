@@ -14,6 +14,7 @@ import Event from "./components/events/Event";
 import Eventdetails from "./components/events/Eventdetails";
 import Workshopdetails from "./components/events/Workshopdetails";
 import Blog from "./components/blog/Blog";
+import Blogdetails from "./components/blog/Blogdetails";
 import GetInTouch from "./components/getintouch/GetInTouch";
 import Error from "./components/error/Error";
 import Community from "./components/community/Community";
@@ -78,6 +79,11 @@ const App = () => {
               path="/blogs"
               exact
               component={() => <Blog active="active_blogs" />}
+            />
+            <Route
+              path="/blogs/:id/"
+              exact
+              component={() => <Blogdetails active="active_blogs" />}
             />
             <Route
               path="/team"

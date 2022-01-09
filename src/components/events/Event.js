@@ -325,7 +325,9 @@ const Event = () => {
 
   const submitEventIdeaForm = async (event) => {
     event.preventDefault();
-    const submitEventIdeaError = document.getElementById("submitEventIdeaError");
+    const submitEventIdeaError = document.getElementById(
+      "submitEventIdeaError"
+    );
     if (eventIdea.length === 0) {
       submitEventIdeaError.classList.remove("d-none");
     } else {
@@ -398,9 +400,7 @@ const Event = () => {
         >
           <div id="Events">
             <span>Events</span>
-            <span role="img" aria-label="">
-              
-            </span>
+            <span role="img" aria-label=""></span>
           </div>
           {/* <div className="Rectangle_6_Div">
             <svg className="Rectangle_6">
@@ -496,7 +496,9 @@ const Event = () => {
                   <span>Deleniti &amp; quibusdam!</span>.
                 </h4>
 
-                <h5 id="submitEventIdeaError" className="text-danger d-none">Please Enter Valid Data!</h5>
+                <h5 id="submitEventIdeaError" className="text-danger d-none">
+                  Please Enter Valid Data!
+                </h5>
                 <form className="form mt-lg-5" onSubmit={submitEventIdeaForm}>
                   <input
                     type="email"
@@ -521,9 +523,7 @@ const Event = () => {
           <div className="row workshops pl-lg-5">
             <div id="Worshops">
               <span>Workshops</span>
-              <span role="img" aria-label="">
-                
-              </span>
+              <span role="img" aria-label=""></span>
             </div>
           </div>
         </Fade>

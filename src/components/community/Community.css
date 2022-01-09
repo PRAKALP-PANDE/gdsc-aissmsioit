@@ -105,7 +105,7 @@ body {
   margin-top: 1rem;
   text-align: center;
   line-height: 25px;
--weight: 600;
+  -weight: 600;
   letter-spacing: 0.4px;
   overflow: hidden;
 }
@@ -130,7 +130,7 @@ body {
 @media (max-width: 768px) {
   .card-body {
     padding: 0;
-  -top: 2.5em;
+    -top: 2.5em;
   }
 
   .about-txt {

@@ -40,7 +40,18 @@ const Home = () => {
     numCounter("workshops", 10, 200);
     numCounter("projects", 2, 1000);
   }, []);
+  useEffect(() => {
+    const popUp = document.getElementsByClassName("pop-up")[0];
+    const submitblogbtn = document.getElementsByClassName("submitblog-btn")[0];
+    const close = document.getElementsByClassName("close")[0];
+    submitblogbtn.addEventListener("click", () => {
+      popUp.classList.add("open");
+    });
 
+    close.addEventListener("click", () => {
+      popUp.classList.remove("open");
+    });
+  });
   const numCounter = (tagId, maxCount, speed) => {
     var initialNumber = 0;
     setInterval(() => {
@@ -143,6 +154,28 @@ const Home = () => {
   media.addEventListener("change", responsive);
   window.onload = () => responsive(media);
 
+  const submitBlogIdea = (id) => {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const [blogIdea, setBlogIdea] = useState("");
+
+  const InputBlog = (event) => {
+    setBlogIdea(event.target.value);
+  };
+
+  const submitBlogIdeaForm = async (event) => {
+    event.preventDefault();
+    const submitBlogIdeaError = document.getElementById("submitBlogIdeaError");
+    if (blogIdea.length === 0) {
+      submitBlogIdeaError.classList.remove("d-none");
+    } else {
+      submitBlogIdeaError.classList.add("d-none");
+    }
+  };
+
   return (
     <div className="container-fluid home">
       <div className="contents">
@@ -211,7 +244,9 @@ const Home = () => {
         </Fade>
 
         <Fade up>
-          <div className="container events mt-2 mt-lg-5 mb-5">{eventSlider}</div>
+          <div className="container events mt-2 mt-lg-5 mb-5">
+            {eventSlider}
+          </div>
         </Fade>
 
         <div className="dots">
@@ -415,7 +450,71 @@ const Home = () => {
                     Check Out
                   </NavLink>
                 </button>
-                {/* <button className="other-btns">Submit Your Blog</button> */}
+
+                <button className="other-btns">
+                  <div className="container text-center ">
+                    <span
+                      onClick={() => submitBlogIdea("pop-up")}
+                      className="submitblog-btn other-btns-links"
+                    >
+                      <span>Submit Your Blog</span>
+                    </span>
+                  </div>
+                </button>
+                <div id="pop-up" className="pop-up">
+                  <div className="content">
+                    <div className="container">
+                      <div className="dots dots-div">
+                        <div className="dot"></div>
+                        <div className="dot"></div>
+                        <div className="dot"></div>
+                      </div>
+
+                      <span className="close">
+                        <img width="20" height="20" src="" alt="Close" />
+                      </span>
+
+                      <div className="title">
+                        <h1>Submit Your Event Idea</h1>
+                      </div>
+
+                      <img src="" alt="GDSC LOGO" />
+
+                      <div className="subscribe">
+                        <h4>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit.
+                          <span>Deleniti &amp; quibusdam!</span>.
+                        </h4>
+
+                        <h5
+                          id="submitBlogIdeaError"
+                          className="text-danger d-none"
+                        >
+                          Please Enter Valid Data!
+                        </h5>
+                        <form
+                          className="form mt-lg-5"
+                          onSubmit={submitBlogIdeaForm}
+                        >
+                          <input
+                            type="email"
+                            className="form__field"
+                            placeholder="Your Idea"
+                            value={blogIdea}
+                            onChange={InputBlog}
+                          />
+                          <button
+                            type="submit"
+                            className="btn- btn--primary btn--inside"
+                          >
+                            Submit
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -26,7 +26,6 @@ footer {
 footer a {
   color: #fff;
   color: black;
-;
   transition-duration: 0.2s;
 }
 
@@ -140,20 +139,38 @@ ul.social-network li {
   background-color: #ffffff;
 }
 
-.social-network a.icoLinkedin:hover i,
-.social-network a.icoEnvelope:hover i,
-.social-network a.icoInstagram:hover i,
-.social-network a.icoYoutube:hover i {
-  color: #fff;
+.social-network a.icoLinkedin:hover i {
+  color: #007bb7;
 }
-
-.social-network a.icoInstagram:hover {
-  background: linear-gradient(59deg,
+.social-network a.icoEnvelope:hover i {
+  color: #fbbc05;
+}
+.social-network a.icoInstagram:hover i {
+  /* color: linear-gradient(59deg, #fbad50, #fccc63, #e95950, #bc2a8d, #8a3ab9); */
+  /* background: -webkit-linear-gradient(
+      59deg,
       #fbad50,
       #fccc63,
       #e95950,
       #bc2a8d,
-      #8a3ab9);
+      #8a3ab9
+    ); */
+  color: #bc2a8d;
+}
+
+.social-network a.icoYoutube:hover i {
+  color: #ff0000;
+}
+
+/* .social-network a.icoInstagram:hover i {
+  background: linear-gradient(
+    59deg,
+    #fbad50,
+    #fccc63,
+    #e95950,
+    #bc2a8d,
+    #8a3ab9
+  );
 }
 
 .social-network a.icoYoutube:hover {
@@ -166,7 +183,7 @@ ul.social-network li {
 
 .social-network a.icoEnvelope:hover {
   background-color: #fbbc05;
-}
+} */
 
 /* GDSC BANNER*/
 .divider {
@@ -277,7 +294,7 @@ ul.social-network li {
     padding-left: 0%;
   }
 
-  ul.social-network li { 
+  ul.social-network li {
     padding: 0em;
   }
 }
