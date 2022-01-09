@@ -23,6 +23,21 @@ import { scrollToTop } from "../footer/ScrollToTop";
 import CloseButton from "../../images/event/close.png";
 
 const Home = () => {
+  const useForm = (initialValues) => {
+    const [values, setValues] = useState(initialValues);
+
+    return [
+      values,
+      (e) => {
+        setValues({
+          ...values,
+          [e.target.name]: e.target.value,
+        });
+      },
+    ];
+  };
+  const [values, handleChange] = useForm({ email: "", title: "" });
+
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
     Array.from(imgFluids).forEach((img) => {
@@ -515,17 +530,19 @@ const Home = () => {
                           />
                           <input
                             type="email"
+                            name="email"
                             className="form__field form__fields"
                             placeholder="Email"
-                            value=""
-                            onChange=""
+                            value={values.email}
+                            onChange={handleChange}
                           />
                           <input
                             type="text"
+                            name="title"
                             className="form__field form__fields"
                             placeholder="Title"
-                            value=""
-                            onChange=""
+                            value={values.title}
+                            onChange={handleChange}
                           />
 
                           <textarea
@@ -535,10 +552,7 @@ const Home = () => {
                             cols="10"
                           ></textarea>
 
-                          <button
-                            type="submit"
-                            className="btn- btn--primary"
-                          >
+                          <button type="submit" className="btn- btn--primary">
                             Submit
                           </button>
                         </form>
