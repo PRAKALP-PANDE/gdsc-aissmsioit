@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.4px;
 }
 
-.animate-charcter {
+.animate-character {
   margin-top: 10rem;
   text-transform: capitalize;
   background-image: linear-gradient(-225deg,
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 2.5s linear infinite;
   display: inline-block;
   font-weight: bold;
 }
@@ -408,7 +408,7 @@ body::-webkit-scrollbar-thumb {
     height: 400px;
   }
 
-  .animate-charcter {
+  .animate-character {
     margin-top: 1rem;
   }
 

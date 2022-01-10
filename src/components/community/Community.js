@@ -53,7 +53,7 @@ const Community = () => {
           >
             <div className="card p-lg-2 p-0">
               <div className="card-body">
-                <h1 className="card-title text-center font-weight-bolder mt-sm-5 mb-0">
+                <h1 className="card-title text-center font-weight-bolder mt-5 mt-lg-4 mb-0">
                   About Us
                   <span role="img" aria-label="">
                     🔎

@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+#Navbar {
+  margin-top: -5px;
+}
+
 .blog-container {
   display: flex;
   flex-wrap: wrap;

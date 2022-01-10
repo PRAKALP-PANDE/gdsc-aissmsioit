@@ -217,9 +217,9 @@ const Home = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <div className="heading-text">
+            <div className="heading-text mt-5">
               <div className="text-center">
-                <h2 className="animate-charcter">
+                <h2 className="animate-character">
                   Google Developer Student Clubs
                 </h2>
               </div>
