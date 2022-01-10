@@ -157,16 +157,11 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <h1 className="font-weight-bold">
-              Meet Our Team
-              <span role="img" aria-label="">
-                🌐
-              </span>
-            </h1>
+            <h1 className="font-weight-bold">Meet Our Team</h1>
             <p className="font-weight-light">
-              Have a look at the great minds of GDSC AISSMS IOIT. <br /> 
-              "None of us, including me, ever do great things. But we can all do small
-              things, with great love, and together we can do something
+              Have a look at the great minds of GDSC AISSMS IOIT. <br />
+              "None of us, including me, ever do great things. But we can all do
+              small things, with great love, and together we can do something
               wonderful."
             </p>
           </div>

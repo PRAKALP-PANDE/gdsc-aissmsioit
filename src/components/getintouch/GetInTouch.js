@@ -45,7 +45,12 @@ const Contact = () => {
     event.preventDefault();
     const { fullname, email, mobile_number, msg } = data;
     const contactError = document.getElementById("contact_error");
-    if (fullname.length === 0 || email.length === 0 || mobile_number.length ===0 || msg.length === 0) {
+    if (
+      fullname.length === 0 ||
+      email.length === 0 ||
+      mobile_number.length === 0 ||
+      msg.length === 0
+    ) {
       contactError.classList.remove("d-none");
     } else {
       // const response = await fetch(
@@ -113,7 +118,11 @@ const Contact = () => {
               <Col sm={12} lg={5} md={5} xl={5}>
                 <div className="contact-illustration">
                   <Fade left>
-                    <img className="img-fluid" src={Animation} alt="Animation_Image" />
+                    <img
+                      className="img-fluid"
+                      src={Animation}
+                      alt="Animation_Image"
+                    />
                   </Fade>
                 </div>
               </Col>
@@ -134,9 +143,6 @@ const Contact = () => {
                       }}
                     >
                       Get in Touch
-                      <span role="img" aria-label="">
-                        🔗
-                      </span>
                     </h1>
                   </div>
                   <div className="row">
