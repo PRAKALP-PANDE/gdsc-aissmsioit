@@ -52,7 +52,7 @@ const Home = () => {
       });
     });
 
-    numCounter("members", 600, 1);
+    numCounter("members", 629, 1);
     numCounter("organizers", 20, 100);
     numCounter("workshops", 10, 200);
     numCounter("projects", 2, 1000);
