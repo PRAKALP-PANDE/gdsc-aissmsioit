@@ -52,10 +52,12 @@ const Home = () => {
       });
     });
 
-    numCounter("members", 629, 1);
-    numCounter("organizers", 20, 100);
-    numCounter("workshops", 10, 200);
-    numCounter("projects", 2, 1000);
+    setTimeout(() => {
+      numCounter("members", 629, 1);
+      numCounter("organizers", 20, 100);
+      numCounter("workshops", 10, 200);
+      numCounter("projects", 2, 1000);
+    }, 1000);
   }, []);
   useEffect(() => {
     const popUp = document.getElementsByClassName("pop-up")[0];

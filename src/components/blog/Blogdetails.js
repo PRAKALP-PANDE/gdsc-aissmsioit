@@ -23,9 +23,6 @@ const Blogdetails = () => {
       >
         <div id="Events">
           <span>Blog Details</span>
-          <span role="img" aria-label="">
-            ✒️
-          </span>
         </div>
       </div>
       <div className="events-container">
@@ -61,7 +58,7 @@ const Blogdetails = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <div className="events-body">
+            <div className="blogs-body">
               <span>
                 <b> {blog.name}</b>
               </span>

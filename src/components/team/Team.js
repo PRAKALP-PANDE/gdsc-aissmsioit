@@ -193,16 +193,16 @@ const Team = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.instagram.com/prarthanachandak"
+                  href="https://github.com/prarthanachandak"
                 >
-                  <i className="fa fa-instagram ico-insta"></i>
+                  <i className="fa fa-github ico-github"></i>
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/prarthanachandak"
+                  href="https://www.instagram.com/prarthanachandak"
                 >
-                  <i className="fa fa-github ico-github"></i>
+                  <i className="fa fa-instagram ico-insta"></i>
                 </a>
               </div>
             </div>
@@ -248,16 +248,16 @@ const Team = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.instagram.com/_.harshal__/"
+                  href="https://github.com/HarshalRaundal"
                 >
-                  <i className="fa fa-instagram ico-insta"></i>
+                  <i className="fa fa-github ico-github"></i>
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/HarshalRaundal"
+                  href="https://www.instagram.com/_.harshal__/"
                 >
-                  <i className="fa fa-github ico-github"></i>
+                  <i className="fa fa-instagram ico-insta"></i>
                 </a>
               </div>
             </div>

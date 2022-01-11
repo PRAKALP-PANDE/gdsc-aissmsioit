@@ -31,7 +31,7 @@
   margin-bottom: 4%;
 }
 
-.events-body {
+.blogs-body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -39,19 +39,21 @@
   text-align: justify;
   max-height: 20em;
   overflow: scroll;
+  justify-content: center;
+  align-items: center;
 }
 
-.events-body::-webkit-scrollbar {
+.blogs-body::-webkit-scrollbar {
   width: 2px;
   height: 0px;
 }
 
-.events-body::-webkit-scrollbar-track {
+.blogs-body::-webkit-scrollbar-track {
   background-color: #ececec;
   border-radius: 2px;
 }
 
-.events-body::-webkit-scrollbar-thumb {
+.blogs-body::-webkit-scrollbar-thumb {
   background-color: rgba(119, 119, 119, 0.3);
   border-radius: 2px;
 }
@@ -128,7 +130,7 @@
 }
 
 @media (max-width: 768px) {
-  .events-body {
+  .blogs-body {
     max-height: 100%;
     overflow: visible;
   }

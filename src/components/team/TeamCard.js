@@ -18,11 +18,11 @@ const TeamCard = (props) => {
           <a href={props.member.linkedin} target="_blank" rel="noreferrer">
             <i className="fa fa-linkedin ico-link"></i>
           </a>
-          <a href={props.member.instagram} target="_blank" rel="noreferrer">
-            <i className="fa fa-instagram ico-insta"></i>
-          </a>
           <a href={props.member.github} target="_blank" rel="noreferrer">
             <i className="fa fa-github ico-github"></i>
+          </a>
+          <a href={props.member.instagram} target="_blank" rel="noreferrer">
+            <i className="fa fa-instagram ico-insta"></i>
           </a>
         </div>
       </div>

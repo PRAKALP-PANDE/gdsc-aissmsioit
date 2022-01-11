@@ -142,7 +142,9 @@ const Footer = () => {
             </div>
 
             <div className="row mt-2">
-              <h4 className="divider donotcross">GDSC AISSMS IOIT</h4>
+              <h4 className="divider donotcross">
+                Google Developer Student Club, AISSMS IOIT
+              </h4>
               <div className="col-md-12 copy">
                 <p className="text-center">
                   Copyright &copy; 2021 All Rights Reserved by
