@@ -134,4 +134,8 @@
     .events-header {
         padding: 8%;
     }
+
+    .span_headings {
+        font-size: 2.5em !important;
+    }
 }

@@ -21,7 +21,7 @@ const Eventdetails = () => {
         data-aos-anchor-placement="top-center"
         className="row"
       >
-        <div id="Events">
+        <div id="Events" className="span_headings">
           <span>Event Details</span>
           <span role="img" aria-label="">
             ✒️
