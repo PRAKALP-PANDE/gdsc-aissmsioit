@@ -23,9 +23,6 @@ const Eventdetails = () => {
       >
         <div id="Events" className="span_headings">
           <span>Event Details</span>
-          <span role="img" aria-label="">
-            ✒️
-          </span>
         </div>
       </div>
       <div className="events-container">

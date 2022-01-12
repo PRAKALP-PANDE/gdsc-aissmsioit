@@ -55,9 +55,6 @@ const Community = () => {
               <div className="card-body">
                 <h1 className="card-title text-center font-weight-bolder mt-5 mt-lg-4 mb-0">
                   About Us
-                  <span role="img" aria-label="">
-                    🔎
-                  </span>
                 </h1>
                 <p className="card-text about-para font-weight-light">
                   Google Developer Student Clubs (GDSC) are community groups for
@@ -88,9 +85,6 @@ const Community = () => {
 
                   <h2 className="card-title text-center font-weight-bolder">
                     What we do
-                    <span role="img" aria-label="">
-                      📊
-                    </span>
                   </h2>
 
                   <img
@@ -121,9 +115,6 @@ const Community = () => {
                 <div className="msg-block mt-4">
                   <h2 className="msg-title card-title text-center">
                     Our Mission and Vision
-                    <span role="img" aria-label="">
-                      🎯
-                    </span>
                   </h2>
                   <div className="msg-text text-center">
                     Our MISSION and VISION is to build an environment for

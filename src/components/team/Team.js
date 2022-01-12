@@ -157,16 +157,11 @@ const Team = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <h1 className="font-weight-bold">
-              Meet Our Team
-              <span role="img" aria-label="">
-                🌐
-              </span>
-            </h1>
+            <h1 className="font-weight-bold">Meet Our Team</h1>
             <p className="font-weight-light">
-              Have a look at the great minds of GDSC AISSMS IOIT. <br /> 
-              "None of us, including me, ever do great things. But we can all do small
-              things, with great love, and together we can do something
+              Have a look at the great minds of GDSC AISSMS IOIT. <br />
+              "None of us, including me, ever do great things. But we can all do
+              small things, with great love, and together we can do something
               wonderful."
             </p>
           </div>
@@ -198,16 +193,16 @@ const Team = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.instagram.com/prarthanachandak"
+                  href="https://github.com/prarthanachandak"
                 >
-                  <i className="fa fa-instagram ico-insta"></i>
+                  <i className="fa fa-github ico-github"></i>
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/prarthanachandak"
+                  href="https://www.instagram.com/prarthanachandak"
                 >
-                  <i className="fa fa-github ico-github"></i>
+                  <i className="fa fa-instagram ico-insta"></i>
                 </a>
               </div>
             </div>
@@ -253,16 +248,16 @@ const Team = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.instagram.com/_.harshal__/"
+                  href="https://github.com/HarshalRaundal"
                 >
-                  <i className="fa fa-instagram ico-insta"></i>
+                  <i className="fa fa-github ico-github"></i>
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/HarshalRaundal"
+                  href="https://www.instagram.com/_.harshal__/"
                 >
-                  <i className="fa fa-github ico-github"></i>
+                  <i className="fa fa-instagram ico-insta"></i>
                 </a>
               </div>
             </div>

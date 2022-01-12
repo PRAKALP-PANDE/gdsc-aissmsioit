@@ -47,7 +47,7 @@ const Footer = () => {
 
               <div className="col-md-6 col-sm-12 quick-links mt-lg-4">
                 <div className="footer-pad">
-                  <h2 className="heading-3 text-center">Quick Links</h2>
+                  <h2 className="heading-3 text-center">Teams</h2>
                   <ul className="list-unstyled row">
                     <li className="gored col-lg-2 col-md-4 col-6 quick-links-li">
                       <NavLink onClick={scrollToTop} to="/">
@@ -142,11 +142,13 @@ const Footer = () => {
             </div>
 
             <div className="row mt-2">
-              <h4 className="divider donotcross">GDSC AISSMS IOIT</h4>
+              <h4 className="divider donotcross">
+                Google Developer Student Club, AISSMS IOIT
+              </h4>
               <div className="col-md-12 copy">
                 <p className="text-center">
                   Copyright &copy; 2021 All Rights Reserved by
-                  <NavLink to="/"> GDSC IOIT</NavLink>.
+                  <NavLink to="/"> GDSC, AISSMS IOIT</NavLink>.
                 </p>
               </div>
             </div>

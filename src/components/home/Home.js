@@ -52,10 +52,12 @@ const Home = () => {
       });
     });
 
-    numCounter("members", 600, 1);
-    numCounter("organizers", 20, 100);
-    numCounter("workshops", 10, 200);
-    numCounter("projects", 2, 1000);
+    setTimeout(() => {
+      numCounter("members", 629, 1);
+      numCounter("organizers", 20, 100);
+      numCounter("workshops", 10, 200);
+      numCounter("projects", 2, 1000);
+    }, 1000);
   }, []);
   useEffect(() => {
     const popUp = document.getElementsByClassName("pop-up")[0];
@@ -252,9 +254,6 @@ const Home = () => {
             <div className="all-divs mt-lg-5">
               <h1 className="text-center home-headings mt-5">
                 Upcoming Events
-                <span role="img" aria-label="">
-                  ⌛
-                </span>
               </h1>
             </div>
           </div>
@@ -307,9 +306,6 @@ const Home = () => {
           <Fade up>
             <h1 className="text-center about-home-headings home-headings mt-lg-0 mt-5">
               GDSC Revolves Around
-              <span role="img" aria-label="">
-                🔁
-              </span>
             </h1>
           </Fade>
 
@@ -360,9 +356,6 @@ const Home = () => {
               <Fade up>
                 <h1 className="text-center team-home-headings home-headings mt-lg-0">
                   Meet Our GDSC Lead
-                  <span role="img" aria-label="">
-                    🙋🏻‍♀️
-                  </span>
                 </h1>
               </Fade>
 
@@ -424,9 +417,6 @@ const Home = () => {
               <Fade up>
                 <h1 className="text-center about-home-headings home-headings mt-lg-0">
                   About Community
-                  <span role="img" aria-label="">
-                    🤝
-                  </span>
                 </h1>
               </Fade>
 
@@ -454,12 +444,7 @@ const Home = () => {
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
               <Fade up>
-                <h1 className="text-center home-headings">
-                  Blogs
-                  <span role="img" aria-label="">
-                    📚
-                  </span>
-                </h1>
+                <h1 className="text-center home-headings">Blogs</h1>
               </Fade>
 
               <p className="text-center">
@@ -568,12 +553,7 @@ const Home = () => {
         <Fade up>
           <div className="container d-flex align-items-center justify-content-center">
             <div className="all-divs">
-              <h1 className="text-center home-headings">
-                Stay Updated
-                <span role="img" aria-label="">
-                  ⏰
-                </span>
-              </h1>
+              <h1 className="text-center home-headings">Stay Updated</h1>
               <p className="text-center">
                 Don’t miss out on the latest happenings happening in GDSC AISSMS
                 IOIT, Pune. RSVP below to get updates about the latest workshops
