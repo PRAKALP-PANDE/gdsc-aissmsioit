@@ -17,7 +17,6 @@ import Cloud from "./cloud";
 import ML from "./ml";
 import Android from "./android";
 import Management from "./management";
-import DesignAndSocialMedia from "./designandsocialmedia";
 
 import TeamCard from "./TeamCard";
 
@@ -75,10 +74,6 @@ const Team = () => {
     <TeamCard key={member.id} member={member} />
   ));
 
-  const DesignAndSocialMediaTeam = DesignAndSocialMedia.map((member) => (
-    <TeamCard key={member.id} member={member} />
-  ));
-
   const [teams, setTeams] = useState(
     window.screen.width < 800
       ? {
@@ -87,9 +82,6 @@ const Team = () => {
           ml: <Slider {...settings}>{MLTeam}</Slider>,
           android: <Slider {...settings}>{AndroidTeam}</Slider>,
           management: <Slider {...settings}>{ManagementTeam}</Slider>,
-          desginandsocialmedia: (
-            <Slider {...settings}>{DesignAndSocialMediaTeam}</Slider>
-          ),
         }
       : {
           web: WebTeam,
@@ -97,7 +89,6 @@ const Team = () => {
           ml: MLTeam,
           android: AndroidTeam,
           management: ManagementTeam,
-          desginandsocialmedia: DesignAndSocialMediaTeam,
         }
   );
 
@@ -109,9 +100,6 @@ const Team = () => {
         ml: <Slider {...settings}>{MLTeam}</Slider>,
         android: <Slider {...settings}>{AndroidTeam}</Slider>,
         management: <Slider {...settings}>{ManagementTeam}</Slider>,
-        desginandsocialmedia: (
-          <Slider {...settings}>{DesignAndSocialMediaTeam}</Slider>
-        ),
       });
     } else {
       setTeams({
@@ -120,7 +108,6 @@ const Team = () => {
         ml: MLTeam,
         android: AndroidTeam,
         management: ManagementTeam,
-        desginandsocialmedia: DesignAndSocialMediaTeam,
       });
     }
   };
@@ -171,7 +158,43 @@ const Team = () => {
       <div className="container team-members">
         <Fade up>
           <div id="gdsc_lead" className="row">
-            <div className="col-lg-12 col-sm-12 member-body">
+            <div className="col-lg-6 col-sm-6 member-body">
+              <Fade up>
+                <h3 className="font-weight-bold">Faculty Advisor</h3>
+              </Fade>
+              <img
+                src=""
+                className="img-fluid lead-img"
+                alt="Faculty_Advisor"
+              />
+              <h5>Dr. K. S. Wagh Sir</h5>
+              <span></span>
+              <div className="social-ico">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="#0"
+                >
+                  <i className="fa fa-linkedin ico-link"></i>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="#0"
+                >
+                  <i className="fa fa-github ico-github"></i>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="#0"
+                >
+                  <i className="fa fa-instagram ico-insta"></i>
+                </a>
+              </div>
+            </div>
+
+            <div className="col-lg-6 col-sm-6 member-body">
               <Fade up>
                 <h3 className="font-weight-bold">GDSC Lead</h3>
               </Fade>
@@ -283,15 +306,6 @@ const Team = () => {
             <h3 className="my-5 font-weight-bold">Management Team</h3>
           </Fade>
           {teams.management}
-        </div>
-
-        <div id="design_and_socialmedia_team" className="row">
-          <Fade up>
-            <h3 className="my-5 font-weight-bold">
-              Design and Social Media Team
-            </h3>
-          </Fade>
-          {teams.desginandsocialmedia}
         </div>
       </div>
     </>

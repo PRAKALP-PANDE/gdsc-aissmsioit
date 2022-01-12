@@ -69,6 +69,13 @@ const Contact = () => {
       //   }
       // );
 
+      setData({
+        fullname: "",
+        email: "",
+        mobile_number: "",
+        msg: "",
+      });
+
       setisSubmit((isSubmit = true));
 
       contactError.classList.add("d-none");

@@ -22,21 +22,29 @@ import { scrollToTop } from "../footer/ScrollToTop";
 
 import CloseButton from "../../images/event/close.png";
 
-const Home = () => {
-  const useForm = (initialValues) => {
-    const [values, setValues] = useState(initialValues);
+// import emailjs from "@emailjs/browser";
 
-    return [
-      values,
-      (e) => {
-        setValues({
-          ...values,
-          [e.target.name]: e.target.value,
-        });
-      },
-    ];
+// import Leads from "./Leads";
+
+const Home = () => {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    domain: "",
+    title: "",
+    content: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setValues((preVal) => {
+      return {
+        ...preVal,
+        [name]: value,
+      };
+    });
   };
-  const [values, handleChange] = useForm({ email: "", title: "" });
 
   useEffect(() => {
     const imgFluids = document.getElementsByClassName("img-fluid");
@@ -52,14 +60,6 @@ const Home = () => {
       });
     });
 
-    setTimeout(() => {
-      numCounter("members", 629, 1);
-      numCounter("organizers", 20, 100);
-      numCounter("workshops", 10, 200);
-      numCounter("projects", 2, 1000);
-    }, 1000);
-  }, []);
-  useEffect(() => {
     const popUp = document.getElementsByClassName("pop-up")[0];
     const submitblogbtn = document.getElementsByClassName("submitblog-btn")[0];
     const close = document.getElementsByClassName("close")[0];
@@ -69,8 +69,21 @@ const Home = () => {
 
     close.addEventListener("click", () => {
       popUp.classList.remove("open");
+
+      setSubmitBlog({
+        success: "",
+        error: "",
+      });
     });
-  });
+
+    setTimeout(() => {
+      numCounter("members", 629, 1);
+      numCounter("organizers", 20, 100);
+      numCounter("workshops", 10, 200);
+      numCounter("projects", 2, 1000);
+    }, 1000);
+  }, []);
+
   const numCounter = (tagId, maxCount, speed) => {
     var initialNumber = 0;
     setInterval(() => {
@@ -179,19 +192,71 @@ const Home = () => {
     });
   };
 
-  const [blogIdea, setBlogIdea] = useState("");
+  const [submitBlog, setSubmitBlog] = useState({
+    error: "",
+    success: "",
+  });
 
-  const InputBlog = (event) => {
-    setBlogIdea(event.target.value);
-  };
-
-  const submitBlogIdeaForm = async (event) => {
-    event.preventDefault();
-    const submitBlogIdeaError = document.getElementById("submitBlogIdeaError");
-    if (blogIdea.length === 0) {
-      submitBlogIdeaError.classList.remove("d-none");
+  const submitBlogForm = async (event) => {
+    event.preventDefault(); // Prevents default refresh by the browser
+    if (
+      values.name.length === 0 ||
+      values.email.length === 0 ||
+      values.domain.length === 0 ||
+      values.title.length === 0 ||
+      values.content.length === 0
+    ) {
+      setSubmitBlog({ ...submitBlog, error: "Please Enter Valid Data!" });
     } else {
-      submitBlogIdeaError.classList.add("d-none");
+      const domains = ["web", "cloud", "dsa/cp", "android", "ai/ml", "general"];
+      const domainIndex = domains.indexOf(values.domain.toLowerCase());
+
+      if (domainIndex === -1) {
+        setSubmitBlog({
+          ...submitBlogForm,
+          error: "Please Enter Valid Domain!",
+        });
+      } else {
+        // const leads = [Leads[0], Leads[domainIndex + 1]];
+
+        // leads.forEach((lead) => {
+        //   lead["from_name"] = "GDSC, AISSMS IOIT";
+        //   lead["name"] = values.name;
+        //   lead["email"] = values.email;
+        //   lead["title"] = values.title;
+        //   lead["content"] = values.content;
+
+        //   emailjs
+        //     .send(
+        //       process.env.REACT_APP_SERVICE_ID,
+        //       process.env.REACT_APP_BLOG_TEMPLATE_ID,
+        //       lead,
+        //       process.env.REACT_APP_USER_ID
+        //     )
+        //     .then(
+        //       (result) => {
+        //         console.log(result.text);
+        //       },
+        //       (error) => {
+        //         console.log(error.text);
+        //       }
+        //     );
+        // });
+
+        setValues({
+          name: "",
+          email: "",
+          domain: "",
+          title: "",
+          content: "",
+        });
+
+        setSubmitBlog({
+          success: `Thank you for showing your Interest 🤩.  
+                    Your Blog will be Published Soon!`,
+          error: "",
+        });
+      }
     }
   };
 
@@ -264,6 +329,16 @@ const Home = () => {
             {eventSlider}
           </div>
         </Fade>
+
+        <button className="other-btns mb-3">
+          <NavLink
+            onClick={scrollToTop}
+            to="/events"
+            className="other-btns-link"
+          >
+            Submit Event Idea
+          </NavLink>
+        </button>
 
         <div className="dots">
           <div className="dot"></div>
@@ -496,22 +571,22 @@ const Home = () => {
                       </div>
 
                       <div className="subscribe">
-                        <h5
-                          id="submitBlogIdeaError"
-                          className="text-danger d-none"
-                        >
-                          Please Enter Valid Data!
+                        <h5 className="text-danger mt-4">{submitBlog.error}</h5>
+                        <h5 className="text-success mt-4">
+                          {submitBlog.success}
                         </h5>
+
                         <form
                           className="form mt-lg-5 home_form"
-                          onSubmit={submitBlogIdeaForm}
+                          onSubmit={submitBlogForm}
                         >
                           <input
                             type="text"
+                            name="name"
                             className="form__field form__fields"
                             placeholder="Name"
-                            value={blogIdea}
-                            onChange={InputBlog}
+                            value={values.name}
+                            onChange={handleChange}
                           />
                           <input
                             type="email"
@@ -523,18 +598,31 @@ const Home = () => {
                           />
                           <input
                             type="text"
+                            name="domain"
+                            className="form__field form__fields"
+                            placeholder="Domain"
+                            value={values.domain}
+                            onChange={handleChange}
+                          />
+                          <span className="domain_example">
+                            Ex. Web, Cloud, AI/ML, DSA/CP, Android, General
+                          </span>
+                          <input
+                            type="text"
                             name="title"
                             className="form__field form__fields"
                             placeholder="Title"
                             value={values.title}
                             onChange={handleChange}
                           />
-
                           <textarea
                             className="form__field form__fields"
-                            placeholder="Description"
+                            name="content"
+                            placeholder="content"
                             rows="5"
-                            cols="10"
+                            cols="6"
+                            value={values.content}
+                            onChange={handleChange}
                           ></textarea>
 
                           <button type="submit" className="btn- btn--primary">

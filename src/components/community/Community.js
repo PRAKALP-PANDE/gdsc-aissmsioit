@@ -56,7 +56,7 @@ const Community = () => {
                 <h1 className="card-title text-center font-weight-bolder mt-5 mt-lg-4 mb-0">
                   About Us
                 </h1>
-                <p className="card-text about-para font-weight-light">
+                <p className="card-text about-para font-weight-light px-lg-5">
                   Google Developer Student Clubs (GDSC) are community groups for
                   college and university students interested in Google developer
                   technologies. Students from all undergraduate or graduate

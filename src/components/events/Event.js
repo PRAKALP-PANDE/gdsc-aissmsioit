@@ -18,6 +18,8 @@ import Gdsc_Logo from "../../images/google_gdsc_logo.png";
 
 import Fade from "react-reveal/Fade";
 
+// import emailjs from "@emailjs/browser";
+
 const Event = () => {
   useEffect(() => {
     const upcomingEvents = document.getElementById("Upcoming_Events_Span");
@@ -317,10 +319,21 @@ const Event = () => {
     });
   };
 
-  const [eventIdea, setEventIdea] = useState("");
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    eventIdea: "",
+  });
 
   const InputEvent = (event) => {
-    setEventIdea(event.target.value);
+    const { name, value } = event.target;
+
+    setValues((preVal) => {
+      return {
+        ...preVal,
+        [name]: value,
+      };
+    });
   };
 
   const submitEventIdeaForm = async (event) => {
@@ -328,7 +341,14 @@ const Event = () => {
     const submitEventIdeaError = document.getElementById(
       "submitEventIdeaError"
     );
-    if (eventIdea.length === 0) {
+    const submitEventIdeaSuccess = document.getElementById(
+      "submitEventIdeaSuccess"
+    );
+    if (
+      values.name.length === 0 ||
+      values.email.length === 0 ||
+      values.eventIdea.length === 0
+    ) {
       submitEventIdeaError.classList.remove("d-none");
     } else {
       // const response = await fetch(
@@ -344,7 +364,42 @@ const Event = () => {
       //   }
       // );
 
+      // emailjs
+      //   .send(
+      //     process.env.REACT_APP_SERVICE_ID,
+      //     process.env.REACT_APP_EVENT_IDEA_TEMPLATE_ID,
+      //     {
+      //       to_name: "Prarthana Chandak",
+      //       to_email: "prarthanachandak@gmail.com",
+      //       from_name: "GDSC, AISSMS IOIT",
+      //       message: JSON.stringify({
+      //         name: values.name,
+      //         email: values.email,
+      //         title: values.title,
+      //         content: values.content,
+      //       }),
+      //     },
+      //     process.env.REACT_APP_USER_ID
+      //   )
+      //   .then(
+      //     (result) => {
+      //       console.log(result.text);
+      //     },
+      //     (error) => {
+      //       console.log(error.text);
+      //     }
+      //   );
+
+      setValues({
+        name: "",
+        email: "",
+        domain: "",
+        title: "",
+        content: "",
+      });
+
       submitEventIdeaError.classList.add("d-none");
+      submitEventIdeaSuccess.classList.remove("d-none");
     }
   };
 
@@ -402,19 +457,6 @@ const Event = () => {
             <span>Events</span>
             <span role="img" aria-label=""></span>
           </div>
-          {/* <div className="Rectangle_6_Div">
-            <svg className="Rectangle_6">
-              <rect
-                className="Rectangle_6_Rect"
-                rx="2.5557963848114014"
-                ry="2.5557963848114014"
-                x="100"
-                y="0"
-                width="102.232"
-                height="5.112"
-              ></rect>
-            </svg>
-          </div> */}
         </div>
         <div className="row">
           <div
@@ -488,6 +530,13 @@ const Event = () => {
                 <h1>Submit Your Event Idea</h1>
               </div>
 
+              <h5 id="submitEventIdeaError" className="text-danger d-none">
+                Please Enter Valid Data!
+              </h5>
+              <h5 id="submitEventIdeaSuccess" className="text-success d-none">
+                Thank You For Submitting Your Idea ❄️
+              </h5>
+
               <img src={Gdsc_Logo} alt="GDSC LOGO" />
 
               <div className="subscribe">
@@ -496,17 +545,31 @@ const Event = () => {
                   <span>Deleniti &amp; quibusdam!</span>.
                 </h4>
 
-                <h5 id="submitEventIdeaError" className="text-danger d-none">
-                  Please Enter Valid Data!
-                </h5>
                 <form className="form mt-lg-5" onSubmit={submitEventIdeaForm}>
-                  <textarea
+                  <input
+                    type="text"
+                    name="name"
                     className="form__field"
+                    placeholder="Name"
+                    value={values.name}
+                    onChange={InputEvent}
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    className="form__field mt-3"
+                    placeholder="Email"
+                    value={values.email}
+                    onChange={InputEvent}
+                  />
+                  <textarea
+                    className="form__field mt-3"
                     placeholder="Your Idea"
-                    value={eventIdea}
+                    name="eventIdea"
+                    value={values.eventIdea}
                     onChange={InputEvent}
                     rows="4"
-                    cols="10"
+                    cols="4"
                   ></textarea>
 
                   <button type="submit" className="btn- btn--primary">

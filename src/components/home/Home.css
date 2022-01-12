@@ -19,6 +19,15 @@ body {
   width: 50%;
 }
 
+.domain_example {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -14px;
+  line-height: 15px;
+  color: blue;
+}
+
 textarea::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: 5px;
@@ -50,13 +59,11 @@ body::-webkit-scrollbar-thumb {
 .animate-character {
   margin-top: 10rem;
   text-transform: capitalize;
-  background-image: linear-gradient(
-    -225deg,
-    #4285f4 0%,
-    #0f9d58 29%,
-    #ee8379 67%,
-    #fff800 100%
-  );
+  background-image: linear-gradient(-225deg,
+      #4285f4 0%,
+      #0f9d58 29%,
+      #ee8379 67%,
+      #fff800 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -256,23 +263,17 @@ body::-webkit-scrollbar-thumb {
 /*COUNTERS #FIXME:*/
 .counts {
   margin: -20px;
-  background: linear-gradient(
-    90deg,
-    rgba(70, 192, 249, 0.5) 0%,
-    rgba(70, 192, 249, 0.5) 100%
-  );
-  background-image: linear-gradient(
-    45deg,
-    #3aacee 0%,
-    #3aacee 51%,
-    #3aacee 100%
-  );
-  background-image: linear-gradient(
-    45deg,
-    #2eb62c 0%,
-    #57c84d 51%,
-    #83d475 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(70, 192, 249, 0.5) 0%,
+      rgba(70, 192, 249, 0.5) 100%);
+  background-image: linear-gradient(45deg,
+      #3aacee 0%,
+      #3aacee 51%,
+      #3aacee 100%);
+  background-image: linear-gradient(45deg,
+      #2eb62c 0%,
+      #57c84d 51%,
+      #83d475 100%);
   /* background-image: linear-gradient(
     45deg,
     #f44336 0%,
@@ -310,12 +311,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .other-btns {
-  background-image: linear-gradient(
-    45deg,
-    #09c6f9 0%,
-    #007bff 51%,
-    #009ffd 100%
-  );
+  background-image: linear-gradient(45deg,
+      #09c6f9 0%,
+      #007bff 51%,
+      #009ffd 100%);
   pointer-events: auto;
   cursor: pointer;
   border: none;
@@ -357,7 +356,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .popup {
-  top: -15% !important;
+  top: -140% !important;
 }
 
 .form__fields {
@@ -365,7 +364,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .home_form {
-  height: 40em !important;
+  height: 45em !important;
 }
 
 .-content {
@@ -373,7 +372,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /** EVENTS **/
-.home-svg > img {
+.home-svg>img {
   width: 41em;
   height: 33em;
 }
@@ -433,11 +432,16 @@ body::-webkit-scrollbar-thumb {
   }
 
   .popup {
-    height: 160% !important;
+    top: -150% !important;
+    height: 200% !important;
   }
 
   .-content {
-    height: 750px !important;
+    height: 800px !important;
+  }
+
+  .domain_example {
+    font-size: 14px;
   }
 }
 
@@ -614,10 +618,6 @@ body::-webkit-scrollbar-thumb {
   .content .subscribe h4 {
     font-size: 1em;
     padding: 0% 10%;
-  }
-
-  .content .subscribe form {
-    margin-top: 10%;
   }
 }
 
