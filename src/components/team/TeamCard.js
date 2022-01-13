@@ -11,7 +11,8 @@ const TeamCard = (props) => {
           className="img-fluid team-img m-auto"
           alt={props.member.alt}
         />
-        <h5>{props.member.name}</h5>
+        <h5>{props.member.name} </h5>
+
         <h5>{props.member.position}</h5>
         <span></span>
         <div className="social-ico-team col-lg-12">
@@ -23,6 +24,9 @@ const TeamCard = (props) => {
           </a>
           <a href={props.member.instagram} target="_blank" rel="noreferrer">
             <i className="fa fa-instagram ico-insta"></i>
+          </a>
+          <a href={props.member.link} target="_blank" rel="noreferrer">
+            <i className="fa fa-link ico-link"></i>
           </a>
         </div>
       </div>

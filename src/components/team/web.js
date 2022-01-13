@@ -9,6 +9,7 @@ const Web = [
     linkedin: "https://www.linkedin.com/in/ashish-patil-👨‍💻-ab2879192",
     instagram: "https://www.instagram.com/ashishpatil2831/",
     github: "https://github.com/Ashish2831",
+    link: "",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const Web = [
     linkedin: "www.linkedin.com/in/ganesh-birajdar-a3a959219",
     instagram: "https://www.instagram.com/ganeshb_009",
     github: "https://github.com/ganeshbirajdar09",
+    link: "",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const Web = [
     linkedin: "https://www.linkedin.com/in/sarangkulkarni99",
     instagram: "https://www.instagram.com/_sarang_kulkarni_",
     github: "https://github.com/sarangkulkarni99",
+    link: "",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const Web = [
     linkedin: "https://www.linkedin.com/in/prakalp-pande-a56219220/",
     instagram: "https://www.instagram.com/prakalp_pande_/",
     github: "https://github.com/PRAKALP-PANDE",
+    link: "",
   },
 ];
 

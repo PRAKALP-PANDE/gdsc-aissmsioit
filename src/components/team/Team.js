@@ -170,25 +170,13 @@ const Team = () => {
               <h5>Dr. K. S. Wagh Sir</h5>
               <span></span>
               <div className="social-ico">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="#0"
-                >
+                <a target="_blank" rel="noreferrer" href="#0">
                   <i className="fa fa-linkedin ico-link"></i>
                 </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="#0"
-                >
+                <a target="_blank" rel="noreferrer" href="#0">
                   <i className="fa fa-github ico-github"></i>
                 </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="#0"
-                >
+                <a target="_blank" rel="noreferrer" href="#0">
                   <i className="fa fa-instagram ico-insta"></i>
                 </a>
               </div>
@@ -226,6 +214,13 @@ const Team = () => {
                   href="https://www.instagram.com/prarthanachandak"
                 >
                   <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a
+                  href="https://github.com/prarthanachandak"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa fa-link ico-link"></i>
                 </a>
               </div>
             </div>
@@ -281,6 +276,13 @@ const Team = () => {
                   href="https://www.instagram.com/_.harshal__/"
                 >
                   <i className="fa fa-instagram ico-insta"></i>
+                </a>
+                <a
+                  href="https://github.com/HarshalRaundal"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa fa-link ico-link"></i>
                 </a>
               </div>
             </div>

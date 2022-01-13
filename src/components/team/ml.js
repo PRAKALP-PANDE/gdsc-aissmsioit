@@ -9,6 +9,7 @@ const ML = [
     linkedin: "https://www.linkedin.com/in/akshada-bhandari-16bb90192/",
     instagram: "https://www.instagram.com/bhandari_akshada",
     github: "https://github.com/akshada2712",
+    link: "",
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ const ML = [
     linkedin: "www.linkedin.com/in/aditya-gandhamal-3750b9209",
     instagram: "https://www.instagram.com/adforeal",
     github: "https://github.com/adityagandhamal",
-  }
+    link: "",
+  },
 ];
 
 export default ML;

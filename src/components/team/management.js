@@ -9,6 +9,7 @@ const Management = [
     linkedin: "https://www.linkedin.com/in/omdanave/",
     instagram: "https://www.instagram.com/__life.racer/",
     github: "https://github.com/omkardanave",
+    link: "",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const Management = [
     linkedin: "https://www.linkedin.com/in/krishna-waske-329a99178",
     instagram: "https://www.instagram.com/waskekrishna/",
     github: "https://github.com/GHkrishna",
+    link: "",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const Management = [
     linkedin: "",
     instagram: "",
     github: "",
+    link: "",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const Management = [
     linkedin: "https://www.linkedin.com/in/sanyukta-kamble-a158711a6",
     instagram: "https://www.instagram.com/of.sanyukta",
     github: "https://github.com/sanyukta111",
+    link: "",
   },
   {
     id: 5,
@@ -53,7 +57,8 @@ const Management = [
     linkedin: "www.linkedin.com/in/pornima-lokhande-31b480200",
     instagram: "https://www.instagram.com/ponu234",
     github: "https://github.com/PornimaLokhande",
-  }
+    link: "",
+  },
 ];
 
 export default Management;

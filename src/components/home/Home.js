@@ -537,7 +537,7 @@ const Home = () => {
                   </NavLink>
                 </button>
 
-                <button className="other-btns">
+                <button className="other-btns submit-blog-btn">
                   <div className="container text-center">
                     <span
                       onClick={() => submitBlogIdea("pop-up")}

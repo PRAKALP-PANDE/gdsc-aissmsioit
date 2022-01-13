@@ -143,7 +143,7 @@ const Footer = () => {
               </h4>
               <div className="col-md-12 copy">
                 <p className="text-center">
-                  Copyright &copy; 2021 All Rights Reserved by
+                  &copy; Made by Web Team |
                   <NavLink to="/"> GDSC, AISSMS IOIT</NavLink>.
                 </p>
               </div>

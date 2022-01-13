@@ -9,6 +9,7 @@ const Cloud = [
     linkedin: "https://www.linkedin.com/in/shriniwas-khond-906329209/",
     instagram: "https://www.instagram.com/shriniwas_khond/",
     github: "https://github.com/ShriniwasKhond",
+    link: "",
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ const Cloud = [
     linkedin: "www.linkedin.com/in/isha-nadkar",
     instagram: "https://www.instagram.com/isha_1o1/?hl=en",
     github: "https://github.com/IshaNadkar",
-  }
+    link: "",
+  },
 ];
 
 export default Cloud;
