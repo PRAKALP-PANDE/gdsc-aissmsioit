@@ -3,7 +3,7 @@ const Android = [
     id: 1,
     name: "Parth Desai",
     position: "Android Lead",
-    image: "",
+    image: "https://i.ibb.co/Wyv0rfx/Parth-Desai.jpg",
     alt: "Lead_Image",
     col: 3,
     linkedin: "https://www.linkedin.com/in/parth-desai-021027",
